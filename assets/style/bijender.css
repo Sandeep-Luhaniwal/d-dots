@@ -1,0 +1,32 @@
+/* FINGERPRINT CSS */
+.footer_fingrprint_img {
+    max-width: 1225px;
+}
+
+/* FOOTER CSS */
+.footer_bg_colour {
+    background-color: rgba(20, 43, 56, 0.70);
+}
+
+.footer_logo {
+    max-width: 108px;
+    height: 60px;
+}
+
+.line_height {
+    line-height: 25px;
+}
+
+.footer_link_opacity:hover {
+    opacity: 1 !important;
+}
+
+.footer_underline {
+    border: 1px solid rgba(255, 255, 255, 0.24);
+}
+
+.footer_button {
+    padding: 14px 32px;
+    border-radius: 34px;
+    background: #9A0000;
+}
