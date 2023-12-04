@@ -1,3 +1,29 @@
-* {
-    padding: 0;
+/* Common class */
+.lh_160 {
+  line-height: 160%;
+}
+/* ==== Application & Benefits === */
+.bg_application {
+  background-image: url("../images/png/application_benefits.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.bg_application::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 204px;
+  background: linear-gradient(180deg, rgba(11, 14, 17, 0) 0%, #0b0e11 100%);
+  transform: rotate(180deg);
+  z-index: -1;
+}
+/*  */
+.bg_card_ai_innovation {
+  border-radius: 24px;
+  background: rgba(242, 247, 249, 0.08);
+  backdrop-filter: blur(5px);
+  max-width: 822px;
 }
