@@ -1,3 +1,20 @@
-* {
-    padding: 0;
+/* ----------ABOUT US CSS --------------  */
+.about-us-bg-img {
+    background: url("../images/png/about-us-bg-img.png") no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.top-overlay,
+.bottom-overlay {
+    background: linear-gradient(180deg, rgba(11, 14, 17, 0) 0%, #0b0e11 100%);
+    max-height: 200px;
+}
+
+.transfrom-rotate {
+    transform: rotate(180deg);
+}
+
+.about-us-image {
+    max-width: 461px !important;
 }
