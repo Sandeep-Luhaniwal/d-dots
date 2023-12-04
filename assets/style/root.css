@@ -1,145 +1,147 @@
 /* FONT FAMILY */
 @font-face {
-    font-family: "articulate-cf";
-    src: url("../fonts/articulat/ArticulatCF-Normal.otf");
-    font-weight: 400;
-    font-style: normal;
+  font-family: "articulate-cf";
+  src: url("../fonts/articulat/ArticulatCF-Normal.otf");
+  font-weight: 400;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: "articulate-cf";
-    src: url("../fonts/articulat/ArticulatCF-Medium.otf");
-    font-weight: 500;
-    font-style: normal;
+  font-family: "articulate-cf";
+  src: url("../fonts/articulat/ArticulatCF-Medium.otf");
+  font-weight: 500;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: "articulate-cf";
-    src: url("../fonts/articulat/ArticulatCF-DemiBold.otf");
-    font-weight: 600;
-    font-style: normal;
+  font-family: "articulate-cf";
+  src: url("../fonts/articulat/ArticulatCF-DemiBold.otf");
+  font-weight: 600;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: "articulate-cf";
-    src: url("../fonts/articulat/ArticulatCF-Bold.otf");
-    font-weight: 700;
-    font-style: normal;
+  font-family: "articulate-cf";
+  src: url("../fonts/articulat/ArticulatCF-Bold.otf");
+  font-weight: 700;
+  font-style: normal;
 }
 
 body {
-    background-color: #0b0e11 !important;
-    font-family: "articulate-cf" !important;
+  background-color: #0b0e11 !important;
+  font-family: "articulate-cf" !important;
 }
 
 :root {
-    /*--------- FONT-SIZE -------- */
-    --font-xs: 12px;
-    --font-sm: 14px;
-    --font-base: 16px;
-    --font-md: 18px;
-    --font-lg: 20px;
-    --font-xl: 24px;
-    --font-2xl: 32px;
-    --font-3xl: 36px;
-    --font-4xl: 54px;
-
-
-    --white: #fff;
-    --light-white: #fafafa;
-    --black: #010101;
+  /*--------- FONT-SIZE -------- */
+  --font-xs: 12px;
+  --font-sm: 14px;
+  --font-base: 16px;
+  --font-md: 18px;
+  --font-lg: 20px;
+  --font-xl: 24px;
+  --font-2xl: 32px;
+  --font-3xl: 36px;
+  --font-4xl: 54px;
+  --white: #fff;
+  --light-white: #fafafa;
+  --black: #010101;
+  --dark-green: rgba(20, 43, 56, 0.7);
 }
-
-
 
 /* ---------- FONT-SIZE ---------- */
 .font_xs {
-    font-size: var(--font-xs);
+  font-size: var(--font-xs);
 }
 
 .font_sm {
-    font-size: var(--font-sm);
+  font-size: var(--font-sm);
 }
 
 .font_base {
-    font-size: var(--font-base);
+  font-size: var(--font-base);
 }
 
 .font_md {
-    font-size: var(--font-md);
+  font-size: var(--font-md);
 }
 
 .font_lg {
-    font-size: var(--font-lg);
+  font-size: var(--font-lg);
 }
 
 .font_xl {
-    font-size: var(--font-xl);
+  font-size: var(--font-xl);
 }
 
 .font_2xl {
-    font-size: var(--font-2xl);
+  font-size: var(--font-2xl);
 }
 
 .font_3xl {
-    font-size: var(--font-3xl);
+  font-size: var(--font-3xl);
 }
 
 .font_4xl {
-    font-size: var(--font-4xl);
+  font-size: var(--font-4xl);
 }
 
 /* --------- COLOR ---------  */
 
 .color_white {
-    color: var(--white);
+  color: var(--white);
 }
 
 .color_light_white {
-    color: var(--light-white);
+  color: var(--light-white);
 }
 
 .color_black {
-    color: var(--black);
+  color: var(--black);
 }
-
-
+/* ---------- BACKGROUND COLOR --------- */
+.bg_dark_green {
+  background-color: var(--dark-green);
+}
+.bg_white {
+  background-color: var(--white);
+}
 /* --------MEDIA QUAERY----------- */
 @media (max-width: 1199.98px) {
-    :root {
-        --font-xl: 20px;
-        --font-2xl: 24px;
-        --font-3xl: 30px;
-        --font-4xl: 40px;
-    }
+  :root {
+    --font-xl: 20px;
+    --font-2xl: 24px;
+    --font-3xl: 30px;
+    --font-4xl: 40px;
+  }
 }
 
 @media (max-width: 991.98px) {
-    :root {
-        --font-base: 15px;
-        --font-md: 16px;
-        --font-lg: 18px;
-        --font-xl: 20px;
-        --font-2xl: 22px;
-        --font-3xl: 24px;
-        --font-4xl: 36px;
-    }
+  :root {
+    --font-base: 15px;
+    --font-md: 16px;
+    --font-lg: 18px;
+    --font-xl: 20px;
+    --font-2xl: 22px;
+    --font-3xl: 24px;
+    --font-4xl: 36px;
+  }
 }
 
 @media (max-width: 575.98px) {
-    :root {
-        --font-base: 15px;
-        --font-md: 16px;
-        --font-3xl: 22px;
-        --font-4xl: 30px;
-    }
+  :root {
+    --font-base: 15px;
+    --font-md: 16px;
+    --font-3xl: 22px;
+    --font-4xl: 30px;
+  }
 }
 
 @media (max-width: 374.98px) {
-    :root {
-        --font-xs: 12px;
-        --font-sm: 13px;
-        --font-base: 14px;
-        --font-4xl: 24px;
-    }
+  :root {
+    --font-xs: 12px;
+    --font-sm: 13px;
+    --font-base: 14px;
+    --font-4xl: 24px;
+  }
 }
