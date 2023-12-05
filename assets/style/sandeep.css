@@ -157,13 +157,21 @@
     max-width: 296px;
 }
 
+.right-arrow-icon {
+    width: 10px;
+}
+
 .transfrom-rotate-icon {
     transform: rotate(90deg);
 }
 
+.transfrom-rotate-icon-neagtive-deg {
+    transform: rotate(-90deg);
+}
+
 .first-text-secure {
     top: 64px;
-    right: 170px;
+    right: 175px;
     transform: rotate(-75deg);
 }
 
@@ -173,6 +181,11 @@
     left: 16px;
 }
 
+.fourth-text-secure {
+    top: 396px;
+    left: 72px;
+}
+
 @media (min-width:375px) {
     .secure-data-image-mobile {
         max-width: 351px;
@@ -180,13 +193,17 @@
 
     .first-text-secure {
         top: 80px;
-        right: 210px;
-        transform: rotate(-75deg);
+        right: 218px;
     }
 
     .second-text-secure {
         top: 295px;
         left: 20px;
+    }
+
+    .fourth-text-secure {
+        top: 456px;
+        left: 100px;
     }
 }
 
@@ -214,6 +231,31 @@
         transform: rotate(26deg);
     }
 
+    .third-text-secure {
+        position: absolute;
+        top: -50px;
+        left: 10px;
+    }
+
+    .right-arrow-icon {
+        width: 14px;
+    }
+
+    .transfrom-rotate-icon-neagtive-deg {
+        transform: rotate(90deg);
+    }
+
+    .fourth-text-secure {
+        top: 170px;
+        left: -75px;
+        transform: rotate(-90deg);
+    }
+
+    .fifth-text-secure {
+        position: absolute;
+        bottom: -52px;
+        left: 0px;
+    }
 }
 
 @media (min-width:768px) {
@@ -278,6 +320,15 @@
         left: 216px;
         transform: rotate(23deg);
     }
+
+    .right-arrow-icon {
+        width: 18px;
+    }
+
+    .fourth-text-secure {
+        top: 239px;
+        left: -56px;
+    }
 }
 
 @media (min-width:992px) {
@@ -332,6 +383,25 @@
         top: 114px;
         left: 250px;
     }
+
+    .third-text-secure {
+        top: 0px;
+        left: -65px;
+    }
+
+    .right-arrow-icon {
+        width: 21px;
+    }
+
+    .fourth-text-secure {
+        top: 280px;
+        left: -46px;
+    }
+
+    .fifth-text-secure {
+        bottom: 0px;
+        left: -80px;
+    }
 }
 
 @media (min-width:1200px) {
@@ -367,5 +437,10 @@
     .first-text-secure {
         top: 129px;
         right: 139px;
+    }
+
+    .fifth-text-secure {
+        bottom: 0px;
+        left: -95px;
     }
 }
