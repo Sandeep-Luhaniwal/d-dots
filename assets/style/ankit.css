@@ -223,6 +223,7 @@
   }
   .lock_icon {
     right: -31px;
+    top: 40%;
   }
   .one_icon {
     right: 64px;
@@ -252,6 +253,7 @@
   }
   .lock_icon {
     right: -29px;
+    top: 40%;
   }
   .one_icon {
     bottom: -21px;
@@ -274,6 +276,9 @@
   .wifi_icon {
     left: 6px;
     top: 64px;
+  }
+  .lock_icon {
+    top: 36%;
   }
   .i_icon {
     top: -19px;
@@ -303,6 +308,7 @@
   }
   .lock_icon {
     right: -25px;
+    top: 40%;
   }
   .one_icon {
     bottom: -14px;
@@ -323,10 +329,11 @@
   }
   .lock_icon {
     right: -25px;
+    top: 43%;
   }
   .one_icon {
-    bottom: -6px;
-    right: 57px;
+    bottom: -14px;
+    right: 76px;
   }
   .v_icon {
     bottom: 32px;
@@ -338,11 +345,15 @@
     top: 46px;
   }
   .i_icon {
-    right: 88px;
-    top: -22px;
+    right: 66px;
+    top: -18px;
+  }
+  .lock_icon {
+    top: 36%;
   }
   .one_icon {
-    bottom: -15px;
+    bottom: -13px;
+    right: 55px;
   }
   .v_icon {
     bottom: 17px;
@@ -356,6 +367,10 @@
   .i_icon {
     right: 88px;
     top: -22px;
+  }
+  .lock_icon {
+    right: -22px;
+    top: 30%;
   }
   .one_icon {
     bottom: -13px;
