@@ -20,7 +20,7 @@
     <section>
       <!-- LEFT SIDEBAAR -->
       <aside
-        class="py-4 overflow-hidden position-fixed asidebar_background_color min_vh_screen nav_bg z-3`"
+        class="py-4 overflow-hidden position-fixed asidebar_background_color min_vh_screen nav_bg z-3"
       >
         <nav class="ps-3 ps-md-4 mt-3 ms-xl-2 pe-2 pe-xl-0">
           <div class="d-flex align-items-center justify-content-between">
@@ -42,65 +42,58 @@
           >
             <li class="mt-4">
               <a
-                onclick="toggle"
+                id="nav-links"
                 href="#"
-                class="verticle_horizontal_sidebar fw-normal text-white opacity_06 font_lg mt-xl-2"
+                class="verticle_horizontal_sidebar fw-normal text-white opacity_06 font_lg mt-xl-2 nav-links"
                 >Home</a
               >
             </li>
             <li class="mt-4 pt-2">
               <a
                 href="#"
-                class="verticle_horizontal_sidebar fw-normal text-white opacity_06 font_lg"
+                class="verticle_horizontal_sidebar fw-normal text-white opacity_06 font_lg nav-links"
                 >Update</a
               >
             </li>
             <li class="mt-4 pt-2">
               <a
                 href="#"
-                class="verticle_horizontal_sidebar fw-normal text-white opacity_06 font_lg"
+                class="verticle_horizontal_sidebar fw-normal text-white opacity_06 font_lg nav-links"
                 >Our Why</a
               >
             </li>
             <li class="mt-4 pt-2">
               <a
                 href="#"
-                class="verticle_horizontal_sidebar fw-normal text-white opacity_06 font_lg"
+                class="verticle_horizontal_sidebar fw-normal text-white opacity_06 font_lg nav-links"
                 >Solutions</a
               >
             </li>
             <li class="mt-4 pt-2">
               <a
                 href="#"
-                class="verticle_horizontal_sidebar fw-normal text-white opacity_06 font_lg"
+                class="verticle_horizontal_sidebar fw-normal text-white opacity_06 font_lg nav-links"
                 >How It Works</a
               >
             </li>
             <li class="mt-4 pt-2">
               <a
                 href="#"
-                class="verticle_horizontal_sidebar fw-normal text-white opacity_06 font_lg"
+                class="verticle_horizontal_sidebar fw-normal text-white opacity_06 font_lg nav-links"
                 >Applications</a
               >
             </li>
             <li class="mt-4 pt-2">
               <a
                 href="#"
-                class="verticle_horizontal_sidebar fw-normal text-white opacity_06 font_lg"
+                class="verticle_horizontal_sidebar fw-normal text-white opacity_06 font_lg nav-links"
                 >FAQ</a
               >
             </li>
             <li class="mt-4 pt-2">
               <a
                 href="#"
-                class="verticle_horizontal_sidebar fw-normal text-white opacity_06 font_lg"
-                >Contact</a
-              >
-            </li>
-            <li class="mt-4 pt-2">
-              <a
-                href="#"
-                class="verticle_horizontal_sidebar fw-normal text-white opacity_06 font_lg"
+                class="verticle_horizontal_sidebar fw-normal text-white opacity_06 font_lg nav-links"
                 >Contact</a
               >
             </li>
@@ -252,7 +245,9 @@
         </div>
       </div>
       <!-- MAIN SECTION -->
-      <div class="main min-vh-100 hero_section ms-xl-5 ps-xl-5 ms-xxl-0 ps-xxl-0">
+      <div
+        class="main min-vh-100 hero_section ms-xl-5 ps-xl-5 ms-xxl-0 ps-xxl-0"
+      >
         <div class="container">
           <div
             class="hero_section_border overflow-hidden d-flex align-items-center justify-content-center position-relative"
@@ -396,11 +391,24 @@
     </section>
     <script>
       const hamburger = document.querySelector(".hamburger");
-      const navMenu = document.querySelector(".nav-menu ");
+      const navLinks = document.querySelector(".nav-links");
+      const navMenu = document.querySelector(".nav-menu");
+      
       hamburger.addEventListener("click", function () {
         hamburger.classList.toggle("active");
         navMenu.classList.toggle("active");
         document.body.classList.toggle("overflow-hidden");
+      });
+
+      // Get all the nav tabs and add click event listeners
+      const navTabs = document.querySelectorAll(".nav-links");
+      navTabs.forEach((tab) => {
+        tab.addEventListener("click", function () {
+          hamburger.classList.remove("active");
+          navMenu.classList.remove("active");
+          document.body.classList.remove("overflow-hidden");
+          // Additional code for handling tab clicks can be added here if needed
+        });
       });
     </script>
 
