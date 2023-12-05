@@ -2,6 +2,18 @@
 .lh_160 {
   line-height: 160%;
 }
+.transition_03 {
+  transition: all 0.3s ease-in-out;
+}
+.common_btn {
+  border: 1px solid white;
+}
+.common_btn:hover {
+  background-color: rgba(20, 43, 56, 0.7);
+  color: white;
+}
+/* practice */
+
 /* ==== Application & Benefits === */
 .bg_application {
   background-image: url("../images/png/application_benefits.png");
@@ -92,6 +104,7 @@
 .btn_submit {
   padding: 14px 32px;
 }
+
 .stay_email {
   border: 1px solid rgba(255, 255, 255, 0);
   background: #4c5a65;
@@ -106,6 +119,86 @@
   opacity: 0.7 !important;
   font-weight: normal !important;
 }
+/*  === WHITE PAPER ===  */
+.bg_white_paper {
+  background-image: url("../images/png/white_paper_bg.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.btn_read_now {
+  padding: 13.5px 31px;
+}
+.white_paper_circle {
+  width: 100%;
+  border: 2px dashed rgba(255, 255, 255, 0.16);
+  border-radius: 100%;
+  padding: 98px;
+  animation: circleanimation 12s infinite linear;
+}
+@keyframes circleanimation {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.white_paper_icons,
+.white_paper_img {
+  animation: iconsanimation 12s infinite linear;
+}
+@keyframes iconsanimation {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+.wifi_icon {
+  left: -4px;
+  top: 83px;
+}
+.i_icon {
+  right: 98px;
+  top: -11px;
+}
+.lock_icon {
+  right: -40px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.one_icon {
+  right: 121px;
+  bottom: -24px;
+}
+.v_icon {
+  left: 0;
+  bottom: 61px;
+}
+@media (max-width: 1199.98px) {
+  .wifi_icon {
+    left: -21px;
+    top: 69px;
+  }
+  .i_icon {
+    top: -27px;
+  }
+  .lock_icon {
+    right: -37px;
+  }
+  .one_icon {
+    right: 100px;
+    bottom: -34px;
+  }
+  .v_icon {
+    left: 2px;
+    bottom: 23px;
+  }
+}
 @media (max-width: 991.98px) {
   .bg_video::after,
   .bg_video::before {
@@ -114,6 +207,33 @@
   .stay_ahead_bg::before,
   .stay_ahead_bg::after {
     height: 180px;
+  }
+  .white_paper_circle {
+    padding: 50px;
+  }
+  .white_paper_icons {
+    width: 60px;
+    height: 60px;
+  }
+  .wifi_icon {
+    left: -12px;
+    top: 34px;
+  }
+  .i_icon {
+    top: -25px;
+    right: 71px;
+  }
+  .lock_icon {
+    right: -31px;
+    top: 40%;
+  }
+  .one_icon {
+    right: 64px;
+    bottom: -23px;
+  }
+  .v_icon {
+    left: -11px;
+    bottom: 26px;
   }
 }
 @media (max-width: 767.98px) {
@@ -127,6 +247,22 @@
   .stay_ahead_bg::after {
     height: 140px;
   }
+  .wifi_icon {
+    left: -4px;
+  }
+  .i_icon {
+    top: -20px;
+  }
+  .lock_icon {
+    right: -29px;
+    top: 40%;
+  }
+  .one_icon {
+    bottom: -21px;
+  }
+  .v_icon {
+    left: -2px;
+  }
 }
 @media (max-width: 575.98px) {
   .bg_video::after,
@@ -135,7 +271,114 @@
   .stay_ahead_bg::after {
     height: 100px;
   }
-  .btn_submit {
-    padding: 8px 24px;
+  .btn_submit,
+  .btn_read_now {
+    padding: 9px 24px;
+  }
+  .wifi_icon {
+    left: 6px;
+    top: 64px;
+  }
+  .lock_icon {
+    top: 36%;
+  }
+  .i_icon {
+    top: -19px;
+    right: 120px;
+  }
+  .one_icon {
+    bottom: -11px;
+    right: 94px;
+  }
+  .v_icon {
+    left: 6px;
+    bottom: 61px;
+  }
+}
+@media (max-width: 484.98px) {
+  .white_paper_icons {
+    width: 50px;
+    height: 50px;
+  }
+  .wifi_icon {
+    left: 4px;
+    top: 60px;
+  }
+  .i_icon {
+    top: -19px;
+    right: 112px;
+  }
+  .lock_icon {
+    right: -25px;
+    top: 40%;
+  }
+  .one_icon {
+    bottom: -14px;
+  }
+  .v_icon {
+    left: 11px;
+    bottom: 43px;
+  }
+}
+@media (max-width: 430.98px) {
+  .wifi_icon {
+    left: 1px;
+    top: 46px;
+  }
+  .i_icon {
+    right: 88px;
+    top: -17px;
+  }
+  .lock_icon {
+    right: -25px;
+    top: 43%;
+  }
+  .one_icon {
+    bottom: -14px;
+    right: 76px;
+  }
+  .v_icon {
+    bottom: 32px;
+  }
+}
+@media (max-width: 375.98px) {
+  .wifi_icon {
+    left: -8px;
+    top: 46px;
+  }
+  .i_icon {
+    right: 66px;
+    top: -18px;
+  }
+  .lock_icon {
+    top: 36%;
+  }
+  .one_icon {
+    bottom: -13px;
+    right: 55px;
+  }
+  .v_icon {
+    bottom: 17px;
+  }
+}
+@media (max-width: 333.98px) {
+  .wifi_icon {
+    left: -19px;
+    top: 46px;
+  }
+  .i_icon {
+    right: 88px;
+    top: -22px;
+  }
+  .lock_icon {
+    right: -22px;
+    top: 30%;
+  }
+  .one_icon {
+    bottom: -13px;
+    right: 34px;
+  }
+  .v_icon {
+    bottom: 2px;
   }
 }

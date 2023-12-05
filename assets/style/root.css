@@ -99,20 +99,23 @@ body {
 .color_black {
   color: var(--black);
 }
+
 /* ---------- BACKGROUND COLOR --------- */
 .bg_dark_green {
   background-color: var(--dark-green);
 }
+
 .bg_white {
   background-color: var(--white);
 }
+
 /* --------MEDIA QUAERY----------- */
 @media (max-width: 1199.98px) {
   :root {
     --font-xl: 20px;
     --font-2xl: 24px;
     --font-3xl: 30px;
-    --font-4xl: 40px;
+    --font-4xl: 48px;
   }
 }
 
@@ -130,18 +133,18 @@ body {
 
 @media (max-width: 575.98px) {
   :root {
+    --font-sm: 12px;
     --font-base: 15px;
     --font-md: 16px;
     --font-3xl: 22px;
-    --font-4xl: 30px;
+    --font-4xl: 32px;
   }
 }
 
 @media (max-width: 374.98px) {
   :root {
     --font-xs: 12px;
-    --font-sm: 13px;
     --font-base: 14px;
-    --font-4xl: 24px;
+    --font-4xl: 28px;
   }
 }
