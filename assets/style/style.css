@@ -1,31 +1,30 @@
 * {
-    margin: 0;
-    padding: 0;
-    list-style-type: none !important;
-    text-decoration: none !important;
-    box-sizing: border-box !important;
+  margin: 0;
+  padding: 0;
+  list-style-type: none !important;
+  text-decoration: none !important;
+  box-sizing: border-box !important;
 }
 
 /* ----------- COMMON ----------- */
 
 .bg_dark_green {
-    background-color: rgba(20, 43, 56, 0.7);
+  background-color: rgba(20, 43, 56, 0.7);
 }
 
 .fw_medium {
-    font-weight: 500;
+  font-weight: 500;
 }
 
 .cursor_pointer {
-    cursor: pointer;
+  cursor: pointer;
 }
-
 .opacity_07 {
-    opacity: 0.7 !important;
+  opacity: 0.7 !important;
 }
 
-@media (min-width:1200px) {
-    .container {
-        max-width: 1140px !important;
-    }
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px !important;
+  }
 }
