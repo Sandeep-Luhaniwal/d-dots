@@ -16,60 +16,271 @@
   </head>
 
   <body class="position-relative">
-     <!-- HERO SECTION -->
-     <!-- <section class="">
-      <header>
-        <a href="#" class="toggle-menu fontawesome-reorder"></a>
-        <h1>Title</h1>
-      </header>
-
-      <aside class="sidebar">
-        <h3>Contents</h3>
-        <nav>
-          <ul class="p-0 m-0">
-            <li class="rotate_180">Chapter 1</li>
-            <li class="active">Chapter 2</li>
-            <li>Chapter 3</li>
-            <li>Chapter 4</li>
-            <li>Chapter 5</li>
-            <li>Chapter 6</li>
-            <li>Chapter 7</li>
-            <li>Chapter 8</li>
-            <li>Chapter 9</li>
-            <li>Chapter 10</li>
+    <!-- HERO SECTION -->
+    <section>
+      <!-- LEFT SIDEBAAR -->
+      <aside
+        class="py-4 overflow-hidden position-fixed asidebar_background_color min_vh_screen nav_bg z-3"
+      >
+        <nav class="ps-3 ps-md-4 mt-3 ms-xl-2 pe-2 pe-xl-0">
+          <div class="d-flex align-items-center justify-content-between">
+            <a href="#"
+              ><img
+                width="68"
+                height="38"
+                src="./assets/images/webp/footer_logo.webp"
+                alt=""
+            /></a>
+            <button class="hamburger d-xl-none index_5 ms-2 cross_icon pe-4">
+              <span class="bar ms-auto"></span>
+              <span class="bar bar-2"></span>
+              <span class="bar ms-auto"></span>
+            </button>
+          </div>
+          <ul
+            class="p-0 m-0 mt-3 overflow-y-scroll asidebar_customise pe-4 nav-menu d-flex justify-content-center d-xl-block"
+          >
+            <li class="mt-4">
+              <a
+                id="nav-links"
+                href="#"
+                class="verticle_horizontal_sidebar fw-normal text-white opacity_06 font_lg mt-xl-2 nav-links"
+                >Home</a
+              >
+            </li>
+            <li class="mt-4 pt-2">
+              <a
+                href="#"
+                class="verticle_horizontal_sidebar fw-normal text-white opacity_06 font_lg nav-links"
+                >Update</a
+              >
+            </li>
+            <li class="mt-4 pt-2">
+              <a
+                href="#"
+                class="verticle_horizontal_sidebar fw-normal text-white opacity_06 font_lg nav-links"
+                >Our Why</a
+              >
+            </li>
+            <li class="mt-4 pt-2">
+              <a
+                href="#"
+                class="verticle_horizontal_sidebar fw-normal text-white opacity_06 font_lg nav-links"
+                >Solutions</a
+              >
+            </li>
+            <li class="mt-4 pt-2">
+              <a
+                href="#"
+                class="verticle_horizontal_sidebar fw-normal text-white opacity_06 font_lg nav-links"
+                >How It Works</a
+              >
+            </li>
+            <li class="mt-4 pt-2">
+              <a
+                href="#"
+                class="verticle_horizontal_sidebar fw-normal text-white opacity_06 font_lg nav-links"
+                >Applications</a
+              >
+            </li>
+            <li class="mt-4 pt-2">
+              <a
+                href="#"
+                class="verticle_horizontal_sidebar fw-normal text-white opacity_06 font_lg nav-links"
+                >FAQ</a
+              >
+            </li>
+            <li class="mt-4 pt-2">
+              <a
+                href="#"
+                class="verticle_horizontal_sidebar fw-normal text-white opacity_06 font_lg nav-links"
+                >Contact</a
+              >
+            </li>
+            <div class="py-4 mt-2 d-xl-none">
+              <img
+                class="cursor_pointer navbar_arrow_rotate"
+                width="12.5"
+                height="6.25"
+                src="./assets/images/svg/down_arrow.svg"
+                alt="down_arrow"
+              />
+            </div>
           </ul>
+
+          <div class="py-4 mt-2 ps-2 d-none d-xl-flex">
+            <img
+              class="cursor_pointer navbar_arrow_rotate"
+              width="12.5"
+              height="6.25"
+              src="./assets/images/svg/down_arrow.svg"
+              alt="down_arrow"
+            />
+          </div>
         </nav>
       </aside>
-
-      <section class="main">
-        <h2>Chapter 2</h2>
-        <p>
-          Ennui Williamsburg Echo Park pork belly, hella flannel single-origin
-          coffee. Bicycle rights artisan beard Neutra cardigan Echo Park.
-          Shoreditch flannel tote bag pug jean shorts post-ironic semiotics
-          cornhole forage. Skateboard aesthetic synth leggings Banksy. Shabby
-          chic PBR plaid helvetica dreamcatcher tousled, irony ethnic Tonx
-          sustainable before they sold out McSweeney's. Hoodie Banksy freegan
-          bicycle rights, aesthetic try-hard fap ethnic deep v fixie. Before
-          they sold out +1 ugh, Bushwick Wes Anderson cred Marfa synth butcher
-          jean shorts Terry Richardson.
-        </p>
-      </section>
-
-      <div class="container"></div>
-    </section> -->
+      <!-- RIGHT SIDEBAAR -->
+      <div
+        class="sidebaar asidebar_background_color position-absolute end-0 overflow-hidden h-100 min_vh_screen d-none"
+      >
+        <div class="pt-4 position-fixed">
+          <div class="pt-3 mt-1 ps-4 ms-2">
+            <a href="#">
+              <div
+                class="sidebar_icons d-flex justify-content-center align-items-center transition_03"
+              >
+                <svg
+                  class="transition_03"
+                  width="20"
+                  height="18"
+                  viewBox="0 0 20 18"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M15.7512 0H18.818L12.1179 7.62462L20 18H13.8275L8.99365 11.7074L3.46266 18H0.394011L7.56038 9.84461L0 0H6.32735L10.6967 5.75169L15.7493 0H15.7512ZM14.6748 16.1723H16.3742L5.4049 1.73169H3.58133L14.6748 16.1723Z"
+                    fill="white"
+                  />
+                </svg>
+              </div>
+            </a>
+          </div>
+          <!-- DISCORD -->
+          <div class="pt-3 mt-1 ps-4 ms-2">
+            <a href="#">
+              <div
+                class="sidebar_icons d-flex justify-content-center align-items-center transition_03"
+              >
+                <svg
+                  class="transition_03"
+                  width="20"
+                  height="18"
+                  viewBox="0 0 20 18"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M14.003 0C14.747 0 15.533 0.26 16.253 0.547L16.78 0.763C18.04 1.291 18.748 2.399 19.297 3.616C20.188 5.591 20.807 8.224 21.021 10.226C21.123 11.176 21.148 12.132 20.965 12.775C20.768 13.462 20.098 13.948 19.447 14.33L19.125 14.513L18.791 14.699C18.619 14.795 18.442 14.89 18.266 14.983L17.744 15.253L17.027 15.61L16.45 15.894C16.3321 15.9576 16.2027 15.9968 16.0694 16.0094C15.936 16.022 15.8015 16.0077 15.6738 15.9673C15.5462 15.9269 15.4279 15.8613 15.326 15.7743C15.2242 15.6874 15.1408 15.5808 15.0809 15.461C15.0211 15.3413 14.9858 15.2107 14.9774 15.077C14.9689 14.9433 14.9874 14.8094 15.0317 14.683C15.076 14.5566 15.1452 14.4404 15.2353 14.3413C15.3254 14.2422 15.4344 14.1622 15.556 14.106L16.346 13.716L15.766 13.107C14.376 13.677 12.739 14 11 14C9.26101 14 7.62401 13.678 6.23401 13.107L5.65401 13.715L6.44701 14.105C6.56455 14.1637 6.66937 14.245 6.75549 14.3442C6.84161 14.4434 6.90735 14.5586 6.94895 14.6832C6.99055 14.8078 7.0072 14.9394 6.99795 15.0705C6.98869 15.2015 6.95372 15.3295 6.89501 15.447C6.83631 15.5645 6.75504 15.6694 6.65583 15.7555C6.55662 15.8416 6.44141 15.9073 6.3168 15.9489C6.06512 16.033 5.79038 16.0136 5.55301 15.895L5.00901 15.625C4.60701 15.425 4.20401 15.227 3.80601 15.018L2.87801 14.513L2.55701 14.33C1.90601 13.948 1.23501 13.462 1.03901 12.775C0.855014 12.132 0.881014 11.177 0.982014 10.225C1.19601 8.224 1.81501 5.591 2.70601 3.616C3.25501 2.399 3.96301 1.291 5.22301 0.763C6.05901 0.413 7.07201 0 8.00001 0C8.60301 0 9.07701 0.555 8.99001 1.147C9.65548 1.04854 10.3273 0.999404 11 1C11.691 1 12.366 1.05 13.014 1.148C12.9947 1.00599 13.0059 0.861504 13.0466 0.724109C13.0874 0.586714 13.1568 0.459542 13.2504 0.351012C13.344 0.242481 13.4596 0.155067 13.5895 0.0945554C13.7194 0.0340434 13.8597 0.00181393 14.003 0ZM7.75001 6.5C7.28589 6.5 6.84077 6.68437 6.51258 7.01256C6.18439 7.34075 6.00001 7.78587 6.00001 8.25C6.00001 8.71413 6.18439 9.15925 6.51258 9.48744C6.84077 9.81563 7.28589 10 7.75001 10C8.21414 10 8.65926 9.81563 8.98745 9.48744C9.31564 9.15925 9.50001 8.71413 9.50001 8.25C9.50001 7.78587 9.31564 7.34075 8.98745 7.01256C8.65926 6.68437 8.21414 6.5 7.75001 6.5ZM14.25 6.5C13.7859 6.5 13.3408 6.68437 13.0126 7.01256C12.6844 7.34075 12.5 7.78587 12.5 8.25C12.5 8.71413 12.6844 9.15925 13.0126 9.48744C13.3408 9.81563 13.7859 10 14.25 10C14.7141 10 15.1593 9.81563 15.4875 9.48744C15.8156 9.15925 16 8.71413 16 8.25C16 7.78587 15.8156 7.34075 15.4875 7.01256C15.1593 6.68437 14.7141 6.5 14.25 6.5Z"
+                    fill="white"
+                  />
+                </svg>
+              </div>
+            </a>
+          </div>
+          <div class="pt-3 mt-1 ps-4 ms-2">
+            <a href="#">
+              <div
+                class="sidebar_icons d-flex justify-content-center align-items-center transition_03"
+              >
+                <svg
+                  class="transition_03"
+                  width="20"
+                  height="18"
+                  viewBox="0 0 20 18"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M13.2658 3.13672C13.2658 5.65899 13.2701 5.73203 13.4721 5.83945C13.5322 5.87383 14.3314 5.88672 15.99 5.88672H17.9221C18.1982 5.88672 18.4221 6.11058 18.4221 6.38672V12.4609V18.5352C18.4221 18.8113 18.1982 19.0352 17.9221 19.0352H11.0959H4.26973C3.99358 19.0352 3.76973 18.8113 3.76973 18.5352V9.9043V1.27344C3.76973 0.997295 3.99358 0.773438 4.26973 0.773438H8.51777H12.7658C13.042 0.773438 13.2658 0.997295 13.2658 1.27344V3.13672Z"
+                    fill="black"
+                  />
+                  <path
+                    d="M3.00488 10.9184L3.01754 19.4439C3.01769 19.5445 3.06171 19.64 3.13809 19.7055C3.21572 19.772 3.3146 19.8086 3.41686 19.8086H9.74668H15.7307C16.0068 19.8086 16.2307 20.0325 16.2307 20.3086V20.5176V20.7266C16.2307 21.0027 16.0068 21.2266 15.7307 21.2266H8.90449H2.07832C1.80218 21.2266 1.57832 21.0027 1.57832 20.7266V11.7305V2.73438C1.57832 2.45823 1.80218 2.23438 2.07832 2.23438H2.2873H2.49678C2.77273 2.23438 2.99651 2.45793 2.99678 2.73388L3.00488 10.9184Z"
+                    fill="black"
+                  />
+                  <path
+                    d="M15.9514 3.22266L16.9884 4.25973C17.3034 4.57471 17.0803 5.11328 16.6349 5.11328H15.9385H14.5393C14.2631 5.11328 14.0393 4.88942 14.0393 4.61328V3.22266C14.0393 2.18281 14.0436 1.33203 14.0521 1.33203C14.0564 1.33203 14.9115 2.18281 15.9514 3.22266Z"
+                    fill="black"
+                  />
+                  <path
+                    d="M5.48828 3.29582C5.45391 3.30871 5.38086 3.36028 5.3293 3.40754C5.23047 3.49348 5.23047 3.50207 5.23047 4.76965V6.04582L5.34219 6.14895C5.45391 6.25207 5.45391 6.25207 6.58398 6.26496C7.32305 6.27356 7.77852 6.26067 7.89453 6.23059C8.18242 6.15325 8.19531 6.0845 8.19531 4.74817C8.19531 3.48059 8.18242 3.39895 7.9332 3.31301C7.79141 3.26575 5.61719 3.24856 5.48828 3.29582ZM7.42188 4.76965V5.50012H6.71289H6.00391V4.76965V4.03918H6.71289H7.42188V4.76965Z"
+                    fill="white"
+                  />
+                  <path
+                    d="M5.33821 7.06826C5.18782 7.21436 5.19211 7.46787 5.3425 7.60967C5.44133 7.6999 5.49719 7.71279 5.86672 7.72998C6.40383 7.74717 6.59289 7.69131 6.67453 7.49365C6.74758 7.32178 6.7218 7.19717 6.59289 7.05537C6.51125 6.96514 6.46828 6.96084 5.97414 6.96084C5.46711 6.96084 5.43703 6.96514 5.33821 7.06826Z"
+                    fill="white"
+                  />
+                  <path
+                    d="M7.52925 7.06824C7.38746 7.20574 7.38746 7.42918 7.52496 7.59246L7.62808 7.71277L12.0925 7.72566C15.2765 7.73425 16.6 7.72566 16.716 7.69129C16.9953 7.60964 17.0683 7.28738 16.8621 7.05535L16.7761 6.96082H12.2043H7.63238L7.52925 7.06824Z"
+                    fill="white"
+                  />
+                  <path
+                    d="M5.33789 9.25977C5.26055 9.33281 5.23047 9.41016 5.23047 9.52617C5.23477 9.84414 5.38086 9.92578 5.96094 9.92578C6.45508 9.92578 6.61406 9.86992 6.68281 9.67656C6.74297 9.50469 6.7 9.33711 6.57109 9.23828C6.48086 9.16523 6.39922 9.15234 5.95234 9.15234C5.4668 9.15234 5.43672 9.15664 5.33789 9.25977Z"
+                    fill="white"
+                  />
+                  <path
+                    d="M7.53398 9.26401C7.3793 9.4187 7.3793 9.65502 7.53398 9.80112L7.6457 9.90424L12.1402 9.91713C15.5391 9.92573 16.6691 9.91284 16.7637 9.87416C17.0043 9.77534 17.0516 9.40151 16.841 9.23823C16.7379 9.15229 16.652 9.15229 12.1918 9.15229H7.65L7.53398 9.26401Z"
+                    fill="white"
+                  />
+                  <path
+                    d="M5.42423 11.3953C5.19649 11.5199 5.15352 11.8336 5.34258 12.0098C5.45001 12.1129 5.48868 12.1172 5.96133 12.1172C6.52423 12.1172 6.65743 12.0656 6.70469 11.8293C6.73477 11.6617 6.63165 11.4383 6.49844 11.3867C6.34805 11.3309 5.53165 11.3352 5.42423 11.3953Z"
+                    fill="white"
+                  />
+                  <path
+                    d="M7.61529 11.3953C7.38755 11.5242 7.34888 11.8207 7.53365 12.0055L7.64966 12.1172H12.1786C15.3411 12.1172 16.7333 12.1043 16.7977 12.0699C16.9309 11.9969 17.0126 11.7648 16.9567 11.6059C16.8579 11.3309 17.1114 11.3438 12.1829 11.3438C8.89146 11.348 7.67974 11.3609 7.61529 11.3953Z"
+                    fill="white"
+                  />
+                  <path
+                    d="M5.44961 13.5824C5.29922 13.6426 5.23477 13.75 5.23047 13.9348C5.23047 14.0508 5.26055 14.1281 5.33789 14.2012C5.43672 14.3043 5.4668 14.3086 5.97383 14.3086C6.46797 14.3086 6.51094 14.3043 6.59258 14.2098C6.71719 14.0723 6.74297 13.9691 6.68711 13.8059C6.61836 13.5953 6.44648 13.5352 5.95234 13.5395C5.7332 13.5395 5.50547 13.5609 5.44961 13.5824Z"
+                    fill="white"
+                  />
+                  <path
+                    d="M7.67984 13.5652C7.41343 13.6641 7.33179 14.0078 7.52945 14.2012L7.63257 14.3086H12.183C16.6517 14.3086 16.7377 14.3086 16.8408 14.2227C17.0642 14.0508 17.0041 13.6727 16.7462 13.5824C16.6431 13.548 15.3755 13.5352 12.1744 13.5395C9.73804 13.5395 7.71421 13.5523 7.67984 13.5652Z"
+                    fill="white"
+                  />
+                  <path
+                    d="M5.51002 15.7566C5.23502 15.8297 5.1276 16.2164 5.32955 16.4055C5.41979 16.4914 5.47565 16.5 5.96549 16.5C6.48541 16.5 6.5069 16.4957 6.60573 16.3926C6.75182 16.2379 6.74323 16.0187 6.59284 15.8641C6.48541 15.7566 6.45104 15.748 6.03854 15.7395C5.79362 15.7352 5.55729 15.7437 5.51002 15.7566Z"
+                    fill="white"
+                  />
+                  <path
+                    d="M7.69286 15.7566C7.43934 15.8082 7.33622 16.2035 7.52957 16.3926L7.6327 16.5H12.2046H16.7765L16.871 16.3969C17.0128 16.2465 17.0042 16.0102 16.8581 15.8598L16.7464 15.748L12.2647 15.7438C9.80262 15.7395 7.74442 15.748 7.69286 15.7566Z"
+                    fill="white"
+                  />
+                </svg>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- MAIN SECTION -->
+      <div
+        class="main min-vh-100 hero_section ms-xl-5 ps-xl-5 ms-xxl-0 ps-xxl-0"
+      >
+        <div class="container">
+          <div
+            class="hero_section_border overflow-hidden d-flex align-items-center justify-content-center position-relative"
+          >
+            <div class="circel_first"></div>
+            <div class="circel_2"></div>
+            <div class="circel_3"></div>
+            <div class="circel_4"></div>
+            <div class="position-relative">
+              <img
+                class="w-100 hero_dots_image"
+                src="./assets/images/webp/d_dot_img_hero.webp"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <!-- FINGERPRINT-IMAGE-SECTION -->
     <section class="bg-white pt-2">
-      <div class="pt-5 mt-4 footer_fingrprint_img mx-auto">
-        <img
-          class="w-100"
-          src="./assets/images/webp/footer_fingrprint_img.webp"
-          alt="fingerprint"
-        />
+      <div class="container">
+        <div class="pt-5 mt-4 footer_fingrprint_img mx-auto">
+          <img
+            class="w-100"
+            src="./assets/images/webp/footer_fingrprint_img.webp"
+            alt="fingerprint"
+          />
+        </div>
       </div>
     </section>
     <!-- FOOTER START -->
-    <section class="footer_bg_colour pt-md-5">
+    <section class="footer_bg_colour pt-md-5 position-relative z-n1">
       <div class="container">
         <div class="row py-4 justify-content-between">
           <div class="col-xl-4 col-lg-4 col-md-5 col-sm-8">
@@ -178,7 +389,29 @@
         </div>
       </div>
     </section>
-   
+    <script>
+      const hamburger = document.querySelector(".hamburger");
+      const navLinks = document.querySelector(".nav-links");
+      const navMenu = document.querySelector(".nav-menu");
+      
+      hamburger.addEventListener("click", function () {
+        hamburger.classList.toggle("active");
+        navMenu.classList.toggle("active");
+        document.body.classList.toggle("overflow-hidden");
+      });
+
+      // Get all the nav tabs and add click event listeners
+      const navTabs = document.querySelectorAll(".nav-links");
+      navTabs.forEach((tab) => {
+        tab.addEventListener("click", function () {
+          hamburger.classList.remove("active");
+          navMenu.classList.remove("active");
+          document.body.classList.remove("overflow-hidden");
+          // Additional code for handling tab clicks can be added here if needed
+        });
+      });
+    </script>
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
