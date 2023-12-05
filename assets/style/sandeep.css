@@ -16,7 +16,7 @@
 }
 
 .about-us-image {
-    max-width: 461px !important;
+    max-width: 75% !important;
 }
 
 /* ---------- BRAND STORY CSS --------------  */
@@ -42,7 +42,7 @@
 }
 
 .how-it-work-image {
-    max-width: 530px;
+    max-width: 400px;
 }
 
 .how-it-work-bg-img {
@@ -59,6 +59,10 @@
     padding: 8px 16px;
 }
 
+.how-it-work-box:hover {
+    box-shadow: 0px 5px 10px -5px rgba(255, 255, 255, 0.411) !important;
+}
+
 .time-line-works::after {
     border-left: 1px dashed var(--white);
     height: 100%;
@@ -67,8 +71,11 @@
     left: 8px;
 }
 
-::before,
-::after {
+.timeline-circle::before,
+.timeline-circle-top::before,
+.timeline-circle-center::before,
+.timeline-circle-bottom::before,
+.time-line-works::after {
     position: absolute;
     content: "";
 }
@@ -78,28 +85,119 @@
     height: 11px;
     border-radius: 50%;
     background-color: #A9AAAB;
+    z-index: 1;
 }
 
 .timeline-circle-top::before {
     top: -2px;
     left: -21px;
-    z-index: 2;
 }
 
 .timeline-circle-center::before {
     top: 50%;
     left: -21px;
     transform: translateY(-50%);
-    z-index: 2;
 }
 
 .timeline-circle-bottom::before {
     bottom: -2px;
     left: -21px;
-    z-index: 2;
+}
+
+/* --------FAQ------------ */
+.faq-bg-image {
+    background: url('../images/png/faq-bg-image.png') no-repeat;
+    background-position: center;
+}
+
+.faq-accrodion {
+    max-width: 800px;
+}
+
+.accordion-item {
+    border: 1px solid rgba(255, 255, 255, 0.16) !important;
+    background: rgba(76, 90, 101, 0.30) !important;
+    backdrop-filter: blur(4px) !important;
+    padding: 17px 20px !important;
+    border-radius: 24px !important;
+    transition: border-radius 0.3s ease;
+}
+
+.accordion-button:not(.collapsed) {
+    box-shadow: unset !important;
+}
+
+.accordion-button:focus {
+    box-shadow: unset !important;
+}
+
+.accordion-button::after {
+    height: 24px !important;
+    width: 24px !important;
+    background-image: url("../images/svg/arrow-down.svg") !important;
+    background-repeat: no-repeat;
+    background-size: var(--bs-accordion-btn-icon-width);
+    transition: var(--bs-accordion-btn-icon-transition);
+}
+
+.faq-text-start-line::before {
+    position: absolute;
+    content: "";
+    height: 95%;
+    width: 1px;
+    top: 0px;
+    left: 0;
+    opacity: 0.5;
+    background-color: var(--light-white);
+}
+
+/* -------- SECURE DATA CSS ------------ */
+.secure-data-image {
+    max-width: 430px;
+    transform: rotate(-90deg);
+}
+
+.first-text-secure {
+    top: 7px;
+    left: 25%;
+    transform: rotate(-75deg);
+}
+
+@media (min-width:375px) {
+    .secure-data-image {
+        max-width: 510px;
+    }
+
+    .first-text-secure {
+        top: 7px;
+        right: 56%;
+        transform: rotate(-75deg);
+    }
+}
+
+@media (min-width:576px) {
+    .about-us-image {
+        max-width: 461px !important;
+    }
+
+    /* -------- SECURE DATA CSS ------------ */
+    .secure-data-image {
+        max-width: 814px;
+        transform: rotate(0deg);
+        width: 100%;
+    }
+
+    .first-text-secure {
+        top: 82px;
+        right: 54px;
+    }
+
 }
 
 @media (min-width:768px) {
+    .how-it-work-image {
+        max-width: 530px !important;
+    }
 
     /* ---------- BRAND STORY CSS --------------  */
     .bg-brand-story {
@@ -145,6 +243,12 @@
         left: 100%;
     }
 
+    /* -------- SECURE DATA CSS ------------ */
+
+    .first-text-secure {
+        top: 110px;
+        right: 100px;
+    }
 }
 
 @media (min-width:992px) {
@@ -187,6 +291,13 @@
     .timeline-circle-bottom::before {
         left: 90%;
     }
+
+    /* -------- SECURE DATA CSS ------------ */
+
+    .first-text-secure {
+        top: 129px;
+        right: 187px;
+    }
 }
 
 @media (min-width:1200px) {
@@ -215,5 +326,12 @@
     .timeline-circle-bottom::before {
         left: 84%;
 
+    }
+
+    /* -------- SECURE DATA CSS ------------ */
+
+    .first-text-secure {
+        top: 129px;
+        right: 275px;
     }
 }
