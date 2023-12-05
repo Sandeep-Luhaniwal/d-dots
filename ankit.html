@@ -27,7 +27,9 @@
             <h6 class="font_xl fw-medium color_white pb-sm-1">
               Financial Sector
             </h6>
-            <p class="font_base fw-normal lh_160 px-lg-3 color_white opacity_07 mb-0">
+            <p
+              class="font_base fw-normal lh_160 px-lg-3 color_white opacity_07 mb-0"
+            >
               Lorem ipsum dolor sit amet consectetur. Id mollis donec eget netus
               vestibulum gravida. Malesuada consectetur vestibulum maecenas amet
               ac fringilla.
@@ -37,7 +39,9 @@
             <h6 class="font_xl fw-medium color_white pb-sm-1">
               Financial Sector
             </h6>
-            <p class="font_base fw-normal lh_160 px-lg-3 color_white opacity_07 mb-0">
+            <p
+              class="font_base fw-normal lh_160 px-lg-3 color_white opacity_07 mb-0"
+            >
               Lorem ipsum dolor sit amet consectetur. Id mollis donec eget netus
               vestibulum gravida. Malesuada consectetur vestibulum maecenas amet
               ac fringilla.
@@ -129,35 +133,35 @@
                 class="w-100 white_paper_img"
               />
               <img
-                src="./assets/images/svg/wifi_icon.svg"
+                src="./assets/images/png/wifi_icon.png"
                 alt="wifi"
                 width="80px"
                 height="80px"
                 class="position-absolute white_paper_icons wifi_icon"
               />
               <img
-                src="./assets/images/svg/white_i_icon.svg"
+                src="./assets/images/png/white_paper_i_icon.png"
                 alt="i icon"
                 width="80px"
                 height="80px"
                 class="position-absolute white_paper_icons i_icon"
               />
               <img
-                src="./assets/images/svg/lock_icon.svg"
+                src="./assets/images/png/lock_icon.png"
                 alt="lock"
                 width="80px"
                 height="80px"
                 class="position-absolute white_paper_icons lock_icon"
               />
               <img
-                src="./assets/images/svg/white_one_icon.svg"
+                src="./assets/images/png/one_icon.png"
                 alt="one"
                 width="80px"
                 height="80px"
                 class="position-absolute white_paper_icons one_icon"
               />
               <img
-                src="./assets/images/svg/white_v_icon.svg"
+                src="./assets/images/png/v_icon.png"
                 alt="v icon"
                 width="80px"
                 height="80px"
@@ -200,6 +204,19 @@
         </div>
       </div>
     </section>
+    <button id="startAnimation" onclick="startAnimation()">
+      Start Animation
+    </button>
+    <div class="animate">
+      <p class="color_white">Paragraph 1</p>
+      <p class="color_white">Paragraph 2</p>
+      <p class="color_white">Paragraph 3</p>
+    </div>
+    <script>
+      function startAnimation() {
+        document.getElementsByClassName("animate").classList("")
+      }
+    </script>
     <!-- === VIDEO SECTION JAVASCRIPT === -->
     <script>
       let vid = document.getElementById("myVideo");
