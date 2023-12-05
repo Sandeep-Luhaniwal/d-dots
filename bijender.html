@@ -246,9 +246,9 @@
       </div>
       <!-- MAIN SECTION -->
       <div
-        class="main min-vh-100 hero_section ms-xl-5 ps-xl-5 ms-xxl-0 ps-xxl-0"
+        class="main min-vh-100 hero_section ms-xl-5 ps-xl-5 ms-xxl-0 ps-xxl-0 overflow-hidden"
       >
-        <div class="container">
+        <div class="container mt-5 mt-xl-0 pt-5 pt-xl-0">
           <div
             class="hero_section_border overflow-hidden d-flex align-items-center justify-content-center position-relative"
           >
@@ -393,7 +393,7 @@
       const hamburger = document.querySelector(".hamburger");
       const navLinks = document.querySelector(".nav-links");
       const navMenu = document.querySelector(".nav-menu");
-      
+
       hamburger.addEventListener("click", function () {
         hamburger.classList.toggle("active");
         navMenu.classList.toggle("active");
