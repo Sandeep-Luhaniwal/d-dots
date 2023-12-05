@@ -71,6 +71,7 @@
     left: 8px;
 }
 
+.bg-brand-story::after,
 .timeline-circle::before,
 .timeline-circle-top::before,
 .timeline-circle-center::before,
@@ -152,26 +153,40 @@
 }
 
 /* -------- SECURE DATA CSS ------------ */
-.secure-data-image {
-    max-width: 430px;
-    transform: rotate(-90deg);
+.secure-data-image-mobile {
+    max-width: 296px;
+}
+
+.transfrom-rotate-icon {
+    transform: rotate(90deg);
 }
 
 .first-text-secure {
-    top: 7px;
-    left: 25%;
+    top: 64px;
+    right: 170px;
     transform: rotate(-75deg);
 }
 
+.second-text-secure {
+    top: 242px;
+    transform: rotate(-67deg);
+    left: 16px;
+}
+
 @media (min-width:375px) {
-    .secure-data-image {
-        max-width: 510px;
+    .secure-data-image-mobile {
+        max-width: 351px;
     }
 
     .first-text-secure {
-        top: 7px;
-        right: 56%;
+        top: 80px;
+        right: 210px;
         transform: rotate(-75deg);
+    }
+
+    .second-text-secure {
+        top: 295px;
+        left: 20px;
     }
 }
 
@@ -190,6 +205,13 @@
     .first-text-secure {
         top: 82px;
         right: 54px;
+        transform: rotate(8deg);
+    }
+
+    .second-text-secure {
+        top: 68px;
+        left: 150px;
+        transform: rotate(26deg);
     }
 
 }
@@ -248,6 +270,13 @@
     .first-text-secure {
         top: 110px;
         right: 100px;
+        transform: rotate(0deg);
+    }
+
+    .second-text-secure {
+        top: 98px;
+        left: 216px;
+        transform: rotate(23deg);
     }
 }
 
@@ -296,7 +325,12 @@
 
     .first-text-secure {
         top: 129px;
-        right: 187px;
+        right: 135px;
+    }
+
+    .second-text-secure {
+        top: 114px;
+        left: 250px;
     }
 }
 
@@ -332,6 +366,6 @@
 
     .first-text-secure {
         top: 129px;
-        right: 275px;
+        right: 139px;
     }
 }
