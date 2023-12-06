@@ -153,7 +153,7 @@
 }
 
 /* -------- SECURE DATA CSS ------------ */
-.secure-data-image-mobile {
+.secure-data-image {
     max-width: 296px;
 }
 
@@ -165,25 +165,37 @@
     transform: rotate(90deg);
 }
 
-.transfrom-rotate-icon-neagtive-deg {
+.transfrom-rotate-icon-neagtive-deg,
+.transfrom-rotate-icon-neagtive-deg-all {
     transform: rotate(-90deg);
 }
 
 .first-text-secure {
-    top: 64px;
-    right: 175px;
-    transform: rotate(-75deg);
+    top: 41px;
+    right: 8px;
 }
 
 .second-text-secure {
-    top: 242px;
-    transform: rotate(-67deg);
-    left: 16px;
+    top: 27px;
+    transform: rotate(21deg);
+    left: 76px;
+}
+
+.third-text-secure {
+    top: -50px;
+    left: 10px;
 }
 
 .fourth-text-secure {
-    top: 396px;
-    left: 72px;
+    top: 85px;
+    left: -42px;
+    transform: rotate(-90deg);
+}
+
+.six-text-secure {
+    top: 247px;
+    right: -12px;
+    transform: rotate(-111deg);
 }
 
 .seven-text-secure {
@@ -192,9 +204,31 @@
     transform: rotate(-98deg);
 }
 
+.eight-text-secure {
+    top: 268px;
+    right: 37px;
+    transform: rotate(-110deg);
+}
+
+.d-sm-mobile-none {
+    display: none;
+}
+
+.text-break {
+    display: block;
+}
+
 @media (min-width:375px) {
-    .secure-data-image-mobile {
+    .secure-data-image {
         max-width: 351px;
+    }
+
+    .text-break {
+        display: inline;
+    }
+
+    .d-mobile-block {
+        display: block !important;
     }
 
     .first-text-secure {
@@ -217,7 +251,15 @@
         right: 36px;
     }
 
+    .six-text-secure {
+        top: 298px;
+        right: 5px;
+    }
 
+    .eight-text-secure {
+        top: 319px;
+        right: 55px;
+    }
 }
 
 @media (min-width:576px) {
@@ -245,7 +287,6 @@
     }
 
     .third-text-secure {
-        position: absolute;
         top: -50px;
         left: 10px;
     }
@@ -256,6 +297,10 @@
 
     .transfrom-rotate-icon-neagtive-deg {
         transform: rotate(90deg);
+    }
+
+    .transfrom-rotate-icon-neagtive-deg-all {
+        transform: rotate(-90deg);
     }
 
     .fourth-text-secure {
@@ -270,10 +315,22 @@
         left: 0px;
     }
 
+    .six-text-secure {
+        top: 270px;
+        right: 231px;
+        transform: rotate(-19.5deg);
+    }
+
     .seven-text-secure {
         top: 268px;
         right: 53px;
         transform: rotate(-4deg);
+    }
+
+    .eight-text-secure {
+        top: 219px;
+        right: 248px;
+        transform: rotate(-21deg);
     }
 }
 
@@ -349,10 +406,20 @@
         left: -56px;
     }
 
+    .six-text-secure {
+        top: 359px;
+        right: 333px;
+    }
+
     .seven-text-secure {
         top: 370px;
         right: 101px;
         transform: rotate(0deg);
+    }
+
+    .eight-text-secure {
+        top: 307px;
+        right: 373px;
     }
 }
 
@@ -431,6 +498,16 @@
     .seven-text-secure {
         top: 435px;
         right: 136px;
+    }
+
+    .six-text-secure {
+        top: 417px;
+        right: 401px;
+    }
+
+    .eight-text-secure {
+        top: 361px;
+        right: 441px;
     }
 }
 
