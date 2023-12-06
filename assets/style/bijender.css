@@ -84,8 +84,13 @@
 }
 
 /* HERO SIDEBAAR CSS */
+.page-logo {
+    width: 58px;
+    height: 33px;
+}
+
 .sidebaar {
-    width: 100px;
+    width: 70px;
 }
 
 .sidebar_icons {
@@ -255,7 +260,7 @@
 
 /* MEDIA QUARRY */
 /* NAVBAAR RESPONSIVE */
-@media (max-width:1199.99px) {
+@media (max-width:1199.98px) {
 
     .hero_section_border {
         min-height: 500px;
@@ -364,6 +369,11 @@
         min-height: 100vh;
     }
 
+    .page-logo {
+        width: 58px;
+        height: 33px;
+    }
+
     .position_fixed {
         position: fixed;
     }
@@ -382,14 +392,14 @@
     }
 
     .asidebar_customise {
-        width: 100px;
+        /* width: 60px; */
         height: 644px;
     }
 
     .right_sidebar {
         top: 0 !important;
         right: 0 !important;
-        width: 100px;
+        width: 70px;
         height: 100%;
     }
 
@@ -414,5 +424,20 @@
         padding: 14px 32px;
         border-radius: 34px;
         background: #9A0000;
+    }
+}
+
+@media (min-width:1400px) {
+    .page-logo {
+        height: 38px;
+        width: 68px;
+    }
+
+    .right_sidebar {
+        width: 100px;
+    }
+
+    .sidebaar {
+        width: 100px;
     }
 }
