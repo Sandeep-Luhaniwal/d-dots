@@ -26,7 +26,7 @@
 }
 
 .footer_button {
-    padding: 14px 32px;
+    padding: 10px 20px;
     border-radius: 34px;
     background: #9A0000;
 }
@@ -38,6 +38,23 @@
 
 .asidebar_background_color {
     background-color: #0B0E11;
+}
+
+
+.footer_text_underline::before {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    bottom: -3px;
+    transition: 0.3s ease-in-out;
+    background-color: white;
+    transform: translatex(-50%);
+    left: 50%;
+}
+
+.footer_text_underline:hover::before {
+    width: 100%;
 }
 
 /* ASIDEBAAR CSS*/
@@ -122,10 +139,9 @@
 
 .circel_first {
     position: absolute;
-    /* z-index: 1; */
-    max-width: 497px;
+    max-width: 300px;
     width: 100%;
-    min-height: 497px;
+    min-height: 300px;
     border-radius: 50%;
     animation: circelFirst 8s linear infinite alternate-reverse;
     background: linear-gradient(145deg, #0C1216 13.59%, #132935 84.97%) !important;
@@ -134,11 +150,10 @@
 
 .circel_2 {
     position: absolute;
-    /* z-index: 1; */
-    max-width: 211px;
+    max-width: 180px;
     width: 100%;
     border-radius: 50%;
-    min-height: 211px;
+    min-height: 180px;
     background: linear-gradient(145deg, #0C1216 13.59%, #132935 84.97%);
     filter: drop-shadow(0px 0px 124px rgba(17, 34, 45, 0.20));
     animation: circel_2 9s linear infinite alternate-reverse;
@@ -146,11 +161,10 @@
 
 .circel_3 {
     position: absolute;
-    /* z-index: 1; */
-    max-width: 201px;
+    max-width: 160px;
     width: 100%;
     border-radius: 50%;
-    min-height: 201px;
+    min-height: 160px;
     background: linear-gradient(145deg, #0C1216 13.59%, #132935 84.97%);
     filter: drop-shadow(0px 0px 124px rgba(17, 34, 45, 0.20));
     animation: circel_3 9s linear infinite alternate-reverse;
@@ -158,11 +172,11 @@
 
 .circel_4 {
     position: absolute;
-    /* z-index: 1; */
-    max-width: 280px;
+
+    max-width: 200px;
     width: 100%;
     border-radius: 50%;
-    min-height: 280px;
+    min-height: 200px;
     background: linear-gradient(145deg, #0C1216 13.59%, #132935 84.97%);
     filter: drop-shadow(0px 0px 124px rgba(17, 34, 45, 0.20));
     animation: circel_4 10s ease-in-out infinite alternate-reverse;
@@ -174,21 +188,21 @@
 
         bottom: 300px;
         opacity: 20%;
-        max-width: 300px;
-        min-height: 300px;
+        max-width: 200px;
+        min-height: 200px;
         left: 10%;
     }
 
     50% {
-        bottom: -250px;
+        bottom: 0px;
         opacity: 100%;
-        max-width: 497px;
-        min-height: 497px;
+        max-width: 350px;
+        min-height: 350px;
         left: 0%;
     }
 
     100% {
-        bottom: -320px;
+        bottom: 0px;
         opacity: -91px;
         left: 30%;
     }
@@ -206,7 +220,7 @@
 
 @keyframes circel_3 {
     from {
-        right: -100px;
+        right: 0px;
         top: 30%;
     }
 
@@ -221,20 +235,20 @@
 
         top: 10%;
         left: 140px;
-        max-width: 500px;
-        min-height: 500px;
+        max-width: 400px;
+        min-height: 400px;
     }
 
     50% {
         top: 10%;
         left: 222px;
-        max-width: 500px;
-        min-height: 500px;
+        max-width: 450px;
+        min-height: 450px;
     }
 
     100% {
         top: -10%;
-        left: 222px;
+        left: 200px;
         top: 0;
     }
 }
@@ -245,6 +259,7 @@
 
     .hero_section_border {
         min-height: 500px;
+        overflow: hidden;
     }
 
     .nav_bg {
@@ -306,11 +321,22 @@
     .active {
         left: 0% !important;
     }
+
+    .right_sidebar {
+        bottom: 0px !important;
+        width: 100%;
+    }
 }
 
 @media (min-width:576px) {
     .hero_dots_image {
         max-width: 350px;
+    }
+
+    .footer_button {
+        padding: 10px 24px;
+        border-radius: 34px;
+        background: #9A0000;
     }
 }
 
@@ -318,15 +344,26 @@
     .hero_dots_image {
         max-width: 500px;
     }
+
 }
 
 @media (min-width:992px) {
     .hero_dots_image {
         max-width: 600px;
     }
+
+    .footer_button {
+        padding: 12px 28px;
+        border-radius: 34px;
+        background: #9A0000;
+    }
 }
 
 @media (min-width:1200px) {
+    .min_vh_100 {
+        min-height: 100vh;
+    }
+
     .position_fixed {
         position: fixed;
     }
@@ -349,6 +386,13 @@
         height: 644px;
     }
 
+    .right_sidebar {
+        top: 0 !important;
+        right: 0 !important;
+        width: 100px;
+        height: 100%;
+    }
+
     .verticle_horizontal_sidebar::before {
         content: "";
         position: absolute;
@@ -364,5 +408,11 @@
     .verticle_horizontal_sidebar:hover::before {
         width: 2px;
         height: 50%;
+    }
+
+    .footer_button {
+        padding: 14px 32px;
+        border-radius: 34px;
+        background: #9A0000;
     }
 }
