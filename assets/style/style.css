@@ -19,14 +19,17 @@
 .cursor_pointer {
   cursor: pointer;
 }
+
 .opacity_07 {
   opacity: 0.7 !important;
 }
+
 /* === SCROLL BAR === */
 /* width */
 ::-webkit-scrollbar {
   width: 6px;
 }
+
 /* Track */
 ::-webkit-scrollbar-track {
   background: black;
@@ -36,7 +39,14 @@
 ::-webkit-scrollbar-thumb {
   background: white;
 }
+
 @media (min-width: 1200px) {
+  .container {
+    max-width: 1040px !important;
+  }
+}
+
+@media (min-width: 1400px) {
   .container {
     max-width: 1140px !important;
   }
