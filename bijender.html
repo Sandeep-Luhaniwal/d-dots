@@ -19,7 +19,7 @@
     <!-- HERO SECTION -->
     <section>
       <!-- LEFT SIDEBAAR -->
-      <aside
+      <div
         class="py-4 overflow-hidden position-fixed asidebar_background_color min_vh_screen nav_bg z-3"
       >
         <nav class="ps-3 ps-md-4 mt-3 ms-xl-2 pe-2 pe-xl-0">
@@ -118,12 +118,36 @@
             />
           </div>
         </nav>
-      </aside>
+      </div>
+      <!-- MAIN SECTION -->
+      <div
+        class="main min-vh-100 hero_section ms-xl-5 ps-xl-5 ms-xxl-0 ps-xxl-0 d-flex justify-content-center"
+      >
+        <div class="container mt-5 mt-xl-0 pt-5 pt-xl-0">
+          <div
+            class="hero_section_border overflow-hidden d-flex align-items-center justify-content-center position-relative"
+          >
+            <div class="circel_first"></div>
+            <div class="circel_2"></div>
+            <div class="circel_3"></div>
+            <div class="circel_4"></div>
+            <div class="position-relative">
+              <img
+                class="w-100 hero_dots_image"
+                src="./assets/images/webp/d_dot_img_hero.webp"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </div>
       <!-- RIGHT SIDEBAAR -->
       <div
-        class="sidebaar position-absolute  overflow-hidden h-100 min_vh_screen z-2"
+        class="sidebaar position-absolute overflow-hidden h-100 min_vh_screen z-2"
       >
-        <div class="pt-4 position-fixed right_sidebar d-flex justify-content-center align-items-center asidebar_background_color d-xl-block">
+        <div
+          class="pt-4 position-fixed right_sidebar d-flex justify-content-center align-items-center asidebar_background_color d-xl-block"
+        >
           <div class="pt-xl-3 mt-xl-1 ps-xl-4 ms-xl-2 pb-3 pb-xl-0">
             <a href="#">
               <div
@@ -244,28 +268,6 @@
           </div>
         </div>
       </div>
-      <!-- MAIN SECTION -->
-      <div
-        class="main min-vh-100 hero_section ms-xl-5 ps-xl-5 ms-xxl-0 ps-xxl-0"
-      >
-        <div class="container mt-5 mt-xl-0 pt-5 pt-xl-0">
-          <div
-            class="hero_section_border overflow-hidden d-flex align-items-center justify-content-center position-relative"
-          >
-            <div class="circel_first"></div>
-            <div class="circel_2"></div>
-            <div class="circel_3"></div>
-            <div class="circel_4"></div>
-            <div class="position-relative">
-              <img
-                class="w-100 hero_dots_image"
-                src="./assets/images/webp/d_dot_img_hero.webp"
-                alt=""
-              />
-            </div>
-          </div>
-        </div>
-      </div>
     </section>
     <!-- FINGERPRINT-IMAGE-SECTION -->
     <section class="bg-white pt-2">
@@ -280,7 +282,7 @@
       </div>
     </section>
     <!-- FOOTER START -->
-    <section class="footer_bg_colour pt-md-5 position-relative z-n1">
+    <section class="footer_bg_colour pt-md-5 position-relative z-1">
       <div class="container">
         <div class="row py-4 justify-content-between">
           <div class="col-xl-4 col-lg-4 col-md-5 col-sm-8">
@@ -309,28 +311,28 @@
                 <li class="mt-3">
                   <a
                     href="#"
-                    class="font_sm fw-normal text-white opacity_07 footer_link_opacity"
+                    class="font_sm fw-normal text-white opacity_07 footer_link_opacity footer_text_underline position-relative"
                     >Home</a
                   >
                 </li>
                 <li class="mt-2 pt-1">
                   <a
                     href="#"
-                    class="font_sm fw-normal text-white opacity_07 footer_link_opacity"
+                    class="font_sm fw-normal text-white opacity_07 footer_link_opacity footer_text_underline position-relative"
                     >About Us</a
                   >
                 </li>
                 <li class="mt-2 pt-1">
                   <a
                     href="#"
-                    class="font_sm fw-normal text-white opacity_07 footer_link_opacity"
+                    class="font_sm fw-normal text-white opacity_07 footer_link_opacity footer_text_underline position-relative"
                     >Services</a
                   >
                 </li>
                 <li class="mt-2 pt-1">
                   <a
                     href="#"
-                    class="font_sm fw-normal text-white opacity_07 footer_link_opacity"
+                    class="font_sm fw-normal text-white opacity_07 footer_link_opacity footer_text_underline position-relative"
                     >Blog</a
                   >
                 </li>
@@ -341,7 +343,7 @@
                 </li>
 
                 <li class="mt-2 pt-1">
-                  <a href="#">
+                  <a href="mailto:support@ddotslab.com">
                     <img
                       src="./assets/images/svg/footer_msg_box.svg"
                       alt="msg"
@@ -352,7 +354,10 @@
                   </a>
                 </li>
                 <li class="mt-2 py-1">
-                  <a href="#">
+                  <a
+                    target="_blank"
+                    href="https://www.google.com/maps/place/Li+Fu,+Lac/@33.6540783,-117.8209388,21z/data=!4m14!1m7!3m6!1s0x80dcdde66a5a7519:0x1b32151632e90b29!2s210+Rockview,+Irvine,+CA+92612,+USA!3b1!8m2!3d33.6541752!4d-117.8207832!3m5!1s0x80dcdde5e22fed2f:0x361582060e25a5ba!8m2!3d33.6541752!4d-117.8207832!16s%2Fg%2F1td33br4?entry=ttu"
+                  >
                     <img
                       src="./assets/images/svg/loaction_icon.svg"
                       alt="location"
@@ -363,7 +368,8 @@
                   </a>
                 </li>
                 <button
-                  class="fw-normal font_base text-white footer_button border-0 mt-4"
+                  type="button"
+                  class="fw-normal font_base text-white footer_button border-0 mt-4 transition_03"
                 >
                   Donate
                 </button>
