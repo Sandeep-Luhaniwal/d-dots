@@ -15,30 +15,41 @@
     />
   </head>
 
-  <body class="position-relative">
+  <body>
+    <!-- back to top -->
+    <button class="bottom-50 z3" onclick="topFunction()" id="myBtn" title="Go to top">
+      <!-- <img
+        class="animat_topbtn"
+        width="50px"
+        src="./assets/img/png/back_top.png"
+        alt=""
+      /> -->
+      top
+    </button>
     <!-- HERO SECTION -->
     <section>
       <!-- LEFT SIDEBAAR -->
       <div
-        class="py-4 overflow-hidden position-fixed asidebar_background_color min_vh_screen nav_bg z-3"
+        class="p-2 px-xl-0 py-sm-3 py-xl-4 sidebaar overflow-hidden position-fixed asidebar_background_color min_vh_screen nav_bg z-3"
       >
-        <nav class="ps-3 ps-md-4 mt-3 ms-xl-2 pe-2 pe-xl-0">
+        <nav
+          class="d-xl-flex flex-xl-column align-items-xl-center mx-1 mx-xl-0"
+        >
           <div class="d-flex align-items-center justify-content-between">
-            <a href="#" class="z-3"
+            <a href="#" class="z-3 d-flex justify-content-end"
               ><img
-                width="68"
-                height="38"
+                class="page-logo"
                 src="./assets/images/webp/footer_logo.webp"
-                alt=""
+                alt="main-logo-image"
             /></a>
-            <button class="hamburger d-xl-none index_5 ms-2 cross_icon pe-4">
+            <button class="hamburger d-xl-none index_5 cross_icon">
               <span class="bar ms-auto"></span>
               <span class="bar bar-2"></span>
               <span class="bar ms-auto"></span>
             </button>
           </div>
           <ul
-            class="p-0 m-0 mt-3 overflow-y-scroll asidebar_customise pe-4 nav-menu d-flex justify-content-center d-xl-block"
+            class="p-0 m-0 mt-3 overflow-y-scroll asidebar_customise nav-menu d-flex justify-content-center d-xl-block"
           >
             <li class="mt-4">
               <a
@@ -97,7 +108,7 @@
                 >Contact</a
               >
             </li>
-            <div class="py-4 mt-2 d-xl-none">
+            <!-- <div class="py-4 mt-2 d-none">
               <img
                 class="cursor_pointer navbar_arrow_rotate"
                 width="12.5"
@@ -105,7 +116,7 @@
                 src="./assets/images/svg/down_arrow.svg"
                 alt="down_arrow"
               />
-            </div>
+            </div> -->
           </ul>
 
           <div class="py-4 mt-2 ps-2 d-none d-xl-flex">
@@ -120,9 +131,7 @@
         </nav>
       </div>
       <!-- MAIN SECTION -->
-      <div
-        class="main min-vh-100 hero_section ms-xl-5 ps-xl-5 ms-xxl-0 ps-xxl-0 d-flex justify-content-center"
-      >
+      <div class="main min-vh-100 hero_section d-flex justify-content-center">
         <div class="container mt-5 mt-xl-0 pt-5 pt-xl-0">
           <div
             class="hero_section_border overflow-hidden d-flex align-items-center justify-content-center position-relative"
@@ -146,9 +155,9 @@
         class="sidebaar position-absolute overflow-hidden h-100 min_vh_screen z-2"
       >
         <div
-          class="pt-4 position-fixed right_sidebar d-flex justify-content-center align-items-center asidebar_background_color d-xl-block"
+          class="py-2 py-xl-4 position-fixed right_sidebar d-flex justify-content-center align-items-center asidebar_background_color d-xl-block"
         >
-          <div class="pt-xl-3 mt-xl-1 ps-xl-4 ms-xl-2 pb-3 pb-xl-0">
+          <div class="d-flex flex-xl-column gap-4 align-items-center">
             <a href="#">
               <div
                 class="sidebar_icons d-flex justify-content-center align-items-center transition_03"
@@ -168,9 +177,9 @@
                 </svg>
               </div>
             </a>
-          </div>
-          <!-- DISCORD -->
-          <div class="pt-xl-3 mt-xl-1 ps-4 ms-2 pb-3 pb-xl-0">
+
+            <!-- DISCORD -->
+
             <a href="#">
               <div
                 class="sidebar_icons d-flex justify-content-center align-items-center transition_03"
@@ -192,8 +201,7 @@
                 </svg>
               </div>
             </a>
-          </div>
-          <div class="pt-xl-3 mt-xl-1 ps-4 ms-2 pb-3 pb-xl-0">
+
             <a href="#">
               <div
                 class="sidebar_icons d-flex justify-content-center align-items-center transition_03"
@@ -379,8 +387,8 @@
         </div>
       </div>
       <div class="footer_underline mt-sm-3"></div>
-      <div class="container">
-        <div class="d-md-flex justify-content-between py-2 my-1">
+      <div class="container py-1">
+        <div class="d-md-flex justify-content-between py-2">
           <p class="fw-normal font_base text-white opacity_07 mb-0">
             Copyright © 2023 D.Dots, All Right Reserved
           </p>
@@ -395,6 +403,7 @@
         </div>
       </div>
     </section>
+    <section></section>
     <script>
       const hamburger = document.querySelector(".hamburger");
       const navLinks = document.querySelector(".nav-links");
@@ -416,6 +425,24 @@
           // Additional code for handling tab clicks can be added here if needed
         });
       });
+    </script>
+    <script>
+      let mybutton = document.getElementById("myBtn");
+      window.onscroll = function () {
+        scrollFunction();
+      };
+
+      function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+          mybutton.style.display = "block";
+        } else {
+          mybutton.style.display = "none";
+        }
+      }
+      function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
     </script>
 
     <script

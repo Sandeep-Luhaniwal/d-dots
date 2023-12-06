@@ -8,11 +8,6 @@
     background-color: rgba(20, 43, 56, 0.70);
 }
 
-.footer_logo {
-    max-width: 108px;
-    height: 60px;
-}
-
 .line_height {
     line-height: 25px;
 }
@@ -39,7 +34,6 @@
 .asidebar_background_color {
     background-color: #0B0E11;
 }
-
 
 .footer_text_underline::before {
     content: "";
@@ -75,6 +69,9 @@
     left: 50%;
 }
 
+.verticle_horizontal_sidebar:hover {
+   opacity: 1;
+}
 .verticle_horizontal_sidebar:hover::before {
     width: 50%;
 }
@@ -127,10 +124,6 @@
 
 .hero_dots_image {
     max-width: 300px;
-}
-
-.hero_section {
-    padding: 100px 0 60px 0;
 }
 
 .hero_section_border {
@@ -253,13 +246,57 @@
 
     100% {
         top: -10%;
-        left: 200px;
+        left: 222px;
         top: 0;
+    }
+}
+
+/* BACK TO TOP */
+#myBtn {
+    display: none ;
+    position: fixed;
+    bottom: 20px;
+    right: 10px;
+    border: none;
+    background-color: #11222C;
+    cursor: pointer;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+
+}
+
+.animat_topbtn {
+    animation: topbtn 3s linear 0.1s infinite forwards;
+}
+
+@keyframes topbtn {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-15px);
+    }
+
+    100% {
+        transform: translateY(0);
     }
 }
 
 /* MEDIA QUARRY */
 /* NAVBAAR RESPONSIVE */
+@media (max-width:575.98px) {
+    .hero_section_border {
+        min-height: 350px !important;
+        overflow: hidden;
+    }
+
+    .hero_dots_image {
+        max-width: 250px;
+    }
+}
+
 @media (max-width:1199.98px) {
 
     .hero_section_border {
@@ -315,7 +352,7 @@
         top: 0;
         flex-direction: column;
         justify-content: center;
-        background-color: black;
+        background: #0B0E11;
         width: 100%;
         min-height: 100vh;
         text-align: center;
@@ -330,6 +367,11 @@
     .right_sidebar {
         bottom: 0px !important;
         width: 100%;
+    }
+
+    .footer_logo {
+        max-width: 60px;
+
     }
 }
 
@@ -366,7 +408,12 @@
 
 @media (min-width:1200px) {
     .min_vh_100 {
-        min-height: 100vh;
+        min-height: 100vh !important;
+    }
+
+    .footer_logo {
+        max-width: 108px;
+        height: 60px;
     }
 
     .page-logo {
@@ -392,7 +439,6 @@
     }
 
     .asidebar_customise {
-        /* width: 60px; */
         height: 644px;
     }
 
@@ -408,7 +454,7 @@
         position: absolute;
         width: 0px;
         height: 0%;
-        left: -2px;
+        left: 1px;
         transition: 0.3s ease-in-out;
         background-color: white;
         transform: translateY(50%);
@@ -418,10 +464,11 @@
     .verticle_horizontal_sidebar:hover::before {
         width: 2px;
         height: 50%;
+
     }
 
     .footer_button {
-        padding: 14px 32px;
+        padding: 13.5px 30.5px;
         border-radius: 34px;
         background: #9A0000;
     }
