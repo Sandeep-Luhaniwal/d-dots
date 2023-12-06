@@ -70,8 +70,9 @@
 }
 
 .verticle_horizontal_sidebar:hover {
-   opacity: 1;
+    opacity: 1;
 }
+
 .verticle_horizontal_sidebar:hover::before {
     width: 50%;
 }
@@ -252,8 +253,8 @@
 }
 
 /* BACK TO TOP */
-#myBtn {
-    display: none ;
+.back-to-top {
+    display: none;
     position: fixed;
     bottom: 20px;
     right: 10px;
@@ -263,7 +264,6 @@
     border-radius: 50%;
     width: 40px;
     height: 40px;
-
 }
 
 .animat_topbtn {
