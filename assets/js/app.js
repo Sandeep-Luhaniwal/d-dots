@@ -38,20 +38,19 @@ navTabs.forEach((tab) => {
   });
 });
 
-// BACK TO TOP
-let mybutton = document.getElementById("myBtn");
-window.onscroll = function () {
-  scrollFunction();
-};
-
-function scrollFunction() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > document.classList.h) {
-    mybutton.style.display = "block";
+// ************ Back to Top ************
+const backToTopButton = document.getElementById('back-to-top');
+window.addEventListener('scroll', () => {
+  if (window.scrollY > 200) {
+    backToTopButton.style.display = 'block';
   } else {
-    mybutton.style.display = "none ";
+    backToTopButton.style.display = 'none';
   }
-}
-function topFunction() {
-  document.body.scrollTop = 0;
-  document.documentElement.scrollTop = 0;
-}
+});
+
+backToTopButton.addEventListener('click', () => {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+  });
+});
