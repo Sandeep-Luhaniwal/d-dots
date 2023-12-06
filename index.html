@@ -29,7 +29,7 @@
     <section>
       <!-- LEFT SIDEBAAR -->
       <div
-        class="p-2 pxxl0 py-sm-3 py-xl-4 sidebaar overflow-hidden position-fixed asidebar_background_color min_vh_screen nav_bg z-3"
+        class="p-2 px-xl-0 py-sm-3 py-xl-4 sidebaar overflow-hidden position-fixed asidebar_background_color min_vh_screen nav_bg z-3"
       >
         <nav
           class="d-xl-flex flex-xl-column align-items-xl-center mx-1 mx-xl-0"
@@ -53,72 +53,63 @@
             <li class="mt-4">
               <a
                 id="nav-links"
-                href="#"
-                class="verticle_horizontal_sidebar fw-normal text-white opacity_06 font_lg mt-xl-2 nav-links"
+                href="#home"
+                class="verticle_horizontal_sidebar fw-normal text-white opacity_06 font_lg mt-xl-2 nav-links position-relative"
                 >Home</a
               >
             </li>
             <li class="mt-4 pt-2">
               <a
-                href="#"
+                href="#about"
                 class="verticle_horizontal_sidebar fw-normal text-white opacity_06 font_lg nav-links"
                 >Update</a
               >
             </li>
             <li class="mt-4 pt-2">
               <a
-                href="#"
+                href="#our"
                 class="verticle_horizontal_sidebar fw-normal text-white opacity_06 font_lg nav-links"
                 >Our Why</a
               >
             </li>
             <li class="mt-4 pt-2">
               <a
-                href="#"
+                href="#solution"
                 class="verticle_horizontal_sidebar fw-normal text-white opacity_06 font_lg nav-links"
                 >Solutions</a
               >
             </li>
             <li class="mt-4 pt-2">
               <a
-                href="#"
+                href="#works"
                 class="verticle_horizontal_sidebar fw-normal text-white opacity_06 font_lg nav-links"
                 >How It Works</a
               >
             </li>
             <li class="mt-4 pt-2">
               <a
-                href="#"
+                href="#applications"
                 class="verticle_horizontal_sidebar fw-normal text-white opacity_06 font_lg nav-links"
                 >Applications</a
               >
             </li>
             <li class="mt-4 pt-2">
               <a
-                href="#"
+                href="#faq"
                 class="verticle_horizontal_sidebar fw-normal text-white opacity_06 font_lg nav-links"
                 >FAQ</a
               >
             </li>
             <li class="mt-4 pt-2">
               <a
-                href="#"
+                href="#contact"
                 class="verticle_horizontal_sidebar fw-normal text-white opacity_06 font_lg nav-links"
                 >Contact</a
               >
             </li>
-            <div class="py-4 mt-2 d-xl-none">
-              <img
-                class="cursor_pointer navbar_arrow_rotate"
-                width="12.5"
-                height="6.25"
-                src="./assets/images/svg/down_arrow.svg"
-                alt="down_arrow"
-              />
-            </div>
           </ul>
 
-          <div class="py-4 mt-2 ps-2 d-none d-xl-flex">
+          <div class="py-4 mt-2 d-none d-xl-flex">
             <img
               class="cursor_pointer navbar_arrow_rotate"
               width="12.5"
@@ -130,8 +121,11 @@
         </nav>
       </div>
       <!-- MAIN SECTION -->
-      <div class="main min-vh-100 hero_section d-flex justify-content-center">
-        <div class="container mt-5 mt-xl-0 pt-5 pt-xl-0">
+      <div
+        id="home"
+        class="main min_vh_100 py-5 d-flex justify-content-center align-items-center"
+      >
+        <div class="container mt-md-5 mt-xl-0 pt-5 pt-xl-0">
           <div
             class="hero_section_border overflow-hidden d-flex align-items-center justify-content-center position-relative"
           >
@@ -370,7 +364,7 @@
     </section>
     <!-- -------------------- BRAND STORY SECTION END -------------------- -->
     <!-- -------------------- HOW IT WORKS SECTION START -------------------- -->
-    <section class="pt-3 pb-5 position-relative how-it-work-bg-img">
+    <section id="works" class="p-lg-3 py-5 py-lg-0 position-relative how-it-work-bg-img">
       <div
         class="top-0 start-0 w-100 h-100 position-absolute top-overlay transfrom-rotate"
       ></div>
@@ -466,7 +460,7 @@
     </section>
     <!-- -------------------- HOW IT WORKS SECTION END -------------------- -->
     <!-- -------------------- VIDEO SECTION START -------------------- -->
-    <section class="py-5 bg_dark_green bg_video position-relative">
+    <section id="our" class="py-5 bg_dark_green bg_video position-relative">
       <div class="container py-lg-5 my-lg-5">
         <div class="position-relative ipad_video_card rounded-4 z-1 mx-auto">
           <video
@@ -492,7 +486,7 @@
     </section>
     <!-- -------------------- VIDEO SECTION END -------------------- -->
     <!-- -------------------- AI INNOVATION SECTION START -------------------- -->
-    <section class="bg_ai_innovation pb-5 pb-md-0 pt-5">
+    <section id="solution" class="bg_ai_innovation pb-5 pb-md-0 pt-4 pt-xl-5">
       <div
         class="container pt-lg-3 mt-lg-1 d-flex flex-md-column flex-column-reverse"
       >
@@ -522,172 +516,109 @@
     </section>
     <!-- -------------------- AI INNOVATION SECTION END -------------------- -->
     <!-- -------------------- FAQ SECTION START -------------------- -->
-    <section class="faq-bg-image py-5">
-      <div class="container pb-lg-5 mt-lg-2 mb-lg-4">
-        <h2 class="text-white font_4xl fw-bold text-center mb-4">FAQ’s</h2>
-        <div class="faq-accrodion mx-auto">
-          <div
-            class="accordion gap-4 d-flex flex-column pt-3"
-            id="accordionExample"
-          >
-            <div class="accordion-item">
-              <button
-                class="accordion-button border-0 bg-transparent p-0 text-white"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#collapseOne"
-                aria-expanded="true"
-                aria-controls="collapseOne"
-              >
-                1. Are there any companies or initiatives that exemplify this
-                vision?
-              </button>
-              <div
-                id="collapseOne"
-                class="accordion-collapse collapse show"
-                data-bs-parent="#accordionExample"
-              >
-                <p
-                  class="mt-2 mb-0 py-0 fw-normal color_light_white font_base accordion-body faq-text-start-line position-relative"
-                >
-                  D.Dots is unique in its approach to data privacy, but we stand
-                  alongside a community of innovators who understand that the
-                  future of technology is ethical, secure, and user-focused
-                </p>
+    <section id="faq" class="faq-bg-image mb-lg-5">
+      <div class="container py-5 mb-lg-4">
+          <h2 class="text-white font_4xl fw-bold text-center mb-3 mb-lg-4">FAQ’s</h2>
+          <div class="faq-accrodion mx-auto">
+              <div class="accordion gap-3 gap-md-4 d-flex flex-column pt-md-3" id="accordionExample">
+                  <div class="accordion-item">
+                      <button class="accordion-button border-0 bg-transparent p-0 text-white" type="button"
+                          data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"
+                          aria-controls="collapseOne">
+                          1. Are there any companies or initiatives
+                          that
+                          exemplify
+                          this vision?
+                      </button>
+                      <div id="collapseOne" class="accordion-collapse collapse show"
+                          data-bs-parent="#accordionExample">
+                          <p
+                              class="mt-2 mb-0 py-0 pe-0 pe-lg-4 fw-normal color_light_white font_base accordion-body faq-text-start-line position-relative">
+                              D.Dots is unique in its approach to data privacy, but we stand alongside a community of
+                              innovators who understand that
+                              the future of technology is ethical, secure, and user-focused
+                          </p>
+                      </div>
+                  </div>
+                  <div class="accordion-item">
+                      <button class="accordion-button border-0 bg-transparent p-0 text-white collapsed" type="button"
+                          data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false"
+                          aria-controls="collapseTwo">
+                          2. What technologies and methodologies are commonly used to achieve this vision?
+                      </button>
+                      <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                          <p
+                              class="mt-2 mb-0 py-0 pe-0 pe-lg-4 fw-normal color_light_white font_base accordion-body faq-text-start-line position-relative">
+                              D.Dots is unique in its approach to data privacy, but we stand alongside a community of
+                              innovators who understand that
+                              the future of technology is ethical, secure, and user-focused
+                          </p>
+                      </div>
+                  </div>
+                  <div class="accordion-item">
+                      <button class="accordion-button border-0 bg-transparent p-0 text-white collapsed" type="button"
+                          data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false"
+                          aria-controls="collapseThree">
+                          3. What is the core concept behind data-driven decision-making without compromising?
+                      </button>
+                      <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                          <p
+                              class="mt-2 mb-0 py-0 pe-0 pe-lg-4 fw-normal color_light_white font_base accordion-body faq-text-start-line position-relative">
+                              D.Dots is unique in its approach to data privacy, but we stand alongside a community of
+                              innovators who understand that
+                              the future of technology is ethical, secure, and user-focused
+                          </p>
+                      </div>
+                  </div>
+                  <div class="accordion-item">
+                      <button class="accordion-button border-0 bg-transparent p-0 text-white collapsed" type="button"
+                          data-bs-toggle="collapse" data-bs-target="#collapseFourth" aria-expanded="false"
+                          aria-controls="collapseFourth">
+                          4. How can individuals protect their own data privacy in this context?
+                      </button>
+                      <div id="collapseFourth" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                          <p
+                              class="mt-2 mb-0 py-0 pe-0 pe-lg-4 fw-normal color_light_white font_base accordion-body faq-text-start-line position-relative">
+                              D.Dots is unique in its approach to data privacy, but we stand alongside a community of
+                              innovators who understand that
+                              the future of technology is ethical, secure, and user-focused
+                          </p>
+                      </div>
+                  </div>
+                  <div class="accordion-item">
+                      <button class="accordion-button border-0 bg-transparent p-0 text-white collapsed" type="button"
+                          data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false"
+                          aria-controls="collapseFive">
+                          5. How does "D.Dots" ensure data privacy?
+                      </button>
+                      <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                          <p
+                              class="mt-2 mb-0 py-0 pe-0 pe-lg-4 fw-normal color_light_white font_base accordion-body faq-text-start-line position-relative">
+                              D.Dots is unique in its approach to data privacy, but we stand alongside a community of
+                              innovators who understand that
+                              the future of technology is ethical, secure, and user-focused
+                          </p>
+                      </div>
+                  </div>
+                  <div class="accordion-item">
+                      <button class="accordion-button border-0 bg-transparent p-0 text-white collapsed" type="button"
+                          data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false"
+                          aria-controls="collapseSix">
+                          6. How does this vision benefit businesses and organizations?
+                      </button>
+                      <div id="collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                          <p
+                              class="mt-2 mb-0 py-0 pe-0 pe-lg-4 fw-normal color_light_white font_base accordion-body faq-text-start-line position-relative">
+                              D.Dots is unique in its approach to data privacy, but we stand alongside a community of
+                              innovators who understand that
+                              the future of technology is ethical, secure, and user-focused
+                          </p>
+                      </div>
+                  </div>
               </div>
-            </div>
-            <div class="accordion-item">
-              <button
-                class="accordion-button border-0 bg-transparent p-0 text-white collapsed"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#collapseTwo"
-                aria-expanded="false"
-                aria-controls="collapseTwo"
-              >
-                2. What technologies and methodologies are commonly used to
-                achieve this vision?
-              </button>
-              <div
-                id="collapseTwo"
-                class="accordion-collapse collapse"
-                data-bs-parent="#accordionExample"
-              >
-                <p
-                  class="mt-2 mb-0 py-0 fw-normal color_light_white font_base accordion-body faq-text-start-line position-relative"
-                >
-                  D.Dots is unique in its approach to data privacy, but we stand
-                  alongside a community of innovators who understand that the
-                  future of technology is ethical, secure, and user-focused
-                </p>
-              </div>
-            </div>
-            <div class="accordion-item">
-              <button
-                class="accordion-button border-0 bg-transparent p-0 text-white collapsed"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#collapseThree"
-                aria-expanded="false"
-                aria-controls="collapseThree"
-              >
-                3. What is the core concept behind data-driven decision-making
-                without compromising?
-              </button>
-              <div
-                id="collapseThree"
-                class="accordion-collapse collapse"
-                data-bs-parent="#accordionExample"
-              >
-                <p
-                  class="mt-2 mb-0 py-0 fw-normal color_light_white font_base accordion-body faq-text-start-line position-relative"
-                >
-                  D.Dots is unique in its approach to data privacy, but we stand
-                  alongside a community of innovators who understand that the
-                  future of technology is ethical, secure, and user-focused
-                </p>
-              </div>
-            </div>
-            <div class="accordion-item">
-              <button
-                class="accordion-button border-0 bg-transparent p-0 text-white collapsed"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#collapseFourth"
-                aria-expanded="false"
-                aria-controls="collapseFourth"
-              >
-                4. How can individuals protect their own data privacy in this
-                context?
-              </button>
-              <div
-                id="collapseFourth"
-                class="accordion-collapse collapse"
-                data-bs-parent="#accordionExample"
-              >
-                <p
-                  class="mt-2 mb-0 py-0 fw-normal color_light_white font_base accordion-body faq-text-start-line position-relative"
-                >
-                  D.Dots is unique in its approach to data privacy, but we stand
-                  alongside a community of innovators who understand that the
-                  future of technology is ethical, secure, and user-focused
-                </p>
-              </div>
-            </div>
-            <div class="accordion-item">
-              <button
-                class="accordion-button border-0 bg-transparent p-0 text-white collapsed"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#collapseFive"
-                aria-expanded="false"
-                aria-controls="collapseFive"
-              >
-                5. How does "D.Dots" ensure data privacy?
-              </button>
-              <div
-                id="collapseFive"
-                class="accordion-collapse collapse"
-                data-bs-parent="#accordionExample"
-              >
-                <p
-                  class="mt-2 mb-0 py-0 fw-normal color_light_white font_base accordion-body faq-text-start-line position-relative"
-                >
-                  D.Dots is unique in its approach to data privacy, but we stand
-                  alongside a community of innovators who understand that the
-                  future of technology is ethical, secure, and user-focused
-                </p>
-              </div>
-            </div>
-            <div class="accordion-item">
-              <button
-                class="accordion-button border-0 bg-transparent p-0 text-white collapsed"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#collapseSix"
-                aria-expanded="false"
-                aria-controls="collapseSix"
-              >
-                6. How does this vision benefit businesses and organizations?
-              </button>
-              <div
-                id="collapseSix"
-                class="accordion-collapse collapse"
-                data-bs-parent="#accordionExample"
-              >
-                <p
-                  class="mt-2 mb-0 py-0 fw-normal color_light_white font_base accordion-body faq-text-start-line position-relative"
-                >
-                  D.Dots is unique in its approach to data privacy, but we stand
-                  alongside a community of innovators who understand that the
-                  future of technology is ethical, secure, and user-focused
-                </p>
-              </div>
-            </div>
           </div>
-        </div>
       </div>
-    </section>
+  </section>
     <!-- -------------------- FAQ SECTION END -------------------- -->
     <!-- -------------------- STAY AHEAD WITH D.DOTS START -------------------- -->
     <section class="bg_dark_green py-5 position-relative stay_ahead_bg z-1">
@@ -723,7 +654,7 @@
     </section>
     <!-- -------------------- STAY AHEAD WITH D.DOTS END -------------------- -->
     <!-- -------------------- WHITE PAPER START -------------------- -->
-    <section class="pb-5 pt-4 py-md-5 bg_white_paper">
+    <section id="about" class="pb-5 pt-4 py-md-5 bg_white_paper">
       <div class="container pt-xl-5 my-xl-4">
         <div
           class="row align-items-center justify-content-center flex-column-reverse flex-md-row"
@@ -792,9 +723,9 @@
     </section>
     <!-- -------------------- WHITE PAPER END -------------------- -->
     <!-- -------------------- APPLICATION & BENEFITS START -------------------- -->
-    <section class="bg_application position-relative z-1 py-5">
+    <section id="applications" class="bg_application position-relative z-1 py-5">
       <div class="container text-center py-lg-5 my-xl-4">
-        <h5 class="font_4xl fw-bold color_white mb-3 mb-lg-5 pb-3">
+        <h5 class="font_4xl fw-bold color_white mb-0 mb-lg-5 pb-3">
           Application & Benefits
         </h5>
         <div class="row justify-content-evenly">
@@ -838,9 +769,9 @@
     </section>
     <!-- -------------------- FINGERPRINT-IMAGE-SECTION END -------------------- -->
     <!-- -------------------- FOOTER START -------------------- -->
-    <section class="footer_bg_colour pt-md-5">
+    <section id="contact" class="footer_bg_colour pt-md-5">
       <div class="container">
-        <div class="row py-4 justify-content-between">
+        <div class="row py-5 py-lg-4 justify-content-between">
           <div class="col-xl-4 col-lg-4 col-md-5 col-sm-8">
             <div class="footer_logo">
               <a href="#">
@@ -952,6 +883,15 @@
       </div>
     </section>
     <!-- -------------------- FOOTER START END -------------------- -->
+     <!-- BACK TO TOP -->
+     <button class="z-2 animat_topbtn d-flex justify-content-center align-items-center" onclick="topFunction()" id="myBtn" title="Go to top">
+      <img
+        width="30px"
+        src="./assets/images/png/back_to_top_icon.png"
+        alt=""
+      />
+    
+    </button>
     <!-- -----------BOOTSTRAP JS--------------- -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
