@@ -20,7 +20,7 @@
 
 /* ==== Application & Benefits === */
 .bg_application {
-  background-image: url("../images/png/application_benefits.png");
+  background-image: url("../images/webp/application_benefits.webp");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -51,7 +51,7 @@
 }
 
 .bg_ai_innovation {
-  background-image: url("../images/png/aI_innovation_bg.png");
+  background-image: url("../images/webp/aI_innovation_bg.webp");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -140,7 +140,7 @@
 
 /*  === WHITE PAPER ===  */
 .bg_white_paper {
-  background-image: url("../images/png/white_paper_bg.png");
+  background-image: url("../images/webp/white_paper_bg.webp");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
