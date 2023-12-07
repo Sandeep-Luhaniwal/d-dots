@@ -153,6 +153,12 @@
 }
 
 /* -------- SECURE DATA CSS ------------ */
+.secure-data-bg-image {
+    background: url('../images/png/secure-data-bg-image.png') no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
 .secure-data-image {
     max-width: 296px;
 }
@@ -462,7 +468,29 @@
     }
 
     .fourth-text-secure:hover .tooltip {
-        transform: rotate(90deg );
+        transform: rotate(90deg);
+    }
+
+    .six-text-secure:hover .tooltip,
+    .seven-text-secure:hover .tooltip {
+        top: 35px;
+        left: 50px;
+    }
+
+    .fifth-text-secure:hover .tooltip {
+        top: -5px;
+        left: 160px;
+    }
+
+    .six-text-secure:hover .tooltip {
+        transform: rotate(0deg);
+    }
+
+    .fifth-text-secure:hover .tooltip::after {
+        top: 50%;
+        left: -15px;
+        transform: translateY(-50%);
+        border-color: transparent white transparent transparent;
     }
 }
 
@@ -629,7 +657,6 @@
     }
 
     .fifth-text-secure {
-        bottom: 0px;
         left: -80px;
     }
 
@@ -651,6 +678,21 @@
     #securedatabtn {
         right: 70px;
     }
+
+    .third-text-secure:hover .tooltip,
+    .fifth-text-secure:hover .tooltip {
+        top: -50px;
+        left: 50px;
+    }
+
+    .third-text-secure:hover .tooltip:after,
+    .fifth-text-secure:hover .tooltip:after {
+        top: 40px;
+        left: 40%;
+        transform: translateY(-50%);
+        border-color: white transparent transparent transparent;
+    }
+
 }
 
 @media (min-width:1200px) {
@@ -692,7 +734,6 @@
     }
 
     .fifth-text-secure {
-        bottom: 0px;
         left: -95px;
     }
 
@@ -700,6 +741,11 @@
         height: 51px;
         width: 213px;
         right: 65px;
+    }
+
+    .third-text-secure:hover .tooltip,
+    .fifth-text-secure:hover .tooltip {
+        left: 30px;
     }
 
 }
