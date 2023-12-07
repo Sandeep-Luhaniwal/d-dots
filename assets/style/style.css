@@ -167,7 +167,10 @@
 .tooltip_img {
   background-image: url(../images/svg/tooltip_bg_img.svg);
   background-size: 100% 100%;
+<<<<<<<<< Temporary merge branch 1
   background-repeat: no-repeat;
+ display: none;
+=========
   opacity: 0;
   rotate: 180deg;
 }
