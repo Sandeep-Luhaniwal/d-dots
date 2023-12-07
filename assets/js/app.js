@@ -57,8 +57,14 @@ backToTopButton.addEventListener("click", () => {
 
 //SECURE DATA BUTTON JS
 
+let isSimulationActive = false;
+
 function startSimulation() {
-  var elementClasses = [
+  if (isSimulationActive) return;
+
+  isSimulationActive = true;
+
+  let elementClasses = [
     ".first-text-secure",
     ".second-text-secure",
     ".third-text-secure",
@@ -69,15 +75,13 @@ function startSimulation() {
     ".eight-text-secure"
   ];
 
-  elementClasses.forEach(function (elementClass, index) {
-    var currentElement = document.querySelector(elementClass);
-
+  elementClasses.forEach((elementClass, index) => {
+    let currentElement = document.querySelector(elementClass);
     if (currentElement) {
       currentElement.style.opacity = "0";
-
-      setTimeout(function () {
-        currentElement.style.opacity = "1";
-      }, 1000 + 500 * index); // Adjust the delay based on the index
+      setTimeout(() => currentElement.style.opacity = "1", 1000 + 500 * index);
     }
   });
+
+  setTimeout(() => isSimulationActive = false, 1000 + 500 * (elementClasses.length - 1));
 }
