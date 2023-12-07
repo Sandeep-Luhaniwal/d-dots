@@ -1,624 +1,1004 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>D Dots</title>
+    <link rel="stylesheet" href="./assets/style/root.css" />
+    <link rel="stylesheet" href="./assets/style/sandeep.css" />
+    <link rel="stylesheet" href="./assets/style/style.css" />
+    <link rel="stylesheet" href="./assets/style/bijender.css" />
+    <link rel="stylesheet" href="./assets/style/ankit.css" />
+    <!-- favicon -->
+    <link
+      rel="shortcut icon"
+      href="./assets/images/svg/favicon.svg"
+      type="image/x-icon"
+    />
+    <!-- -----------BOOTSTRAP LINK--------------- -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>D Dots</title>
-  <link rel="stylesheet" href="./assets/style/root.css" />
-  <link rel="stylesheet" href="./assets/style/sandeep.css" />
-  <link rel="stylesheet" href="./assets/style/style.css" />
-  <link rel="stylesheet" href="./assets/style/bijender.css" />
-  <link rel="stylesheet" href="./assets/style/ankit.css" />
-  <!-- favicon -->
-  <link` rel="shortcut icon" href="./assets/images/svg/page_icon.ico" type="image/x-icon" />
-  <!-- -----------BOOTSTRAP LINK--------------- -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
-</head>
-
-<body>
-  <!-- HERO SECTION -->
-  <section>
-    <!-- LEFT SIDEBAAR -->
-    <div
-      class="p-2 px-xl-0 py-sm-3 py-xl-5 sidebaar overflow-hidden position-fixed asidebar_background_color min_vh_screen nav_bg z-3">
-      <nav class="d-xl-flex flex-xl-column align-items-xl-center mx-1 mx-xl-0">
-        <div class="d-flex align-items-center justify-content-between justify-content-xl-end w-100">
-          <a href="#" class="z-3"><img class="page-logo"
-              src="./assets/images/webp/page_logo.webp" alt="main-logo-image" /></a>
-          <button type="button" class="hamburger d-xl-none index_5 cross_icon">
-            <span class="bar ms-auto"></span>
-            <span class="bar bar-2"></span>
-            <span class="bar ms-auto"></span>
-          </button>
-        </div>
-        <ul class="p-0 m-0 mt-3 overflow-y-scroll asidebar_customise nav-menu d-flex justify-content-center d-xl-block">
-          <li class="mt-xl-4">
-            <a id="nav-links" href="#home"
-              class="verticle_horizontal_sidebar fw-normal text-white opacity_06 font_lg mt-xl-2 nav-links position-relative">Home</a>
-          </li>
-          <li class="mt-4 pt-2">
-            <a href="#about"
-              class="verticle_horizontal_sidebar fw-normal text-white opacity_06 font_lg nav-links">Update</a>
-          </li>
-          <li class="mt-4 pt-2">
-            <a href="#our" class="verticle_horizontal_sidebar fw-normal text-white opacity_06 font_lg nav-links">Our
-              Why</a>
-          </li>
-          <li class="mt-4 pt-2">
-            <a href="#solution"
-              class="verticle_horizontal_sidebar fw-normal text-white opacity_06 font_lg nav-links">Solutions</a>
-          </li>
-          <li class="mt-4 pt-2">
-            <a href="#works" class="verticle_horizontal_sidebar fw-normal text-white opacity_06 font_lg nav-links">How
-              It Works</a>
-          </li>
-          <li class="mt-4 pt-2">
-            <a href="#applications"
-              class="verticle_horizontal_sidebar fw-normal text-white opacity_06 font_lg nav-links">Applications</a>
-          </li>
-          <li class="mt-4 pt-2">
-            <a href="#faq" class="verticle_horizontal_sidebar fw-normal text-white opacity_06 font_lg nav-links">FAQ</a>
-          </li>
-          <li class="mt-4 pt-2">
-            <a href="#contact"
-              class="verticle_horizontal_sidebar fw-normal text-white opacity_06 font_lg nav-links">Contact</a>
-          </li>
-        </ul>
-
-        <div class="py-4 mt-2 d-none d-xl-flex">
-          <img class="cursor_pointer navbar_arrow_rotate" width="12.5" height="6.25"
-            src="./assets/images/svg/down_arrow.svg" alt="down_arrow" />
-        </div>
-      </nav>
-    </div>
-    <!-- MAIN SECTION -->
-    <div id="home" class="main min_vh_100 py-5 d-flex justify-content-center align-items-center">
-      <div class="container mt-md-5 mt-xl-0 pt-5 pt-xl-0">
-        <div
-          class="hero_section_border overflow-hidden d-flex align-items-center justify-content-center position-relative">
-          <div class="circel_first"></div>
-          <div class="circel_2"></div>
-          <div class="circel_3"></div>
-          <div class="circel_4"></div>
-          <div class="position-relative">
-            <img class="w-100 hero_dots_image" src="./assets/images/webp/d_dot_img_hero.webp" alt="" />
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- RIGHT SIDEBAAR ICONS-->
-    <div class="sidebaar position-absolute overflow-hidden h-100 min_vh_screen z-2">
+  <body>
+    <!-- HERO SECTION -->
+    <section>
+      <!-- LEFT SIDEBAAR -->
       <div
-        class="py-2 py-xl-5 position-fixed right_sidebar d-flex justify-content-center align-items-center asidebar_background_color d-xl-block">
-        <div class="d-flex flex-xl-column gap-4 align-items-center">
-          <!-- TWITTER ICON -->
-          <a target="_blank" href="https://twitter.com/">
-            <div class="sidebar_icons d-flex justify-content-center align-items-center transition_03">
-              <svg class="transition_03 sidebar_icons_screen" width="20" height="18" viewBox="0 0 20 18" fill="none"
-                xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M15.7512 0H18.818L12.1179 7.62462L20 18H13.8275L8.99365 11.7074L3.46266 18H0.394011L7.56038 9.84461L0 0H6.32735L10.6967 5.75169L15.7493 0H15.7512ZM14.6748 16.1723H16.3742L5.4049 1.73169H3.58133L14.6748 16.1723Z"
-                  fill="white" />
-              </svg>
-            </div>
-          </a>
-
-          <!-- DISCORD ICON-->
-          <a target="_blank" href="https://discord.com/">
-            <div class="sidebar_icons d-flex justify-content-center align-items-center transition_03">
-              <svg class="transition_03 sidebar_icons_screen" width="20" height="18" viewBox="0 0 20 18" fill="none"
-                xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" clip-rule="evenodd"
-                  d="M14.003 0C14.747 0 15.533 0.26 16.253 0.547L16.78 0.763C18.04 1.291 18.748 2.399 19.297 3.616C20.188 5.591 20.807 8.224 21.021 10.226C21.123 11.176 21.148 12.132 20.965 12.775C20.768 13.462 20.098 13.948 19.447 14.33L19.125 14.513L18.791 14.699C18.619 14.795 18.442 14.89 18.266 14.983L17.744 15.253L17.027 15.61L16.45 15.894C16.3321 15.9576 16.2027 15.9968 16.0694 16.0094C15.936 16.022 15.8015 16.0077 15.6738 15.9673C15.5462 15.9269 15.4279 15.8613 15.326 15.7743C15.2242 15.6874 15.1408 15.5808 15.0809 15.461C15.0211 15.3413 14.9858 15.2107 14.9774 15.077C14.9689 14.9433 14.9874 14.8094 15.0317 14.683C15.076 14.5566 15.1452 14.4404 15.2353 14.3413C15.3254 14.2422 15.4344 14.1622 15.556 14.106L16.346 13.716L15.766 13.107C14.376 13.677 12.739 14 11 14C9.26101 14 7.62401 13.678 6.23401 13.107L5.65401 13.715L6.44701 14.105C6.56455 14.1637 6.66937 14.245 6.75549 14.3442C6.84161 14.4434 6.90735 14.5586 6.94895 14.6832C6.99055 14.8078 7.0072 14.9394 6.99795 15.0705C6.98869 15.2015 6.95372 15.3295 6.89501 15.447C6.83631 15.5645 6.75504 15.6694 6.65583 15.7555C6.55662 15.8416 6.44141 15.9073 6.3168 15.9489C6.06512 16.033 5.79038 16.0136 5.55301 15.895L5.00901 15.625C4.60701 15.425 4.20401 15.227 3.80601 15.018L2.87801 14.513L2.55701 14.33C1.90601 13.948 1.23501 13.462 1.03901 12.775C0.855014 12.132 0.881014 11.177 0.982014 10.225C1.19601 8.224 1.81501 5.591 2.70601 3.616C3.25501 2.399 3.96301 1.291 5.22301 0.763C6.05901 0.413 7.07201 0 8.00001 0C8.60301 0 9.07701 0.555 8.99001 1.147C9.65548 1.04854 10.3273 0.999404 11 1C11.691 1 12.366 1.05 13.014 1.148C12.9947 1.00599 13.0059 0.861504 13.0466 0.724109C13.0874 0.586714 13.1568 0.459542 13.2504 0.351012C13.344 0.242481 13.4596 0.155067 13.5895 0.0945554C13.7194 0.0340434 13.8597 0.00181393 14.003 0ZM7.75001 6.5C7.28589 6.5 6.84077 6.68437 6.51258 7.01256C6.18439 7.34075 6.00001 7.78587 6.00001 8.25C6.00001 8.71413 6.18439 9.15925 6.51258 9.48744C6.84077 9.81563 7.28589 10 7.75001 10C8.21414 10 8.65926 9.81563 8.98745 9.48744C9.31564 9.15925 9.50001 8.71413 9.50001 8.25C9.50001 7.78587 9.31564 7.34075 8.98745 7.01256C8.65926 6.68437 8.21414 6.5 7.75001 6.5ZM14.25 6.5C13.7859 6.5 13.3408 6.68437 13.0126 7.01256C12.6844 7.34075 12.5 7.78587 12.5 8.25C12.5 8.71413 12.6844 9.15925 13.0126 9.48744C13.3408 9.81563 13.7859 10 14.25 10C14.7141 10 15.1593 9.81563 15.4875 9.48744C15.8156 9.15925 16 8.71413 16 8.25C16 7.78587 15.8156 7.34075 15.4875 7.01256C15.1593 6.68437 14.7141 6.5 14.25 6.5Z"
-                  fill="white" />
-              </svg>
-            </div>
-          </a>
-          <!--PAGE ICON-->
+        class="p-2 px-xl-0 py-sm-3 py-xl-5 sidebaar overflow-hidden position-fixed asidebar_background_color min_vh_screen nav_bg z-3"
+      >
+        <nav
+          class="d-xl-flex flex-xl-column align-items-xl-center mx-1 mx-xl-0"
+        >
           <div
-            class="sidebar_icons2 d-flex justify-content-center align-items-center transition_03 position-relative cursor_pointer">
-            <div class="tooltip_img position-absolute whitepaper_icons">
-              <div class="text-white font_md whitepaper_icon_text fw-normal">Whitepaper</div>
-            </div>
-            <svg class="transition_03 sidebar_icons_screen" width="20" height="18" viewBox="0 0 20 18" fill="none"
-              xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="M13.2658 3.13672C13.2658 5.65899 13.2701 5.73203 13.4721 5.83945C13.5322 5.87383 14.3314 5.88672 15.99 5.88672H17.9221C18.1982 5.88672 18.4221 6.11058 18.4221 6.38672V12.4609V18.5352C18.4221 18.8113 18.1982 19.0352 17.9221 19.0352H11.0959H4.26973C3.99358 19.0352 3.76973 18.8113 3.76973 18.5352V9.9043V1.27344C3.76973 0.997295 3.99358 0.773438 4.26973 0.773438H8.51777H12.7658C13.042 0.773438 13.2658 0.997295 13.2658 1.27344V3.13672Z"
-                fill="black" />
-              <path
-                d="M3.00488 10.9184L3.01754 19.4439C3.01769 19.5445 3.06171 19.64 3.13809 19.7055C3.21572 19.772 3.3146 19.8086 3.41686 19.8086H9.74668H15.7307C16.0068 19.8086 16.2307 20.0325 16.2307 20.3086V20.5176V20.7266C16.2307 21.0027 16.0068 21.2266 15.7307 21.2266H8.90449H2.07832C1.80218 21.2266 1.57832 21.0027 1.57832 20.7266V11.7305V2.73438C1.57832 2.45823 1.80218 2.23438 2.07832 2.23438H2.2873H2.49678C2.77273 2.23438 2.99651 2.45793 2.99678 2.73388L3.00488 10.9184Z"
-                fill="black" />
-              <path
-                d="M15.9514 3.22266L16.9884 4.25973C17.3034 4.57471 17.0803 5.11328 16.6349 5.11328H15.9385H14.5393C14.2631 5.11328 14.0393 4.88942 14.0393 4.61328V3.22266C14.0393 2.18281 14.0436 1.33203 14.0521 1.33203C14.0564 1.33203 14.9115 2.18281 15.9514 3.22266Z"
-                fill="black" />
-              <path
-                d="M5.48828 3.29582C5.45391 3.30871 5.38086 3.36028 5.3293 3.40754C5.23047 3.49348 5.23047 3.50207 5.23047 4.76965V6.04582L5.34219 6.14895C5.45391 6.25207 5.45391 6.25207 6.58398 6.26496C7.32305 6.27356 7.77852 6.26067 7.89453 6.23059C8.18242 6.15325 8.19531 6.0845 8.19531 4.74817C8.19531 3.48059 8.18242 3.39895 7.9332 3.31301C7.79141 3.26575 5.61719 3.24856 5.48828 3.29582ZM7.42188 4.76965V5.50012H6.71289H6.00391V4.76965V4.03918H6.71289H7.42188V4.76965Z"
-                fill="white" />
-              <path
-                d="M5.33821 7.06826C5.18782 7.21436 5.19211 7.46787 5.3425 7.60967C5.44133 7.6999 5.49719 7.71279 5.86672 7.72998C6.40383 7.74717 6.59289 7.69131 6.67453 7.49365C6.74758 7.32178 6.7218 7.19717 6.59289 7.05537C6.51125 6.96514 6.46828 6.96084 5.97414 6.96084C5.46711 6.96084 5.43703 6.96514 5.33821 7.06826Z"
-                fill="white" />
-              <path
-                d="M7.52925 7.06824C7.38746 7.20574 7.38746 7.42918 7.52496 7.59246L7.62808 7.71277L12.0925 7.72566C15.2765 7.73425 16.6 7.72566 16.716 7.69129C16.9953 7.60964 17.0683 7.28738 16.8621 7.05535L16.7761 6.96082H12.2043H7.63238L7.52925 7.06824Z"
-                fill="white" />
-              <path
-                d="M5.33789 9.25977C5.26055 9.33281 5.23047 9.41016 5.23047 9.52617C5.23477 9.84414 5.38086 9.92578 5.96094 9.92578C6.45508 9.92578 6.61406 9.86992 6.68281 9.67656C6.74297 9.50469 6.7 9.33711 6.57109 9.23828C6.48086 9.16523 6.39922 9.15234 5.95234 9.15234C5.4668 9.15234 5.43672 9.15664 5.33789 9.25977Z"
-                fill="white" />
-              <path
-                d="M7.53398 9.26401C7.3793 9.4187 7.3793 9.65502 7.53398 9.80112L7.6457 9.90424L12.1402 9.91713C15.5391 9.92573 16.6691 9.91284 16.7637 9.87416C17.0043 9.77534 17.0516 9.40151 16.841 9.23823C16.7379 9.15229 16.652 9.15229 12.1918 9.15229H7.65L7.53398 9.26401Z"
-                fill="white" />
-              <path
-                d="M5.42423 11.3953C5.19649 11.5199 5.15352 11.8336 5.34258 12.0098C5.45001 12.1129 5.48868 12.1172 5.96133 12.1172C6.52423 12.1172 6.65743 12.0656 6.70469 11.8293C6.73477 11.6617 6.63165 11.4383 6.49844 11.3867C6.34805 11.3309 5.53165 11.3352 5.42423 11.3953Z"
-                fill="white" />
-              <path
-                d="M7.61529 11.3953C7.38755 11.5242 7.34888 11.8207 7.53365 12.0055L7.64966 12.1172H12.1786C15.3411 12.1172 16.7333 12.1043 16.7977 12.0699C16.9309 11.9969 17.0126 11.7648 16.9567 11.6059C16.8579 11.3309 17.1114 11.3438 12.1829 11.3438C8.89146 11.348 7.67974 11.3609 7.61529 11.3953Z"
-                fill="white" />
-              <path
-                d="M5.44961 13.5824C5.29922 13.6426 5.23477 13.75 5.23047 13.9348C5.23047 14.0508 5.26055 14.1281 5.33789 14.2012C5.43672 14.3043 5.4668 14.3086 5.97383 14.3086C6.46797 14.3086 6.51094 14.3043 6.59258 14.2098C6.71719 14.0723 6.74297 13.9691 6.68711 13.8059C6.61836 13.5953 6.44648 13.5352 5.95234 13.5395C5.7332 13.5395 5.50547 13.5609 5.44961 13.5824Z"
-                fill="white" />
-              <path
-                d="M7.67984 13.5652C7.41343 13.6641 7.33179 14.0078 7.52945 14.2012L7.63257 14.3086H12.183C16.6517 14.3086 16.7377 14.3086 16.8408 14.2227C17.0642 14.0508 17.0041 13.6727 16.7462 13.5824C16.6431 13.548 15.3755 13.5352 12.1744 13.5395C9.73804 13.5395 7.71421 13.5523 7.67984 13.5652Z"
-                fill="white" />
-              <path
-                d="M5.51002 15.7566C5.23502 15.8297 5.1276 16.2164 5.32955 16.4055C5.41979 16.4914 5.47565 16.5 5.96549 16.5C6.48541 16.5 6.5069 16.4957 6.60573 16.3926C6.75182 16.2379 6.74323 16.0187 6.59284 15.8641C6.48541 15.7566 6.45104 15.748 6.03854 15.7395C5.79362 15.7352 5.55729 15.7437 5.51002 15.7566Z"
-                fill="white" />
-              <path
-                d="M7.69286 15.7566C7.43934 15.8082 7.33622 16.2035 7.52957 16.3926L7.6327 16.5H12.2046H16.7765L16.871 16.3969C17.0128 16.2465 17.0042 16.0102 16.8581 15.8598L16.7464 15.748L12.2647 15.7438C9.80262 15.7395 7.74442 15.748 7.69286 15.7566Z"
-                fill="white" />
-            </svg>
+            class="d-flex align-items-center justify-content-between justify-content-xl-end w-100"
+          >
+            <a href="#" class="z-3"
+              ><img
+                class="page-logo"
+                src="./assets/images/webp/page_logo.webp"
+                alt="main-logo-image"
+            /></a>
+            <button
+              type="button"
+              class="hamburger d-xl-none index_5 cross_icon"
+            >
+              <span class="bar ms-auto"></span>
+              <span class="bar bar-2"></span>
+              <span class="bar ms-auto"></span>
+            </button>
           </div>
-        </div>
+          <ul
+            class="p-0 m-0 mt-3 overflow-y-scroll asidebar_customise nav-menu d-flex justify-content-center d-xl-block"
+          >
+            <li class="mt-xl-4">
+              <a
+                id="nav-links"
+                href="#home"
+                class="verticle_horizontal_sidebar fw-normal text-white opacity_06 font_lg mt-xl-2 nav-links position-relative"
+                >Home</a
+              >
+            </li>
+            <li class="mt-4 pt-2">
+              <a
+                href="#about"
+                class="verticle_horizontal_sidebar fw-normal text-white opacity_06 font_lg nav-links"
+                >Update</a
+              >
+            </li>
+            <li class="mt-4 pt-2">
+              <a
+                href="#our"
+                class="verticle_horizontal_sidebar fw-normal text-white opacity_06 font_lg nav-links"
+                >Our Why</a
+              >
+            </li>
+            <li class="mt-4 pt-2">
+              <a
+                href="#solution"
+                class="verticle_horizontal_sidebar fw-normal text-white opacity_06 font_lg nav-links"
+                >Solutions</a
+              >
+            </li>
+            <li class="mt-4 pt-2">
+              <a
+                href="#works"
+                class="verticle_horizontal_sidebar fw-normal text-white opacity_06 font_lg nav-links"
+                >How It Works</a
+              >
+            </li>
+            <li class="mt-4 pt-2">
+              <a
+                href="#applications"
+                class="verticle_horizontal_sidebar fw-normal text-white opacity_06 font_lg nav-links"
+                >Applications</a
+              >
+            </li>
+            <li class="mt-4 pt-2">
+              <a
+                href="#faq"
+                class="verticle_horizontal_sidebar fw-normal text-white opacity_06 font_lg nav-links"
+                >FAQ</a
+              >
+            </li>
+            <li class="mt-4 pt-2">
+              <a
+                href="#contact"
+                class="verticle_horizontal_sidebar fw-normal text-white opacity_06 font_lg nav-links"
+                >Contact</a
+              >
+            </li>
+          </ul>
+
+          <div class="py-4 mt-2 d-none d-xl-flex">
+            <img
+              class="cursor_pointer navbar_arrow_rotate"
+              width="12.5"
+              height="6.25"
+              src="./assets/images/svg/down_arrow.svg"
+              alt="down_arrow"
+            />
+          </div>
+        </nav>
       </div>
-    </div>
-  </section>
-  <!-- -------------------- ABOUT US SECTION START -------------------- -->
-  <section class="py-5 position-relative about-us-bg-img">
-    <div class="top-0 start-0 w-100 h-100 position-absolute top-overlay transfrom-rotate"></div>
-    <div class="bottom-0 start-0 w-100 h-100 position-absolute bottom-overlay"></div>
-    <div class="container py-lg-5 my-lg-4 position-relative z-1">
-      <div class="row justify-content-between align-items-center py-lg-5">
-        <div class="col-md-7 col-lg-6">
-          <h2 class="text-center text-md-start text-white font_4xl fw-bold mb-0">
-            About Us
-          </h2>
-          <h5 class="text-center text-md-start font_xl text-white mb-0 pt-3 fw-medium">
-            Mission
-          </h5>
-          <p
-            class="text-center text-md-start me-lg-4 fw-normal pt-2 mt-lg-1 font_base text-white mb-0 pe-lg-5 opacity_07">
-            D.Dots champions the fundamental right to privacy in the digital
-            realm, ensuring thatpersonal data remains personal. We're
-            committed to innovating secure solutions thatempower individuals
-            to control their digital footprint.
-          </p>
-          <h5 class="text-center text-md-start font_xl text-white mb-0 pt-3 pt-lg-4 mt-lg-2 fw-medium">
-            Vision
-          </h5>
-          <p
-            class="text-center text-md-start me-lg-4 fw-normal pt-2 mt-lg-1 font_base text-white mb-0 pe-lg-5 opacity_07">
-            Our vision extends beyond safeguarding individual data to shaping
-            a world where privacyand progress coexist harmoniously. We
-            envision a future where technology respectspersonal boundaries and
-            fosters a collective intelligence that is both insightful
-            andunintrusive.
-          </p>
-        </div>
-        <div class="col-md-5 col-lg-6 d-flex justify-content-center pt-4 pt-md-0">
-          <img src="./assets/images/webp/about-us-do-dots-image.webp" alt="about-us-do-dots-image"
-            class="about-us-image w-100" />
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- -------------------- ABOUT US SECTION END -------------------- -->
-  <!-- -------------------- BRAND STORY SECTION START -------------------- -->
-  <section
-    class="py-sm-5 py-md-0 bg-brand-story bg-black position-relative d-flex justify-content-center align-items-center">
-    <div class="top-0 start-0 w-100 h-100 position-absolute top-overlay transfrom-rotate"></div>
-    <div class="bottom-0 start-0 w-100 h-100 position-absolute bottom-overlay"></div>
-    <img src="./assets/images/webp/left-brands-circle-image.webp" alt="circle images"
-      class="d-none d-md-block left-top-circle-brand-position position-absolute" />
-    <img src="./assets/images/webp/right-brands-circle-image.webp" alt="circle images"
-      class="d-none d-md-block right-bottom-circle-brand-position position-absolute" />
-    <div class="container position-relative z-1 py-5 my-5">
-      <h3 class="text-white mb-0 font_3xl fw-semibold text-center">
-        Brand Story
-      </h3>
-      <p class="text-white mb-0 pt-3 opacity_07 fw-normal brand-story-paragraph text-center mx-auto">
-        D.Dots is a vanguard of privacy, where every technological stride
-        enhances individualfreedom. Our story intertwines with the relentless
-        pursuit of a society that values andprotects the sanctity of personal
-        data.
-      </p>
-    </div>
-  </section>
-  <!-- -------------------- BRAND STORY SECTION END -------------------- -->
-  <!-- -------------------- HOW IT WORKS SECTION START -------------------- -->
-<section id="works" class="px-lg-3 py-5 pt-lg-0 pb-lg-5 position-relative how-it-work-bg-img">
-  <div class="top-0 start-0 w-100 h-100 position-absolute top-overlay transfrom-rotate"></div>
-  <div class="bottom-0 start-0 w-100 h-100 position-absolute bottom-overlay"></div>
-  <div class="container position-relative z-1 mb-xl-4">
-    <div class="row align-items-center pb-md-4 mb-lg-2">
-      <div class="col-md-6 col-lg-5 pe-xl-3">
-        <h2 class="text-center text-md-start color_light_white font_4xl fw-bold mb-0">
-          How It Works
-        </h2>
-        <p class="text-center text-md-start fw-normal pt-3 font_base color_light_white mb-0 opacity_07 me-xl-3 pe-xl-3">
-          At D.Dots, we employ fully homomorphic encryption (FHE) to
-          revolutionize the confidentialityof your data. Unlike traditional
-          encryption that must be decrypted for any computation, ouradvanced
-          FHE methods ensure that your data remains encrypted during the
-          entire analyticalprocess, mitigating the risk of exposure and
-          maintaining privacy integrity.
-        </p>
-      </div>
-      <div class="col-md-6 col-lg-7 d-flex justify-content-center justify-content-md-end py-4 py-md-0">
-        <img src="./assets/images/webp/how-it-works-image.webp" alt="how it works" class="how-it-work-image w-100" />
-      </div>
-    </div>
-    <!-- ---------------- TIME LINE BOX--------------------------- -->
-    <div class="time-line-works position-relative ps-4 ps-md-0 mt-md-4">
-      <div class="timeline-circle timeline-circle-top position-relative">
-        <div class="timeline-circle timeline-circle-center position-relative">
-          <div class="timeline-circle timeline-circle-bottom position-relative">
-            <div class="row flex-column flex-md-row pt-md-4">
-              <div class="col-md-4">
-                <div class="how-it-work-box transition_03 h-100 z-1 position-relative h-100 d-flex flex-column">
-                  <p class="font_md fw-medium color_light_white mb-0">
-                    How It Works
-                  </p>
-                  <p class="pt-2 opacity_07 fw-normal font_xs color_light_white mb-0">
-                    Discover the power of FHE through our secure ecosystem
-                    that processes data without compromising
-                    confidentiality.
-                  </p>
-                </div>
-              </div>
-              <div class="col-md-4 pt-4 pt-md-0">
-                <div class="how-it-work-box transition_03 h-100 z-1 position-relative d-flex flex-column ">
-                  <p class="font_md fw-medium color_light_white mb-0">
-                    Workflow Explanation
-                  </p>
-                  <p class="pt-2 opacity_07 fw-normal font_xs color_light_white mb-0">
-                    Delve into our privacy-first methodology where data
-                    remains encrypted at every step, fromcollection to
-                    computation.
-                  </p>
-                </div>
-              </div>
-              <div class="col-md-4 pt-4 pt-md-0">
-                <div class="how-it-work-box transition_03 h-100 z-1 position-relative d-flex flex-column ">
-                  <p class="font_md fw-medium color_light_white mb-0">
-                    Streamlined Process
-                  </p>
-                  <p class="pt-2 opacity_07 fw-normal font_xs color_light_white mb-0">
-                    Our process is designed for optimal security and
-                    efficiency, safeguarding data privacy inevery operation.
-                  </p>
-                </div>
-              </div>
+      <!-- MAIN SECTION -->
+      <div
+        id="home"
+        class="main min_vh_100 py-5 d-flex justify-content-center align-items-center"
+      >
+        <div class="container mt-md-5 mt-xl-0 pt-5 pt-xl-0">
+          <div
+            class="hero_section_border overflow-hidden d-flex align-items-center justify-content-center position-relative"
+          >
+            <div class="circel_first"></div>
+            <div class="circel_2"></div>
+            <div class="circel_3"></div>
+            <div class="circel_4"></div>
+            <div class="position-relative">
+              <img
+                class="w-100 hero_dots_image"
+                src="./assets/images/webp/d_dot_img_hero.webp"
+                alt=""
+              />
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </div>
-</section>
-  <!-- -------------------- HOW IT WORKS SECTION END -------------------- -->
-  <!-- -------------------- VIDEO SECTION START -------------------- -->
-    <section id="our" class="py-5 bg_dark_green bg_video position-relative">
-      <div class="container py-lg-5 my-lg-5">
-        <div class="position-relative ipad_video_card rounded-4 z-1 mx-auto">
-          <video class="w-100 h-100 ipad_video d-block rounded-4" id="myVideo" width="950" height="534" muted
-            controlsList="nodownload" poster="./assets/images/webp/video_play.webp">
-            <source src="./assets/video/video_dummy.mp4" type="video/mp4" />
-          </video>
-          <img onclick="playVid()" id="playVideo" class="position-absolute top-50 start-50 translate-middle cursor_pointer"
-            src="./assets/images/svg/icon_play.svg" alt="play-icon" />
+      <!-- RIGHT SIDEBAAR ICONS-->
+      <div
+        class="sidebaar position-absolute overflow-hidden h-100 min_vh_screen z-2"
+      >
+        <div
+          class="py-2 py-xl-5 position-fixed right_sidebar d-flex justify-content-center align-items-center asidebar_background_color d-xl-block"
+        >
+          <div class="d-flex flex-xl-column gap-4 align-items-center">
+            <!-- TWITTER ICON -->
+            <a target="_blank" href="https://twitter.com/">
+              <div
+                class="sidebar_icons d-flex justify-content-center align-items-center transition_03"
+              >
+                <svg
+                  class="transition_03 sidebar_icons_screen"
+                  width="20"
+                  height="18"
+                  viewBox="0 0 20 18"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M15.7512 0H18.818L12.1179 7.62462L20 18H13.8275L8.99365 11.7074L3.46266 18H0.394011L7.56038 9.84461L0 0H6.32735L10.6967 5.75169L15.7493 0H15.7512ZM14.6748 16.1723H16.3742L5.4049 1.73169H3.58133L14.6748 16.1723Z"
+                    fill="white"
+                  />
+                </svg>
+              </div>
+            </a>
+
+            <!-- DISCORD ICON-->
+            <a target="_blank" href="https://discord.com/">
+              <div
+                class="sidebar_icons d-flex justify-content-center align-items-center transition_03"
+              >
+                <svg
+                  class="transition_03 sidebar_icons_screen"
+                  width="20"
+                  height="18"
+                  viewBox="0 0 20 18"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M14.003 0C14.747 0 15.533 0.26 16.253 0.547L16.78 0.763C18.04 1.291 18.748 2.399 19.297 3.616C20.188 5.591 20.807 8.224 21.021 10.226C21.123 11.176 21.148 12.132 20.965 12.775C20.768 13.462 20.098 13.948 19.447 14.33L19.125 14.513L18.791 14.699C18.619 14.795 18.442 14.89 18.266 14.983L17.744 15.253L17.027 15.61L16.45 15.894C16.3321 15.9576 16.2027 15.9968 16.0694 16.0094C15.936 16.022 15.8015 16.0077 15.6738 15.9673C15.5462 15.9269 15.4279 15.8613 15.326 15.7743C15.2242 15.6874 15.1408 15.5808 15.0809 15.461C15.0211 15.3413 14.9858 15.2107 14.9774 15.077C14.9689 14.9433 14.9874 14.8094 15.0317 14.683C15.076 14.5566 15.1452 14.4404 15.2353 14.3413C15.3254 14.2422 15.4344 14.1622 15.556 14.106L16.346 13.716L15.766 13.107C14.376 13.677 12.739 14 11 14C9.26101 14 7.62401 13.678 6.23401 13.107L5.65401 13.715L6.44701 14.105C6.56455 14.1637 6.66937 14.245 6.75549 14.3442C6.84161 14.4434 6.90735 14.5586 6.94895 14.6832C6.99055 14.8078 7.0072 14.9394 6.99795 15.0705C6.98869 15.2015 6.95372 15.3295 6.89501 15.447C6.83631 15.5645 6.75504 15.6694 6.65583 15.7555C6.55662 15.8416 6.44141 15.9073 6.3168 15.9489C6.06512 16.033 5.79038 16.0136 5.55301 15.895L5.00901 15.625C4.60701 15.425 4.20401 15.227 3.80601 15.018L2.87801 14.513L2.55701 14.33C1.90601 13.948 1.23501 13.462 1.03901 12.775C0.855014 12.132 0.881014 11.177 0.982014 10.225C1.19601 8.224 1.81501 5.591 2.70601 3.616C3.25501 2.399 3.96301 1.291 5.22301 0.763C6.05901 0.413 7.07201 0 8.00001 0C8.60301 0 9.07701 0.555 8.99001 1.147C9.65548 1.04854 10.3273 0.999404 11 1C11.691 1 12.366 1.05 13.014 1.148C12.9947 1.00599 13.0059 0.861504 13.0466 0.724109C13.0874 0.586714 13.1568 0.459542 13.2504 0.351012C13.344 0.242481 13.4596 0.155067 13.5895 0.0945554C13.7194 0.0340434 13.8597 0.00181393 14.003 0ZM7.75001 6.5C7.28589 6.5 6.84077 6.68437 6.51258 7.01256C6.18439 7.34075 6.00001 7.78587 6.00001 8.25C6.00001 8.71413 6.18439 9.15925 6.51258 9.48744C6.84077 9.81563 7.28589 10 7.75001 10C8.21414 10 8.65926 9.81563 8.98745 9.48744C9.31564 9.15925 9.50001 8.71413 9.50001 8.25C9.50001 7.78587 9.31564 7.34075 8.98745 7.01256C8.65926 6.68437 8.21414 6.5 7.75001 6.5ZM14.25 6.5C13.7859 6.5 13.3408 6.68437 13.0126 7.01256C12.6844 7.34075 12.5 7.78587 12.5 8.25C12.5 8.71413 12.6844 9.15925 13.0126 9.48744C13.3408 9.81563 13.7859 10 14.25 10C14.7141 10 15.1593 9.81563 15.4875 9.48744C15.8156 9.15925 16 8.71413 16 8.25C16 7.78587 15.8156 7.34075 15.4875 7.01256C15.1593 6.68437 14.7141 6.5 14.25 6.5Z"
+                    fill="white"
+                  />
+                </svg>
+              </div>
+            </a>
+            <!--PAGE ICON-->
+            <div
+              class="sidebar_icons2 d-flex justify-content-center align-items-center transition_03 position-relative cursor_pointer"
+            >
+              <div class="tooltip_img position-absolute whitepaper_icons">
+                <div class="text-white font_md whitepaper_icon_text fw-normal">
+                  Whitepaper
+                </div>
+              </div>
+              <svg
+                class="transition_03 sidebar_icons_screen"
+                width="20"
+                height="18"
+                viewBox="0 0 20 18"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M13.2658 3.13672C13.2658 5.65899 13.2701 5.73203 13.4721 5.83945C13.5322 5.87383 14.3314 5.88672 15.99 5.88672H17.9221C18.1982 5.88672 18.4221 6.11058 18.4221 6.38672V12.4609V18.5352C18.4221 18.8113 18.1982 19.0352 17.9221 19.0352H11.0959H4.26973C3.99358 19.0352 3.76973 18.8113 3.76973 18.5352V9.9043V1.27344C3.76973 0.997295 3.99358 0.773438 4.26973 0.773438H8.51777H12.7658C13.042 0.773438 13.2658 0.997295 13.2658 1.27344V3.13672Z"
+                  fill="black"
+                />
+                <path
+                  d="M3.00488 10.9184L3.01754 19.4439C3.01769 19.5445 3.06171 19.64 3.13809 19.7055C3.21572 19.772 3.3146 19.8086 3.41686 19.8086H9.74668H15.7307C16.0068 19.8086 16.2307 20.0325 16.2307 20.3086V20.5176V20.7266C16.2307 21.0027 16.0068 21.2266 15.7307 21.2266H8.90449H2.07832C1.80218 21.2266 1.57832 21.0027 1.57832 20.7266V11.7305V2.73438C1.57832 2.45823 1.80218 2.23438 2.07832 2.23438H2.2873H2.49678C2.77273 2.23438 2.99651 2.45793 2.99678 2.73388L3.00488 10.9184Z"
+                  fill="black"
+                />
+                <path
+                  d="M15.9514 3.22266L16.9884 4.25973C17.3034 4.57471 17.0803 5.11328 16.6349 5.11328H15.9385H14.5393C14.2631 5.11328 14.0393 4.88942 14.0393 4.61328V3.22266C14.0393 2.18281 14.0436 1.33203 14.0521 1.33203C14.0564 1.33203 14.9115 2.18281 15.9514 3.22266Z"
+                  fill="black"
+                />
+                <path
+                  d="M5.48828 3.29582C5.45391 3.30871 5.38086 3.36028 5.3293 3.40754C5.23047 3.49348 5.23047 3.50207 5.23047 4.76965V6.04582L5.34219 6.14895C5.45391 6.25207 5.45391 6.25207 6.58398 6.26496C7.32305 6.27356 7.77852 6.26067 7.89453 6.23059C8.18242 6.15325 8.19531 6.0845 8.19531 4.74817C8.19531 3.48059 8.18242 3.39895 7.9332 3.31301C7.79141 3.26575 5.61719 3.24856 5.48828 3.29582ZM7.42188 4.76965V5.50012H6.71289H6.00391V4.76965V4.03918H6.71289H7.42188V4.76965Z"
+                  fill="white"
+                />
+                <path
+                  d="M5.33821 7.06826C5.18782 7.21436 5.19211 7.46787 5.3425 7.60967C5.44133 7.6999 5.49719 7.71279 5.86672 7.72998C6.40383 7.74717 6.59289 7.69131 6.67453 7.49365C6.74758 7.32178 6.7218 7.19717 6.59289 7.05537C6.51125 6.96514 6.46828 6.96084 5.97414 6.96084C5.46711 6.96084 5.43703 6.96514 5.33821 7.06826Z"
+                  fill="white"
+                />
+                <path
+                  d="M7.52925 7.06824C7.38746 7.20574 7.38746 7.42918 7.52496 7.59246L7.62808 7.71277L12.0925 7.72566C15.2765 7.73425 16.6 7.72566 16.716 7.69129C16.9953 7.60964 17.0683 7.28738 16.8621 7.05535L16.7761 6.96082H12.2043H7.63238L7.52925 7.06824Z"
+                  fill="white"
+                />
+                <path
+                  d="M5.33789 9.25977C5.26055 9.33281 5.23047 9.41016 5.23047 9.52617C5.23477 9.84414 5.38086 9.92578 5.96094 9.92578C6.45508 9.92578 6.61406 9.86992 6.68281 9.67656C6.74297 9.50469 6.7 9.33711 6.57109 9.23828C6.48086 9.16523 6.39922 9.15234 5.95234 9.15234C5.4668 9.15234 5.43672 9.15664 5.33789 9.25977Z"
+                  fill="white"
+                />
+                <path
+                  d="M7.53398 9.26401C7.3793 9.4187 7.3793 9.65502 7.53398 9.80112L7.6457 9.90424L12.1402 9.91713C15.5391 9.92573 16.6691 9.91284 16.7637 9.87416C17.0043 9.77534 17.0516 9.40151 16.841 9.23823C16.7379 9.15229 16.652 9.15229 12.1918 9.15229H7.65L7.53398 9.26401Z"
+                  fill="white"
+                />
+                <path
+                  d="M5.42423 11.3953C5.19649 11.5199 5.15352 11.8336 5.34258 12.0098C5.45001 12.1129 5.48868 12.1172 5.96133 12.1172C6.52423 12.1172 6.65743 12.0656 6.70469 11.8293C6.73477 11.6617 6.63165 11.4383 6.49844 11.3867C6.34805 11.3309 5.53165 11.3352 5.42423 11.3953Z"
+                  fill="white"
+                />
+                <path
+                  d="M7.61529 11.3953C7.38755 11.5242 7.34888 11.8207 7.53365 12.0055L7.64966 12.1172H12.1786C15.3411 12.1172 16.7333 12.1043 16.7977 12.0699C16.9309 11.9969 17.0126 11.7648 16.9567 11.6059C16.8579 11.3309 17.1114 11.3438 12.1829 11.3438C8.89146 11.348 7.67974 11.3609 7.61529 11.3953Z"
+                  fill="white"
+                />
+                <path
+                  d="M5.44961 13.5824C5.29922 13.6426 5.23477 13.75 5.23047 13.9348C5.23047 14.0508 5.26055 14.1281 5.33789 14.2012C5.43672 14.3043 5.4668 14.3086 5.97383 14.3086C6.46797 14.3086 6.51094 14.3043 6.59258 14.2098C6.71719 14.0723 6.74297 13.9691 6.68711 13.8059C6.61836 13.5953 6.44648 13.5352 5.95234 13.5395C5.7332 13.5395 5.50547 13.5609 5.44961 13.5824Z"
+                  fill="white"
+                />
+                <path
+                  d="M7.67984 13.5652C7.41343 13.6641 7.33179 14.0078 7.52945 14.2012L7.63257 14.3086H12.183C16.6517 14.3086 16.7377 14.3086 16.8408 14.2227C17.0642 14.0508 17.0041 13.6727 16.7462 13.5824C16.6431 13.548 15.3755 13.5352 12.1744 13.5395C9.73804 13.5395 7.71421 13.5523 7.67984 13.5652Z"
+                  fill="white"
+                />
+                <path
+                  d="M5.51002 15.7566C5.23502 15.8297 5.1276 16.2164 5.32955 16.4055C5.41979 16.4914 5.47565 16.5 5.96549 16.5C6.48541 16.5 6.5069 16.4957 6.60573 16.3926C6.75182 16.2379 6.74323 16.0187 6.59284 15.8641C6.48541 15.7566 6.45104 15.748 6.03854 15.7395C5.79362 15.7352 5.55729 15.7437 5.51002 15.7566Z"
+                  fill="white"
+                />
+                <path
+                  d="M7.69286 15.7566C7.43934 15.8082 7.33622 16.2035 7.52957 16.3926L7.6327 16.5H12.2046H16.7765L16.871 16.3969C17.0128 16.2465 17.0042 16.0102 16.8581 15.8598L16.7464 15.748L12.2647 15.7438C9.80262 15.7395 7.74442 15.748 7.69286 15.7566Z"
+                  fill="white"
+                />
+              </svg>
+            </div>
+          </div>
         </div>
       </div>
     </section>
-  <!-- -------------------- VIDEO SECTION END -------------------- -->
-  <!-- -------------------- AI INNOVATION SECTION START -------------------- -->
-  <section id="solution" class="bg_ai_innovation pb-5 pb-md-0 pt-4 pt-xl-5">
-    <div class="container pt-lg-3 mt-lg-1 d-flex flex-md-column flex-column-reverse">
-      <div class="text-center bg_card_ai_innovation mx-auto py-4 px-3 p-sm-4 p-md-5">
-        <h5 class="font_3xl color_white fw-semibold lh_160 mb-lg-3 mt-lg-3">
-          AI Innovation
-        </h5>
-        <p class="font_base color_white opacity_07 fw-normal lh_160 px-md-5 mx-md-4 mb-0 mb-lg-3">
-          D.Dots stands at the crossroads of AI and privacy, creating
-          intelligent systems that learnglobally without infringing on
-          individual privacy, ensuring ethical standards in
-          technologicaladvancement.
+    <!-- -------------------- ABOUT US SECTION START -------------------- -->
+    <section class="py-5 position-relative about-us-bg-img">
+      <div
+        class="top-0 start-0 w-100 h-100 position-absolute top-overlay transfrom-rotate"
+      ></div>
+      <div
+        class="bottom-0 start-0 w-100 h-100 position-absolute bottom-overlay"
+      ></div>
+      <div class="container py-lg-5 my-lg-4 position-relative z-1">
+        <div class="row justify-content-between align-items-center py-lg-5">
+          <div class="col-md-7 col-lg-6">
+            <h2
+              class="text-center text-md-start text-white font_4xl fw-bold mb-0"
+            >
+              About Us
+            </h2>
+            <h5
+              class="text-center text-md-start font_xl text-white mb-0 pt-3 fw-medium"
+            >
+              Mission
+            </h5>
+            <p
+              class="text-center text-md-start me-lg-4 fw-normal pt-2 mt-lg-1 font_base text-white mb-0 pe-lg-5 opacity_07"
+            >
+              D.Dots champions the fundamental right to privacy in the digital
+              realm, ensuring thatpersonal data remains personal. We're
+              committed to innovating secure solutions thatempower individuals
+              to control their digital footprint.
+            </p>
+            <h5
+              class="text-center text-md-start font_xl text-white mb-0 pt-3 pt-lg-4 mt-lg-2 fw-medium"
+            >
+              Vision
+            </h5>
+            <p
+              class="text-center text-md-start me-lg-4 fw-normal pt-2 mt-lg-1 font_base text-white mb-0 pe-lg-5 opacity_07"
+            >
+              Our vision extends beyond safeguarding individual data to shaping
+              a world where privacyand progress coexist harmoniously. We
+              envision a future where technology respectspersonal boundaries and
+              fosters a collective intelligence that is both insightful
+              andunintrusive.
+            </p>
+          </div>
+          <div
+            class="col-md-5 col-lg-6 d-flex justify-content-center pt-4 pt-md-0"
+          >
+            <img
+              src="./assets/images/webp/about-us-do-dots-image.webp"
+              alt="about-us-do-dots-image"
+              class="about-us-image w-100"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- -------------------- ABOUT US SECTION END -------------------- -->
+    <!-- -------------------- BRAND STORY SECTION START -------------------- -->
+    <section
+      class="py-sm-5 py-md-0 bg-brand-story bg-black position-relative d-flex justify-content-center align-items-center"
+    >
+      <div
+        class="top-0 start-0 w-100 h-100 position-absolute top-overlay transfrom-rotate"
+      ></div>
+      <div
+        class="bottom-0 start-0 w-100 h-100 position-absolute bottom-overlay"
+      ></div>
+      <img
+        src="./assets/images/webp/left-brands-circle-image.webp"
+        alt="circle images"
+        class="d-none d-md-block left-top-circle-brand-position position-absolute"
+      />
+      <img
+        src="./assets/images/webp/right-brands-circle-image.webp"
+        alt="circle images"
+        class="d-none d-md-block right-bottom-circle-brand-position position-absolute"
+      />
+      <div class="container position-relative z-1 py-5 my-5">
+        <h3 class="text-white mb-0 font_3xl fw-semibold text-center">
+          Brand Story
+        </h3>
+        <p
+          class="text-white mb-0 pt-3 opacity_07 fw-normal brand-story-paragraph text-center mx-auto"
+        >
+          D.Dots is a vanguard of privacy, where every technological stride
+          enhances individualfreedom. Our story intertwines with the relentless
+          pursuit of a society that values andprotects the sanctity of personal
+          data.
         </p>
       </div>
-      <div class="px-md-5 mx-lg-5 mt-4 mt-lg-5">
-        <img src="./assets/images/webp/trust_privacy_ai.webp" alt="Trust Privacy" class="w-100 px-xl-3" />
-      </div>
-    </div>
-  </section>
-  <!-- -------------------- AI INNOVATION SECTION END -------------------- -->
-  <!-- -------------------- SECURE DATA SECTION START -------------------- -->
-  <section class="py-5 py-lg-0 secure-data-bg-image position-relative">
-    <div class="top-0 start-0 w-100 h-100 position-absolute top-overlay transfrom-rotate"></div>
-    <div class="bottom-0 start-0 w-100 h-100 position-absolute bottom-overlay"></div>
-    <div class="container py-lg-5 my-xl-4 position-relative z-1">
-      <h2 class="fw-bold font_4xl color_light_white mb-5 mb-lg-0 text-center mb-xl-5 pb-4 pb-lg-5">
-        Secure Your Data
-      </h2>
-      <div class="d-flex justify-content-center">
-        <div class="position-relative pb-5 pb-lg-0">
-          <img src="./assets/images/webp/secure-data-image.webp" alt="secure data" class="secure-data-image">
-          <div class="position-absolute first-text-secure transition_03">
-            <p class="fw-semibold font_sm text-white mb-0">
-              1. Generate Key
-            </p>
-            <p class="tooltip text-white font_sm fw-normal color_light_white mb-0">
-              Whitepaper
-            </p>
-          </div>
-          <div class="d-flex align-items-center gap-2 position-absolute second-text-secure transition_03">
-            <svg class="right-arrow-icon transfrom-rotate-icon d-sm-mobile-none d-mobile-block" width="14" height="22"
-              viewBox="0 0 14 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="M6.39896 20.914C6.7309 21.246 7.2691 21.246 7.60104 20.914L13.0104 15.5047C13.3424 15.1727 13.3424 14.6345 13.0104 14.3026C12.6785 13.9706 12.1403 13.9706 11.8083 14.3026L7 19.1109L2.19167 14.3026C1.85973 13.9706 1.32154 13.9706 0.989592 14.3026C0.657647 14.6345 0.657647 15.1727 0.989592 15.5047L6.39896 20.914ZM7.85 0.99978C7.85 0.530338 7.46944 0.14978 7 0.14978C6.53056 0.14978 6.15 0.530338 6.15 0.99978H7.85ZM7.85 20.313V0.99978H6.15V20.313H7.85Z"
-                fill="white" />
-            </svg>
-            <p class="fw-normal ms-2 pt-1 font_sm text-white mb-0">
-              2. Send Key
-            </p>
-            <p class="tooltip text-white font_sm fw-normal color_light_white mb-0">
-              Whitepaper
+    </section>
+    <!-- -------------------- BRAND STORY SECTION END -------------------- -->
+    <!-- -------------------- HOW IT WORKS SECTION START -------------------- -->
+    <section
+      id="works"
+      class="px-lg-3 py-5 pt-lg-0 pb-lg-5 position-relative how-it-work-bg-img"
+    >
+      <div
+        class="top-0 start-0 w-100 h-100 position-absolute top-overlay transfrom-rotate"
+      ></div>
+      <div
+        class="bottom-0 start-0 w-100 h-100 position-absolute bottom-overlay"
+      ></div>
+      <div class="container position-relative z-1 mb-xl-4">
+        <div class="row align-items-center pb-md-4 mb-lg-2">
+          <div class="col-md-6 col-lg-5 pe-xl-3">
+            <h2
+              class="text-center text-md-start color_light_white font_4xl fw-bold mb-0"
+            >
+              How It Works
+            </h2>
+            <p
+              class="text-center text-md-start fw-normal pt-3 font_base color_light_white mb-0 opacity_07 me-xl-3 pe-xl-3"
+            >
+              At D.Dots, we employ fully homomorphic encryption (FHE) to
+              revolutionize the confidentialityof your data. Unlike traditional
+              encryption that must be decrypted for any computation, ouradvanced
+              FHE methods ensure that your data remains encrypted during the
+              entire analyticalprocess, mitigating the risk of exposure and
+              maintaining privacy integrity.
             </p>
           </div>
-          <div class="position-absolute third-text-secure transition_03">
-            <p class="fw-normal font_sm text-white mb-0 text-start text-sm-center pt-2 pt-sm-0">
-              3. Encrypted
-              <span class="d-block ps-3 ps-sm-0">Inputs</span>
-            </p>
-            <p class="tooltip text-white font_sm fw-normal color_light_white mb-0">
-              Whitepaper
-            </p>
+          <div
+            class="col-md-6 col-lg-7 d-flex justify-content-center justify-content-md-end py-4 py-md-0"
+          >
+            <img
+              src="./assets/images/webp/how-it-works-image.webp"
+              alt="how it works"
+              class="how-it-work-image w-100"
+            />
           </div>
-          <div class="d-flex align-items-center gap-2 position-absolute fourth-text-secure transition_03">
-            <svg class="right-arrow-icon transfrom-rotate-icon d-sm-mobile-none d-mobile-block" width="14" height="22"
-              viewBox="0 0 14 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="M6.39896 20.914C6.7309 21.246 7.2691 21.246 7.60104 20.914L13.0104 15.5047C13.3424 15.1727 13.3424 14.6345 13.0104 14.3026C12.6785 13.9706 12.1403 13.9706 11.8083 14.3026L7 19.1109L2.19167 14.3026C1.85973 13.9706 1.32154 13.9706 0.989592 14.3026C0.657647 14.6345 0.657647 15.1727 0.989592 15.5047L6.39896 20.914ZM7.85 0.99978C7.85 0.530338 7.46944 0.14978 7 0.14978C6.53056 0.14978 6.15 0.530338 6.15 0.99978H7.85ZM7.85 20.313V0.99978H6.15V20.313H7.85Z"
-                fill="white" />
-            </svg>
-            <p class="fw-normal pt-1 font_sm text-white mb-0 text-center">
-              4. Send Encrypted <span class="text-break">Inputs</span>
-            </p>
-            <p class="tooltip text-white font_sm fw-normal color_light_white mb-0">
-              Whitepaper
-            </p>
-          </div>
-          <div class="fifth-text-secure transition_03 position-absolute">
-            <p class="fw-normal font_sm text-white mb-0 text-start text-sm-center pt-2 pt-sm-0">
-              <span class="ps-3 ps-sm-0">5. Process</span>
-              <span class="d-block ">Encrypted Inputs</span>
-            </p>
-            <p class="tooltip text-white font_sm fw-normal color_light_white mb-0">
-              Whitepaper
-            </p>
-          </div>
-          <div class="d-flex align-items-center gap-2 position-absolute six-text-secure transition_03">
-            <svg class="right-arrow-icon transfrom-rotate-icon-neagtive-deg-all order-1 d-sm-mobile-none d-mobile-block"
-              width="14" height="22" viewBox="0 0 14 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="M6.39896 20.914C6.7309 21.246 7.2691 21.246 7.60104 20.914L13.0104 15.5047C13.3424 15.1727 13.3424 14.6345 13.0104 14.3026C12.6785 13.9706 12.1403 13.9706 11.8083 14.3026L7 19.1109L2.19167 14.3026C1.85973 13.9706 1.32154 13.9706 0.989592 14.3026C0.657647 14.6345 0.657647 15.1727 0.989592 15.5047L6.39896 20.914ZM7.85 0.99978C7.85 0.530338 7.46944 0.14978 7 0.14978C6.53056 0.14978 6.15 0.530338 6.15 0.99978H7.85ZM7.85 20.313V0.99978H6.15V20.313H7.85Z"
-                fill="white" />
-            </svg>
-            <p class="fw-normal text-center order-0 pt-1 font_sm text-white mb-0">
-              6. Send Encrypted <span class="text-break">Output</span>
-            </p>
-            <p class="tooltip text-white font_sm fw-normal color_light_white mb-0">
-              Whitepaper
-            </p>
-          </div>
-          <div class="position-absolute seven-text-secure transition_03">
-            <p class="fw-semibold text-center font_sm text-white mb-0 ">
-              7. Decrypt <span class="text-break">Output</span>
-            </p>
-            <p class="tooltip text-white font_sm fw-normal color_light_white mb-0">
-              Whitepaper
-            </p>
-          </div>
-          <div class="d-flex align-items-center gap-2 position-absolute eight-text-secure transition_03">
-            <svg class="right-arrow-icon transfrom-rotate-icon d-sm-mobile-none d-mobile-block" width="14" height="22"
-              viewBox="0 0 14 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="M6.39896 20.914C6.7309 21.246 7.2691 21.246 7.60104 20.914L13.0104 15.5047C13.3424 15.1727 13.3424 14.6345 13.0104 14.3026C12.6785 13.9706 12.1403 13.9706 11.8083 14.3026L7 19.1109L2.19167 14.3026C1.85973 13.9706 1.32154 13.9706 0.989592 14.3026C0.657647 14.6345 0.657647 15.1727 0.989592 15.5047L6.39896 20.914ZM7.85 0.99978C7.85 0.530338 7.46944 0.14978 7 0.14978C6.53056 0.14978 6.15 0.530338 6.15 0.99978H7.85ZM7.85 20.313V0.99978H6.15V20.313H7.85Z"
-                fill="white" />
-            </svg>
-            <p class="fw-normal pt-1 text-center font_sm text-white mb-0">
-              8. Send Decrypted <span class="text-break">Output</span>
-            </p>
-            <p class="tooltip text-white font_sm fw-normal color_light_white mb-0">
-              Whitepaper
-            </p>
-          </div>
-          <button class="position-absolute" type="button" id="securedatabtn" onclick="startSimulation()">
-            Start the Simulation
-          </button>
         </div>
-      </div>
-    </div>
-  </section>
-  <!-- -------------------- SECURE DATA SECTION END -------------------- -->
-  <!-- -------------------- FAQ SECTION START -------------------- -->
-  <section id="faq" class="mb-lg-5 position-relative overflow-hidden">
-    <div class="top-0 start-0 w-100 h-100 position-absolute top-overlay transfrom-rotate"></div>
-    <div class="bottom-0 start-0 w-100 h-100 position-absolute bottom-overlay"></div>
-    <div class="container position-relative z-1 py-5 mb-lg-4">
-      <img src="./assets/images/webp/faq-question-image.webp" alt="faq-question-image"
-        class="faq-question-image d-none d-md-block position-absolute">
-      <h2 class="text-white font_4xl fw-bold text-center mb-3 mb-lg-4">
-        FAQ’s
-      </h2>
-      <div class="faq-accrodion mx-auto">
-        <div class="accordion gap-3 gap-md-4 d-flex flex-column pt-md-3" id="accordionExample">
-          <div class="accordion-item">
-            <button class="accordion-button border-0 bg-transparent p-0 text-white fw-semibold font_base" type="button"
-              data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-              1. Are there any companies or initiatives that exemplify this
-              vision?
-            </button>
-            <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
-              <p
-                class="mt-2 mb-0 py-0 pe-0 pe-lg-4 fw-normal color_light_white font_base accordion-body faq-text-start-line position-relative">
-                D.Dots is unique in its approach to data privacy, but we stand
-                alongside a community of innovators who understand that the
-                future of technology is ethical, secure, and user-focused
-              </p>
-            </div>
-          </div>
-          <div class="accordion-item">
-            <button class="accordion-button border-0 bg-transparent p-0 text-white collapsed fw-semibold font_base "
-              type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false"
-              aria-controls="collapseTwo">
-              2. What technologies and methodologies are commonly used to
-              achieve this vision?
-            </button>
-            <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-              <p
-                class="mt-2 mb-0 py-0 pe-0 pe-lg-4 fw-normal color_light_white font_base accordion-body faq-text-start-line position-relative">
-                D.Dots is unique in its approach to data privacy, but we stand
-                alongside a community of innovators who understand that the
-                future of technology is ethical, secure, and user-focused
-              </p>
-            </div>
-          </div>
-          <div class="accordion-item">
-            <button class="accordion-button border-0 bg-transparent p-0 text-white collapsed fw-semibold font_base"
-              type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false"
-              aria-controls="collapseThree">
-              3. What is the core concept behind data-driven decision-making
-              without compromising?
-            </button>
-            <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-              <p
-                class="mt-2 mb-0 py-0 pe-0 pe-lg-4 fw-normal color_light_white font_base accordion-body faq-text-start-line position-relative">
-                D.Dots is unique in its approach to data privacy, but we stand
-                alongside a community of innovators who understand that the
-                future of technology is ethical, secure, and user-focused
-              </p>
-            </div>
-          </div>
-          <div class="accordion-item">
-            <button class="accordion-button border-0 bg-transparent p-0 text-white collapsed fw-semibold font_base"
-              type="button" data-bs-toggle="collapse" data-bs-target="#collapseFourth" aria-expanded="false"
-              aria-controls="collapseFourth">
-              4. How can individuals protect their own data privacy in this
-              context?
-            </button>
-            <div id="collapseFourth" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-              <p
-                class="mt-2 mb-0 py-0 pe-0 pe-lg-4 fw-normal color_light_white font_base accordion-body faq-text-start-line position-relative">
-                D.Dots is unique in its approach to data privacy, but we stand
-                alongside a community of innovators who understand that the
-                future of technology is ethical, secure, and user-focused
-              </p>
-            </div>
-          </div>
-          <div class="accordion-item">
-            <button class="accordion-button border-0 bg-transparent p-0 text-white collapsed fw-semibold font_base"
-              type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false"
-              aria-controls="collapseFive">
-              5. How does "D.Dots" ensure data privacy?
-            </button>
-            <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-              <p
-                class="mt-2 mb-0 py-0 pe-0 pe-lg-4 fw-normal color_light_white font_base accordion-body faq-text-start-line position-relative">
-                D.Dots is unique in its approach to data privacy, but we stand
-                alongside a community of innovators who understand that the
-                future of technology is ethical, secure, and user-focused
-              </p>
-            </div>
-          </div>
-          <div class="accordion-item">
-            <button class="accordion-button border-0 bg-transparent p-0 text-white collapsed fw-semibold font_base"
-              type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false"
-              aria-controls="collapseSix">
-              6. How does this vision benefit businesses and organizations?
-            </button>
-            <div id="collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-              <p
-                class="mt-2 mb-0 py-0 pe-0 pe-lg-4 fw-normal color_light_white font_base accordion-body faq-text-start-line position-relative">
-                D.Dots is unique in its approach to data privacy, but we stand
-                alongside a community of innovators who understand that the
-                future of technology is ethical, secure, and user-focused
-              </p>
+        <!-- ---------------- TIME LINE BOX--------------------------- -->
+        <div class="time-line-works position-relative ps-4 ps-md-0 mt-md-4">
+          <div class="timeline-circle timeline-circle-top position-relative">
+            <div
+              class="timeline-circle timeline-circle-center position-relative"
+            >
+              <div
+                class="timeline-circle timeline-circle-bottom position-relative"
+              >
+                <div class="row flex-column flex-md-row pt-md-4">
+                  <div class="col-md-4">
+                    <div
+                      class="how-it-work-box transition_03 h-100 z-1 position-relative h-100 d-flex flex-column"
+                    >
+                      <p class="font_md fw-medium color_light_white mb-0">
+                        How It Works
+                      </p>
+                      <p
+                        class="pt-2 opacity_07 fw-normal font_xs color_light_white mb-0"
+                      >
+                        Discover the power of FHE through our secure ecosystem
+                        that processes data without compromising
+                        confidentiality.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="col-md-4 pt-4 pt-md-0">
+                    <div
+                      class="how-it-work-box transition_03 h-100 z-1 position-relative d-flex flex-column"
+                    >
+                      <p class="font_md fw-medium color_light_white mb-0">
+                        Workflow Explanation
+                      </p>
+                      <p
+                        class="pt-2 opacity_07 fw-normal font_xs color_light_white mb-0"
+                      >
+                        Delve into our privacy-first methodology where data
+                        remains encrypted at every step, fromcollection to
+                        computation.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="col-md-4 pt-4 pt-md-0">
+                    <div
+                      class="how-it-work-box transition_03 h-100 z-1 position-relative d-flex flex-column"
+                    >
+                      <p class="font_md fw-medium color_light_white mb-0">
+                        Streamlined Process
+                      </p>
+                      <p
+                        class="pt-2 opacity_07 fw-normal font_xs color_light_white mb-0"
+                      >
+                        Our process is designed for optimal security and
+                        efficiency, safeguarding data privacy inevery operation.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
-  <!-- -------------------- FAQ SECTION END -------------------- -->
-  <!-- -------------------- STAY AHEAD WITH D.DOTS START -------------------- -->
-  <section class="bg_dark_green py-5 position-relative stay_ahead_bg z-1">
-    <div class="container my-lg-5">
-      <h5 class="font_4xl fw-semibold text-capitalize color_white mb-3 text-center">
-        stay ahead with d.dots
-      </h5>
-      <p class="font_base color_white fw-normal opacity_07 lh_160 mb-4 pb-lg-3 mx-auto text-center">
-        Stay in touch with D.Dots and be the first to know about our
-        innovative solutions thatredefine privacy in the digital age.
-        Subscribe for updates and insights into how we'rechanging the world,
-        one encrypted byte at a time.
-      </p>
-      <div class="stay_email rounded-pill d-flex justify-content-between mx-auto p-1">
-        <input type="email" placeholder="Your Email Here..."
-          class="font_base fw-normal lh_160 color_white opacity_07 border-0 bg-transparent w-100 ps-4 pe-2" />
-        <button
-          class="font_base fw-semibold lh_160 color_black bg_white rounded-pill btn_submit common_btn transition_03">
-          Submit
-        </button>
+    </section>
+    <!-- -------------------- HOW IT WORKS SECTION END -------------------- -->
+    <!-- -------------------- VIDEO SECTION START -------------------- -->
+    <section id="our" class="py-5 bg_dark_green bg_video position-relative">
+      <div class="container py-lg-5 my-lg-5">
+        <div class="position-relative ipad_video_card rounded-4 z-1 mx-auto">
+          <video
+            class="w-100 h-100 ipad_video d-block rounded-4"
+            id="myVideo"
+            width="950"
+            height="534"
+            muted
+            controlsList="nodownload"
+            poster="./assets/images/webp/video_play.webp"
+          >
+            <source src="./assets/video/video_dummy.mp4" type="video/mp4" />
+          </video>
+          <img
+            onclick="playVid()"
+            id="playVideo"
+            class="position-absolute top-50 start-50 translate-middle cursor_pointer"
+            src="./assets/images/svg/icon_play.svg"
+            alt="play-icon"
+          />
+        </div>
       </div>
-    </div>
-  </section>
-  <!-- -------------------- STAY AHEAD WITH D.DOTS END -------------------- -->
-  <!-- -------------------- WHITE PAPER START -------------------- -->
-  <section id="about" class="pb-5 pt-4 py-md-5 bg_white_paper">
-    <div class="container pt-xl-5 my-xl-4">
-      <div class="row align-items-center justify-content-center flex-column-reverse flex-md-row">
-        <div class="col-md-6 text-center text-md-start pe-xxl-5">
-          <h5 class="font_4xl fw-bold color_white mb-3">White Paper</h5>
-          <p class="font_base fw-normal lh_160 color_white opacity_07 mb-lg-4 pb-lg-3 pe-lg-5">
-            Lorem ipsum dolor sit amet consectetur. Id mollis donec eget netus
-            vestibulum gravida. Malesuada consectetur vestibulum maecenas amet
-            ac fringilla.
+    </section>
+    <!-- -------------------- VIDEO SECTION END -------------------- -->
+    <!-- -------------------- AI INNOVATION SECTION START -------------------- -->
+    <section id="solution" class="bg_ai_innovation pb-5 pb-md-0 pt-4 pt-xl-5">
+      <div
+        class="container pt-lg-3 mt-lg-1 d-flex flex-md-column flex-column-reverse"
+      >
+        <div
+          class="text-center bg_card_ai_innovation mx-auto py-4 px-3 p-sm-4 p-md-5"
+        >
+          <h5 class="font_3xl color_white fw-semibold lh_160 mb-lg-3 mt-lg-3">
+            AI Innovation
+          </h5>
+          <p
+            class="font_base color_white opacity_07 fw-normal lh_160 px-md-5 mx-md-4 mb-0 mb-lg-3"
+          >
+            D.Dots stands at the crossroads of AI and privacy, creating
+            intelligent systems that learnglobally without infringing on
+            individual privacy, ensuring ethical standards in
+            technologicaladvancement.
           </p>
-          <button
-            class="btn_read_now font_base fw-semibold lh_160 color_black bg_white rounded-pill common_btn transition_03">
-            Read Now
-          </button>
         </div>
-        <div class="col-sm-9 col-md-6 p-5 overflow-hidden">
-          <div class="white_paper_circle position-relative">
-            <img src="./assets/images/webp/white_paper_img.webp" alt="D" class="w-100 white_paper_img" />
-            <img src="./assets/images/webp/wifi_icon.webp" alt="wifi" width="80px" height="80px"
-              class="position-absolute white_paper_icons wifi_icon" />
-            <img src="./assets/images/webp/white_paper_i_icon.webp" alt="i icon" width="80px" height="80px"
-              class="position-absolute white_paper_icons i_icon" />
-            <img src="./assets/images/webp/lock_icon.webp" alt="lock" width="80px" height="80px"
-              class="position-absolute white_paper_icons lock_icon" />
-            <img src="./assets/images/webp/one_icon.webp" alt="one" width="80px" height="80px"
-              class="position-absolute white_paper_icons one_icon" />
-            <img src="./assets/images/webp/v_icon.webp" alt="v icon" width="80px" height="80px"
-              class="position-absolute white_paper_icons v_icon" />
+        <div class="px-md-5 mx-lg-5 mt-4 mt-lg-5">
+          <img
+            src="./assets/images/webp/trust_privacy_ai.webp"
+            alt="Trust Privacy"
+            class="w-100 px-xl-3"
+          />
+        </div>
+      </div>
+    </section>
+    <!-- -------------------- AI INNOVATION SECTION END -------------------- -->
+    <!-- -------------------- SECURE DATA SECTION START -------------------- -->
+    <section class="py-5 py-lg-0 secure-data-bg-image position-relative">
+      <div
+        class="top-0 start-0 w-100 h-100 position-absolute top-overlay transfrom-rotate"
+      ></div>
+      <div
+        class="bottom-0 start-0 w-100 h-100 position-absolute bottom-overlay"
+      ></div>
+      <div class="container py-lg-5 my-xl-4 position-relative z-1">
+        <h2
+          class="fw-bold font_4xl color_light_white mb-5 mb-lg-0 text-center mb-xl-5 pb-4 pb-lg-5"
+        >
+          Secure Your Data
+        </h2>
+        <div class="d-flex justify-content-center">
+          <div class="position-relative pb-5 pb-lg-0">
+            <img
+              src="./assets/images/webp/secure-data-image.webp"
+              alt="secure data"
+              class="secure-data-image"
+            />
+            <div class="position-absolute first-text-secure transition_03">
+              <p class="fw-semibold font_sm text-white mb-0">1. Generate Key</p>
+              <p
+                class="tooltip text-white font_sm fw-normal color_light_white mb-0"
+              >
+                Whitepaper
+              </p>
+            </div>
+            <div
+              class="d-flex align-items-center gap-2 position-absolute second-text-secure transition_03"
+            >
+              <svg
+                class="right-arrow-icon transfrom-rotate-icon d-sm-mobile-none d-mobile-block"
+                width="14"
+                height="22"
+                viewBox="0 0 14 22"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M6.39896 20.914C6.7309 21.246 7.2691 21.246 7.60104 20.914L13.0104 15.5047C13.3424 15.1727 13.3424 14.6345 13.0104 14.3026C12.6785 13.9706 12.1403 13.9706 11.8083 14.3026L7 19.1109L2.19167 14.3026C1.85973 13.9706 1.32154 13.9706 0.989592 14.3026C0.657647 14.6345 0.657647 15.1727 0.989592 15.5047L6.39896 20.914ZM7.85 0.99978C7.85 0.530338 7.46944 0.14978 7 0.14978C6.53056 0.14978 6.15 0.530338 6.15 0.99978H7.85ZM7.85 20.313V0.99978H6.15V20.313H7.85Z"
+                  fill="white"
+                />
+              </svg>
+              <p class="fw-normal ms-2 pt-1 font_sm text-white mb-0">
+                2. Send Key
+              </p>
+              <p
+                class="tooltip text-white font_sm fw-normal color_light_white mb-0"
+              >
+                Whitepaper
+              </p>
+            </div>
+            <div class="position-absolute third-text-secure transition_03">
+              <p
+                class="fw-normal font_sm text-white mb-0 text-start text-sm-center pt-2 pt-sm-0"
+              >
+                3. Encrypted
+                <span class="d-block ps-3 ps-sm-0">Inputs</span>
+              </p>
+              <p
+                class="tooltip text-white font_sm fw-normal color_light_white mb-0"
+              >
+                Whitepaper
+              </p>
+            </div>
+            <div
+              class="d-flex align-items-center gap-2 position-absolute fourth-text-secure transition_03"
+            >
+              <svg
+                class="right-arrow-icon transfrom-rotate-icon d-sm-mobile-none d-mobile-block"
+                width="14"
+                height="22"
+                viewBox="0 0 14 22"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M6.39896 20.914C6.7309 21.246 7.2691 21.246 7.60104 20.914L13.0104 15.5047C13.3424 15.1727 13.3424 14.6345 13.0104 14.3026C12.6785 13.9706 12.1403 13.9706 11.8083 14.3026L7 19.1109L2.19167 14.3026C1.85973 13.9706 1.32154 13.9706 0.989592 14.3026C0.657647 14.6345 0.657647 15.1727 0.989592 15.5047L6.39896 20.914ZM7.85 0.99978C7.85 0.530338 7.46944 0.14978 7 0.14978C6.53056 0.14978 6.15 0.530338 6.15 0.99978H7.85ZM7.85 20.313V0.99978H6.15V20.313H7.85Z"
+                  fill="white"
+                />
+              </svg>
+              <p class="fw-normal pt-1 font_sm text-white mb-0 text-center">
+                4. Send Encrypted <span class="text-break">Inputs</span>
+              </p>
+              <p
+                class="tooltip text-white font_sm fw-normal color_light_white mb-0"
+              >
+                Whitepaper
+              </p>
+            </div>
+            <div class="fifth-text-secure transition_03 position-absolute">
+              <p
+                class="fw-normal font_sm text-white mb-0 text-start text-sm-center pt-2 pt-sm-0"
+              >
+                <span class="ps-3 ps-sm-0">5. Process</span>
+                <span class="d-block">Encrypted Inputs</span>
+              </p>
+              <p
+                class="tooltip text-white font_sm fw-normal color_light_white mb-0"
+              >
+                Whitepaper
+              </p>
+            </div>
+            <div
+              class="d-flex align-items-center gap-2 position-absolute six-text-secure transition_03"
+            >
+              <svg
+                class="right-arrow-icon transfrom-rotate-icon-neagtive-deg-all order-1 d-sm-mobile-none d-mobile-block"
+                width="14"
+                height="22"
+                viewBox="0 0 14 22"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M6.39896 20.914C6.7309 21.246 7.2691 21.246 7.60104 20.914L13.0104 15.5047C13.3424 15.1727 13.3424 14.6345 13.0104 14.3026C12.6785 13.9706 12.1403 13.9706 11.8083 14.3026L7 19.1109L2.19167 14.3026C1.85973 13.9706 1.32154 13.9706 0.989592 14.3026C0.657647 14.6345 0.657647 15.1727 0.989592 15.5047L6.39896 20.914ZM7.85 0.99978C7.85 0.530338 7.46944 0.14978 7 0.14978C6.53056 0.14978 6.15 0.530338 6.15 0.99978H7.85ZM7.85 20.313V0.99978H6.15V20.313H7.85Z"
+                  fill="white"
+                />
+              </svg>
+              <p
+                class="fw-normal text-center order-0 pt-1 font_sm text-white mb-0"
+              >
+                6. Send Encrypted <span class="text-break">Output</span>
+              </p>
+              <p
+                class="tooltip text-white font_sm fw-normal color_light_white mb-0"
+              >
+                Whitepaper
+              </p>
+            </div>
+            <div class="position-absolute seven-text-secure transition_03">
+              <p class="fw-semibold text-center font_sm text-white mb-0">
+                7. Decrypt <span class="text-break">Output</span>
+              </p>
+              <p
+                class="tooltip text-white font_sm fw-normal color_light_white mb-0"
+              >
+                Whitepaper
+              </p>
+            </div>
+            <div
+              class="d-flex align-items-center gap-2 position-absolute eight-text-secure transition_03"
+            >
+              <svg
+                class="right-arrow-icon transfrom-rotate-icon d-sm-mobile-none d-mobile-block"
+                width="14"
+                height="22"
+                viewBox="0 0 14 22"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M6.39896 20.914C6.7309 21.246 7.2691 21.246 7.60104 20.914L13.0104 15.5047C13.3424 15.1727 13.3424 14.6345 13.0104 14.3026C12.6785 13.9706 12.1403 13.9706 11.8083 14.3026L7 19.1109L2.19167 14.3026C1.85973 13.9706 1.32154 13.9706 0.989592 14.3026C0.657647 14.6345 0.657647 15.1727 0.989592 15.5047L6.39896 20.914ZM7.85 0.99978C7.85 0.530338 7.46944 0.14978 7 0.14978C6.53056 0.14978 6.15 0.530338 6.15 0.99978H7.85ZM7.85 20.313V0.99978H6.15V20.313H7.85Z"
+                  fill="white"
+                />
+              </svg>
+              <p class="fw-normal pt-1 text-center font_sm text-white mb-0">
+                8. Send Decrypted <span class="text-break">Output</span>
+              </p>
+              <p
+                class="tooltip text-white font_sm fw-normal color_light_white mb-0"
+              >
+                Whitepaper
+              </p>
+            </div>
+            <button
+              class="position-absolute"
+              type="button"
+              id="securedatabtn"
+              onclick="startSimulation()"
+            >
+              Start the Simulation
+            </button>
           </div>
         </div>
       </div>
-    </div>
-  </section>
-  <!-- -------------------- WHITE PAPER END -------------------- -->
-  <!-- -------------------- APPLICATION & BENEFITS START -------------------- -->
-    <section id="applications" class="bg_application position-relative z-1 py-5">
+    </section>
+    <!-- -------------------- SECURE DATA SECTION END -------------------- -->
+    <!-- -------------------- FAQ SECTION START -------------------- -->
+    <section id="faq" class="mb-lg-5 position-relative overflow-hidden">
+      <div
+        class="top-0 start-0 w-100 h-100 position-absolute top-overlay transfrom-rotate"
+      ></div>
+      <div
+        class="bottom-0 start-0 w-100 h-100 position-absolute bottom-overlay"
+      ></div>
+      <div class="container position-relative z-1 py-5 mb-lg-4">
+        <img
+          src="./assets/images/webp/faq-question-image.webp"
+          alt="faq-question-image"
+          class="faq-question-image d-none d-md-block position-absolute"
+        />
+        <h2 class="text-white font_4xl fw-bold text-center mb-3 mb-lg-4">
+          FAQ’s
+        </h2>
+        <div class="faq-accrodion mx-auto">
+          <div
+            class="accordion gap-3 gap-md-4 d-flex flex-column pt-md-3"
+            id="accordionExample"
+          >
+            <div class="accordion-item">
+              <button
+                class="accordion-button border-0 bg-transparent p-0 text-white fw-semibold font_base"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseOne"
+                aria-expanded="true"
+                aria-controls="collapseOne"
+              >
+                1. Are there any companies or initiatives that exemplify this
+                vision?
+              </button>
+              <div
+                id="collapseOne"
+                class="accordion-collapse collapse show"
+                data-bs-parent="#accordionExample"
+              >
+                <p
+                  class="mt-2 mb-0 py-0 pe-0 pe-lg-4 fw-normal color_light_white font_base accordion-body faq-text-start-line position-relative"
+                >
+                  D.Dots is unique in its approach to data privacy, but we stand
+                  alongside a community of innovators who understand that the
+                  future of technology is ethical, secure, and user-focused
+                </p>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <button
+                class="accordion-button border-0 bg-transparent p-0 text-white collapsed fw-semibold font_base"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseTwo"
+                aria-expanded="false"
+                aria-controls="collapseTwo"
+              >
+                2. What technologies and methodologies are commonly used to
+                achieve this vision?
+              </button>
+              <div
+                id="collapseTwo"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordionExample"
+              >
+                <p
+                  class="mt-2 mb-0 py-0 pe-0 pe-lg-4 fw-normal color_light_white font_base accordion-body faq-text-start-line position-relative"
+                >
+                  D.Dots is unique in its approach to data privacy, but we stand
+                  alongside a community of innovators who understand that the
+                  future of technology is ethical, secure, and user-focused
+                </p>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <button
+                class="accordion-button border-0 bg-transparent p-0 text-white collapsed fw-semibold font_base"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseThree"
+                aria-expanded="false"
+                aria-controls="collapseThree"
+              >
+                3. What is the core concept behind data-driven decision-making
+                without compromising?
+              </button>
+              <div
+                id="collapseThree"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordionExample"
+              >
+                <p
+                  class="mt-2 mb-0 py-0 pe-0 pe-lg-4 fw-normal color_light_white font_base accordion-body faq-text-start-line position-relative"
+                >
+                  D.Dots is unique in its approach to data privacy, but we stand
+                  alongside a community of innovators who understand that the
+                  future of technology is ethical, secure, and user-focused
+                </p>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <button
+                class="accordion-button border-0 bg-transparent p-0 text-white collapsed fw-semibold font_base"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseFourth"
+                aria-expanded="false"
+                aria-controls="collapseFourth"
+              >
+                4. How can individuals protect their own data privacy in this
+                context?
+              </button>
+              <div
+                id="collapseFourth"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordionExample"
+              >
+                <p
+                  class="mt-2 mb-0 py-0 pe-0 pe-lg-4 fw-normal color_light_white font_base accordion-body faq-text-start-line position-relative"
+                >
+                  D.Dots is unique in its approach to data privacy, but we stand
+                  alongside a community of innovators who understand that the
+                  future of technology is ethical, secure, and user-focused
+                </p>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <button
+                class="accordion-button border-0 bg-transparent p-0 text-white collapsed fw-semibold font_base"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseFive"
+                aria-expanded="false"
+                aria-controls="collapseFive"
+              >
+                5. How does "D.Dots" ensure data privacy?
+              </button>
+              <div
+                id="collapseFive"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordionExample"
+              >
+                <p
+                  class="mt-2 mb-0 py-0 pe-0 pe-lg-4 fw-normal color_light_white font_base accordion-body faq-text-start-line position-relative"
+                >
+                  D.Dots is unique in its approach to data privacy, but we stand
+                  alongside a community of innovators who understand that the
+                  future of technology is ethical, secure, and user-focused
+                </p>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <button
+                class="accordion-button border-0 bg-transparent p-0 text-white collapsed fw-semibold font_base"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseSix"
+                aria-expanded="false"
+                aria-controls="collapseSix"
+              >
+                6. How does this vision benefit businesses and organizations?
+              </button>
+              <div
+                id="collapseSix"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordionExample"
+              >
+                <p
+                  class="mt-2 mb-0 py-0 pe-0 pe-lg-4 fw-normal color_light_white font_base accordion-body faq-text-start-line position-relative"
+                >
+                  D.Dots is unique in its approach to data privacy, but we stand
+                  alongside a community of innovators who understand that the
+                  future of technology is ethical, secure, and user-focused
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- -------------------- FAQ SECTION END -------------------- -->
+    <!-- -------------------- STAY AHEAD WITH D.DOTS START -------------------- -->
+    <section class="bg_dark_green py-5 position-relative stay_ahead_bg z-1">
+      <div class="container my-lg-5">
+        <h5
+          class="font_4xl fw-semibold text-capitalize color_white mb-3 text-center"
+        >
+          stay ahead with d.dots
+        </h5>
+        <p
+          class="font_base color_white fw-normal opacity_07 lh_160 mb-4 pb-lg-3 mx-auto text-center"
+        >
+          Stay in touch with D.Dots and be the first to know about our
+          innovative solutions thatredefine privacy in the digital age.
+          Subscribe for updates and insights into how we'rechanging the world,
+          one encrypted byte at a time.
+        </p>
+        <div
+          class="stay_email rounded-pill d-flex justify-content-between mx-auto p-1"
+        >
+          <input
+            type="email"
+            placeholder="Your Email Here..."
+            class="font_base fw-normal lh_160 color_white opacity_07 border-0 bg-transparent w-100 ps-4 pe-2"
+          />
+          <button
+            class="font_base fw-semibold lh_160 color_black bg_white rounded-pill btn_submit common_btn transition_03"
+          >
+            Submit
+          </button>
+        </div>
+      </div>
+    </section>
+    <!-- -------------------- STAY AHEAD WITH D.DOTS END -------------------- -->
+    <!-- -------------------- WHITE PAPER START -------------------- -->
+    <section id="about" class="pb-5 pt-4 py-md-5 bg_white_paper">
+      <div class="container pt-xl-5 my-xl-4">
+        <div
+          class="row align-items-center justify-content-center flex-column-reverse flex-md-row"
+        >
+          <div class="col-md-6 text-center text-md-start pe-xxl-5">
+            <h5 class="font_4xl fw-bold color_white mb-3">White Paper</h5>
+            <p
+              class="font_base fw-normal lh_160 color_white opacity_07 mb-lg-4 pb-lg-3 pe-lg-5"
+            >
+              Lorem ipsum dolor sit amet consectetur. Id mollis donec eget netus
+              vestibulum gravida. Malesuada consectetur vestibulum maecenas amet
+              ac fringilla.
+            </p>
+            <button
+              class="btn_read_now font_base fw-semibold lh_160 color_black bg_white rounded-pill common_btn transition_03"
+            >
+              Read Now
+            </button>
+          </div>
+          <div class="col-sm-9 col-md-6 p-5 overflow-hidden">
+            <div class="white_paper_circle position-relative">
+              <img
+                src="./assets/images/webp/white_paper_img.webp"
+                alt="D"
+                class="w-100 white_paper_img"
+              />
+              <img
+                src="./assets/images/webp/wifi_icon.webp"
+                alt="wifi"
+                width="80px"
+                height="80px"
+                class="position-absolute white_paper_icons wifi_icon"
+              />
+              <img
+                src="./assets/images/webp/white_paper_i_icon.webp"
+                alt="i icon"
+                width="80px"
+                height="80px"
+                class="position-absolute white_paper_icons i_icon"
+              />
+              <img
+                src="./assets/images/webp/lock_icon.webp"
+                alt="lock"
+                width="80px"
+                height="80px"
+                class="position-absolute white_paper_icons lock_icon"
+              />
+              <img
+                src="./assets/images/webp/one_icon.webp"
+                alt="one"
+                width="80px"
+                height="80px"
+                class="position-absolute white_paper_icons one_icon"
+              />
+              <img
+                src="./assets/images/webp/v_icon.webp"
+                alt="v icon"
+                width="80px"
+                height="80px"
+                class="position-absolute white_paper_icons v_icon"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- -------------------- WHITE PAPER END -------------------- -->
+    <!-- -------------------- APPLICATION & BENEFITS START -------------------- -->
+    <section
+      id="applications"
+      class="bg_application position-relative z-1 py-5"
+    >
       <div class="container text-center py-lg-5 my-xl-4">
         <h5 class="font_4xl fw-bold color_white mb-0 mb-lg-5 pb-3">
           Application & Benefits
@@ -628,7 +1008,9 @@
             <h6 class="font_xl fw-medium color_white pb-sm-1">
               Financial Sector
             </h6>
-            <p class="font_base fw-normal lh_160 px-lg-3 color_white opacity_07 mb-0">
+            <p
+              class="font_base fw-normal lh_160 px-lg-3 color_white opacity_07 mb-0"
+            >
               Lorem ipsum dolor sit amet consectetur. Id mollis donec eget netus
               vestibulum gravida. Malesuada consectetur vestibulum maecenas amet
               ac fringilla.
@@ -638,7 +1020,9 @@
             <h6 class="font_xl fw-medium color_white pb-sm-1">
               Financial Sector
             </h6>
-            <p class="font_base fw-normal lh_160 px-lg-3 color_white opacity_07 mb-0">
+            <p
+              class="font_base fw-normal lh_160 px-lg-3 color_white opacity_07 mb-0"
+            >
               Lorem ipsum dolor sit amet consectetur. Id mollis donec eget netus
               vestibulum gravida. Malesuada consectetur vestibulum maecenas amet
               ac fringilla.
@@ -647,111 +1031,154 @@
         </div>
       </div>
     </section>
-  <!-- -------------------- APPLICATION & BENEFITS END -------------------- -->
-  <!-- -------------------- FINGERPRINT-IMAGE-SECTION START -------------------- -->
-  <section class="bg-white pt-lg-2">
-    <div class="pt-5 mt-lg-4 footer_fingrprint_img mx-auto">
-      <img class="w-100" src="./assets/images/webp/footer_fingrprint_img.webp" alt="fingerprint" />
-    </div>
-  </section>
-  <!-- -------------------- FINGERPRINT-IMAGE-SECTION END -------------------- -->
-  <!-- -------------------- FOOTER START -------------------- -->
-  <section id="contact" class="footer_bg_colour pt-lg-5">
-    <div class="container">
-      <div class="row py-4 py-md-5 py-lg-4 justify-content-between">
-        <div class="col-xl-4 col-lg-4 col-md-5 col-sm-8">
-          <div class="footer_logo">
-            <a href="#">
-              <img class="w-100" src="./assets/images/webp/page_logo.webp" alt="footer_logo" />
+    <!-- -------------------- APPLICATION & BENEFITS END -------------------- -->
+    <!-- -------------------- FINGERPRINT-IMAGE-SECTION START -------------------- -->
+    <section class="bg-white pt-lg-2">
+      <div class="pt-5 mt-lg-4 footer_fingrprint_img mx-auto">
+        <img
+          class="w-100"
+          src="./assets/images/webp/footer_fingrprint_img.webp"
+          alt="fingerprint"
+        />
+      </div>
+    </section>
+    <!-- -------------------- FINGERPRINT-IMAGE-SECTION END -------------------- -->
+    <!-- -------------------- FOOTER START -------------------- -->
+    <section id="contact" class="footer_bg_colour pt-lg-5">
+      <div class="container">
+        <div class="row py-4 py-md-5 py-lg-4 justify-content-between">
+          <div class="col-xl-4 col-lg-4 col-md-5 col-sm-8">
+            <div class="footer_logo">
+              <a href="#">
+                <img
+                  class="w-100"
+                  src="./assets/images/webp/page_logo.webp"
+                  alt="footer_logo"
+                />
+              </a>
+            </div>
+            <p
+              class="font_base fw-normal text-white opacity_07 pe-sm-2 mt-3 line_height mb-0"
+            >
+              D.Dots®: Pioneering Privacy in a Connected World - Where Security
+              Meets Freedom.
+            </p>
+          </div>
+          <div class="col-xl-4 col-lg-5 col-md-6 mt-3 mt-md-0">
+            <div class="d-flex justify-content-between">
+              <ul class="m-0 p-0">
+                <li class="font_base fw-normal text-white line_height">
+                  Links
+                </li>
+                <li class="mt-2 mt-sm-3">
+                  <a
+                    href="#home"
+                    class="font_sm fw-normal text-white opacity_07 footer_link_opacity footer_text_underline position-relative"
+                    >Home</a
+                  >
+                </li>
+                <li class="mt-2 pt-sm-1">
+                  <a
+                    href="#about"
+                    class="font_sm fw-normal text-white opacity_07 footer_link_opacity footer_text_underline position-relative"
+                    >About Us</a
+                  >
+                </li>
+                <li class="mt-2 pt-sm-1">
+                  <a
+                    href="#"
+                    class="font_sm fw-normal text-white opacity_07 footer_link_opacity footer_text_underline position-relative"
+                    >Services</a
+                  >
+                </li>
+                <li class="mt-2 pt-sm-1">
+                  <a
+                    href="#"
+                    class="font_sm fw-normal text-white opacity_07 footer_link_opacity footer_text_underline position-relative"
+                    >Blog</a
+                  >
+                </li>
+              </ul>
+              <ul class="p-0 m-0">
+                <li class="font_base fw-normal text-white line_height">
+                  Contact Us
+                </li>
+
+                <li class="mt-2 pt-sm-1">
+                  <a href="mailto:support@ddotslab.com">
+                    <img
+                      src="./assets/images/svg/footer_msg_box.svg"
+                      alt="msg"
+                    />
+                    <span class="ps-2 ms-1 font_sm fw-normal text-white"
+                      >support@ddotslab.com</span
+                    >
+                  </a>
+                </li>
+                <li class="mt-2 py-1">
+                  <a
+                    target="_blank"
+                    href="https://www.google.com/maps/place/Li+Fu,+Lac/@33.6540783,-117.8209388,21z/data=!4m14!1m7!3m6!1s0x80dcdde66a5a7519:0x1b32151632e90b29!2s210+Rockview,+Irvine,+CA+92612,+USA!3b1!8m2!3d33.6541752!4d-117.8207832!3m5!1s0x80dcdde5e22fed2f:0x361582060e25a5ba!8m2!3d33.6541752!4d-117.8207832!16s%2Fg%2F1td33br4?entry=ttu"
+                  >
+                    <img
+                      src="./assets/images/svg/loaction_icon.svg"
+                      alt="location"
+                    />
+                    <span class="ps-2 ms-1 font_sm fw-normal text-white"
+                      >210 Rockview, Irvine, CA 92612</span
+                    >
+                  </a>
+                </li>
+                <button
+                  type="button"
+                  class="fw-normal font_base text-white footer_button border-0 mt-3 mt-md-4 transition_03"
+                >
+                  Donate
+                </button>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer_underline mt-lg-3"></div>
+      <div class="container py-1">
+        <div class="d-md-flex justify-content-between py-2">
+          <p class="fw-normal font_base text-white opacity_07 mb-0">
+            Copyright © 2023 D.Dots, All Right Reserved
+          </p>
+          <div class="mt-2 mt-md-0 pb-5 pb-xl-0">
+            <a href="#" class="fw-normal font_base text-white opacity_07">
+              Privacy Policy,
+            </a>
+            <a href="#" class="fw-normal font_base text-white opacity_07 ms-1">
+              Terms & Conditions
             </a>
           </div>
-          <p class="font_base fw-normal text-white opacity_07 pe-sm-2 mt-3 line_height mb-0">
-            D.Dots®: Pioneering Privacy in a Connected World - Where Security
-            Meets Freedom.
-          </p>
-        </div>
-        <div class="col-xl-4 col-lg-5 col-md-6 mt-3 mt-md-0">
-          <div class="d-flex justify-content-between">
-            <ul class="m-0 p-0">
-              <li class="font_base fw-normal text-white line_height">
-                Links
-              </li>
-              <li class="mt-2 mt-sm-3">
-                <a href="#home"
-                  class="font_sm fw-normal text-white opacity_07 footer_link_opacity footer_text_underline position-relative">Home</a>
-              </li>
-              <li class="mt-2 pt-sm-1">
-                <a href="#about"
-                  class="font_sm fw-normal text-white opacity_07 footer_link_opacity footer_text_underline position-relative">About
-                  Us</a>
-              </li>
-              <li class="mt-2 pt-sm-1">
-                <a href="#"
-                  class="font_sm fw-normal text-white opacity_07 footer_link_opacity footer_text_underline position-relative">Services</a>
-              </li>
-              <li class="mt-2 pt-sm-1">
-                <a href="#"
-                  class="font_sm fw-normal text-white opacity_07 footer_link_opacity footer_text_underline position-relative">Blog</a>
-              </li>
-            </ul>
-            <ul class="p-0 m-0">
-              <li class="font_base fw-normal text-white line_height">
-                Contact Us
-              </li>
-
-              <li class="mt-2 pt-sm-1">
-                <a href="mailto:support@ddotslab.com">
-                  <img src="./assets/images/svg/footer_msg_box.svg" alt="msg" />
-                  <span class="ps-2 ms-1 font_sm fw-normal text-white">support@ddotslab.com</span>
-                </a>
-              </li>
-              <li class="mt-2 py-1">
-                <a target="_blank"
-                  href="https://www.google.com/maps/place/Li+Fu,+Lac/@33.6540783,-117.8209388,21z/data=!4m14!1m7!3m6!1s0x80dcdde66a5a7519:0x1b32151632e90b29!2s210+Rockview,+Irvine,+CA+92612,+USA!3b1!8m2!3d33.6541752!4d-117.8207832!3m5!1s0x80dcdde5e22fed2f:0x361582060e25a5ba!8m2!3d33.6541752!4d-117.8207832!16s%2Fg%2F1td33br4?entry=ttu">
-                  <img src="./assets/images/svg/loaction_icon.svg" alt="location" />
-                  <span class="ps-2 ms-1 font_sm fw-normal text-white">210 Rockview, Irvine, CA 92612</span>
-                </a>
-              </li>
-              <button type="button"
-                class="fw-normal font_base text-white footer_button border-0 mt-3 mt-md-4 transition_03">
-                Donate
-              </button>
-            </ul>
-          </div>
         </div>
       </div>
-    </div>
-    <div class="footer_underline mt-lg-3"></div>
-    <div class="container py-1">
-      <div class="d-md-flex justify-content-between py-2">
-        <p class="fw-normal font_base text-white opacity_07 mb-0">
-          Copyright © 2023 D.Dots, All Right Reserved
-        </p>
-        <div class="mt-2 mt-md-0 pb-5 pb-xl-0">
-          <a href="#" class="fw-normal font_base text-white opacity_07">
-            Privacy Policy,
-          </a>
-          <a href="#" class="fw-normal font_base text-white opacity_07 ms-1">
-            Terms & Conditions
-          </a>
-        </div>
+    </section>
+    <!-- -------------------- FOOTER START END -------------------- -->
+    <!-- ******************** Back to Top ******************** -->
+    <div id="back-to-top" class="hidden z-2 position-relative">
+      <div
+        class="d-flex justify-content-center align-items-center back-to-top animat_topbtn"
+      >
+        <img
+          height="30px"
+          width="30px"
+          src="./assets/images/webp/back_to_top_icon.webp"
+          alt="back-to-top"
+        />
       </div>
     </div>
-  </section>
-  <!-- -------------------- FOOTER START END -------------------- -->
-  <!-- ******************** Back to Top ******************** -->
-  <div id="back-to-top" class="hidden z-2 position-relative">
-    <div class="d-flex justify-content-center align-items-center back-to-top animat_topbtn">
-      <img height="30px" width="30px" src="./assets/images/webp/back_to_top_icon.webp" alt="back-to-top" />
-    </div>
-  </div>
 
-  <!-- -----------BOOTSTRAP JS--------------- -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-    crossorigin="anonymous"></script>
-  <!-- -----------JS FILE LINK--------------- -->
-  <script src="./assets/js/app.js"></script>
-</body>
-
+    <!-- -----------BOOTSTRAP JS--------------- -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <!-- -----------JS FILE LINK--------------- -->
+    <script src="./assets/js/app.js"></script>
+  </body>
 </html>
