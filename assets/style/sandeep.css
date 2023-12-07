@@ -193,8 +193,7 @@
     transform: rotate(-90deg);
 }
 
-/* 
-.fifth-text-secure {
+/* .fifth-text-secure {
     bottom: 3px;
     left: 0px;
 } */
@@ -383,6 +382,7 @@
         display: inline;
     }
 
+    /* -------- ABOUT DATA CSS ------------ */
     .about-us-image {
         max-width: 461px !important;
     }
@@ -490,6 +490,7 @@
 }
 
 @media (min-width:768px) {
+    /* ---------- HOW IT WORK CSS --------------  */
     .how-it-work-image {
         max-width: 530px !important;
     }
