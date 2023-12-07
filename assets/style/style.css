@@ -49,7 +49,7 @@
 
 /* ============== SCROLL BAR ============== */
 ::-webkit-scrollbar {
-  display: none ;
+  display: none;
 }
 
 
@@ -145,7 +145,7 @@
 }
 
 .tooltip_img {
-  background-image: url(../images/svg/tooltip_bg_img.svg) no-repeat;
+  background-image: url(../images/svg/tooltip_bg_img.svg);
   background-size: 100% 100%;
   opacity: 0;
   rotate: 180deg;
@@ -352,7 +352,7 @@
 }
 
 .bg_ai_innovation {
-  background-image: url("../images/webp/aI_innovation_bg.webp") no-repeat;
+  background: url("../images/webp/aI_innovation_bg.webp") no-repeat;
   background-position: center;
   background-size: cover;
 }
@@ -557,7 +557,7 @@
 .accordion-button::after {
   height: 24px !important;
   width: 24px !important;
-  background-image: url("../images/svg/arrow-down.svg") no-repeat !important;
+  background-image: url("../images/svg/arrow-down.svg") !important;
   background-size: var(--bs-accordion-btn-icon-width);
   transition: var(--bs-accordion-btn-icon-transition);
 }
@@ -621,7 +621,7 @@
 
 /*  ============== WHITE PAPER ==============  */
 .bg_white_paper {
-  background-image: url("../images/webp/white_paper_bg.webp") no-repeat;
+  background: url("../images/webp/white_paper_bg.webp") no-repeat;
   background-size: cover;
   background-position: center;
 }
@@ -688,7 +688,7 @@
 
 /* ============== Application & Benefits ============== */
 .bg_application {
-  background-image: url("../images/webp/application_benefits.webp") no-repeat;
+  background: url("../images/webp/application_benefits.webp") no-repeat;
   background-position: center;
   background-size: cover;
 }
