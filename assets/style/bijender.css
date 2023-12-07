@@ -92,12 +92,22 @@
 }
 
 .sidebar_icons {
-    width: 36px;
-    height: 36px;
+    width: 30px;
+    height: 30px;
     background-color: rgba(217, 217, 217, 0.10);
     border-radius: 50%;
     border: 1px solid rgba(255, 255, 255, 0.24);
     backdrop-filter: blur(5px);
+}
+
+.sidebar_icons svg {
+    width: 14px;
+    height: 12px;
+}
+
+.sidebar_icons2 svg {
+    width: 14px;
+    height: 12px;
 }
 
 .sidebar_icons:hover {
@@ -107,6 +117,25 @@
 
 .sidebar_icons:hover svg {
     transform: scale(1.5);
+}
+
+.sidebar_icons2 {
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.sidebar_icons2:hover .tooltip_img {
+    opacity: 1;
+}
+
+.tooltip_img {
+    background-image: url(../images/svg/tooltip_bg_img.svg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    opacity: 0;
+    rotate: 180deg;
 }
 
 /* COMMON CLASS */
@@ -302,6 +331,14 @@
 }
 
 @media (max-width:1199.98px) {
+    .whitepaper_icons {
+        left: 50px;
+        padding: 16px 16px 16px 8px;
+    }
+
+    .whitepaper_icon_text {
+        rotate: 180deg;
+    }
 
     .hero_section_border {
         min-height: 500px;
@@ -411,8 +448,38 @@
 }
 
 @media (min-width:1200px) {
+    .sidebar_icons {
+        width: 36px;
+        height: 36px;
+    }
+
+    .sidebar_icons2 {
+        width: 36px;
+        height: 36px;
+    }
+
+    .sidebar_icons svg {
+        width: 20px;
+        height: 18px;
+    }
+
+    .sidebar_icons2 svg {
+        width: 20px;
+        height: 18px;
+    }
+
     .min_vh_100 {
         min-height: 100vh !important;
+    }
+
+    .whitepaper_icons {
+        top: 80px;
+        padding: 16px 16px 16px 8px;
+        rotate: 270deg;
+    }
+
+    .whitepaper_icon_text {
+        rotate: 180deg;
     }
 
     .footer_logo {
@@ -490,5 +557,15 @@
 
     .sidebaar {
         width: 100px;
+    }
+
+    .whitepaper_icons {
+        right: 40px;
+        rotate: 0deg;
+        top: -5px;
+    }
+
+    .whitepaper_icon_text {
+        rotate: 0deg;
     }
 }
