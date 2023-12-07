@@ -294,8 +294,9 @@
     border-style: solid;
     border-color: transparent white transparent transparent;
 }
+
 .fourth-text-secure:hover .tooltip {
-    content: "";
+    content: " ";
     position: absolute;
     top: 50%;
     left: -15px;
