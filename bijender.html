@@ -16,30 +16,22 @@
   </head>
 
   <body>
-    <!-- back to top -->
-    <button class="bottom-50 z3" onclick="topFunction()" id="myBtn" title="Go to top">
-      <!-- <img
-        class="animat_topbtn"
-        width="50px"
-        src="./assets/img/png/back_top.png"
-        alt=""
-      /> -->
-      top
-    </button>
     <!-- HERO SECTION -->
     <section>
       <!-- LEFT SIDEBAAR -->
       <div
-        class="p-2 px-xl-0 py-sm-3 py-xl-4 sidebaar overflow-hidden position-fixed asidebar_background_color min_vh_screen nav_bg z-3"
+        class="p-2 px-xl-0 py-sm-3 py-xl-5 sidebaar overflow-hidden position-fixed asidebar_background_color min_vh_screen nav_bg z-3"
       >
         <nav
           class="d-xl-flex flex-xl-column align-items-xl-center mx-1 mx-xl-0"
         >
-          <div class="d-flex align-items-center justify-content-between">
-            <a href="#" class="z-3 d-flex justify-content-end"
+          <div
+            class="d-flex align-items-center justify-content-between justify-content-xl-end w-100"
+          >
+            <a href="#" class="z-3"
               ><img
                 class="page-logo"
-                src="./assets/images/webp/footer_logo.webp"
+                src="./assets/images/webp/page_logo.webp"
                 alt="main-logo-image"
             /></a>
             <button class="hamburger d-xl-none index_5 cross_icon">
@@ -54,72 +46,63 @@
             <li class="mt-4">
               <a
                 id="nav-links"
-                href="#"
-                class="verticle_horizontal_sidebar fw-normal text-white opacity_06 font_lg mt-xl-2 nav-links"
+                href="#home"
+                class="verticle_horizontal_sidebar fw-normal text-white opacity_06 font_lg mt-xl-2 nav-links position-relative"
                 >Home</a
               >
             </li>
             <li class="mt-4 pt-2">
               <a
-                href="#"
+                href="#about"
                 class="verticle_horizontal_sidebar fw-normal text-white opacity_06 font_lg nav-links"
                 >Update</a
               >
             </li>
             <li class="mt-4 pt-2">
               <a
-                href="#"
+                href="#our"
                 class="verticle_horizontal_sidebar fw-normal text-white opacity_06 font_lg nav-links"
                 >Our Why</a
               >
             </li>
             <li class="mt-4 pt-2">
               <a
-                href="#"
+                href="#solution"
                 class="verticle_horizontal_sidebar fw-normal text-white opacity_06 font_lg nav-links"
                 >Solutions</a
               >
             </li>
             <li class="mt-4 pt-2">
               <a
-                href="#"
+                href="#works"
                 class="verticle_horizontal_sidebar fw-normal text-white opacity_06 font_lg nav-links"
                 >How It Works</a
               >
             </li>
             <li class="mt-4 pt-2">
               <a
-                href="#"
+                href="#applications"
                 class="verticle_horizontal_sidebar fw-normal text-white opacity_06 font_lg nav-links"
                 >Applications</a
               >
             </li>
             <li class="mt-4 pt-2">
               <a
-                href="#"
+                href="#faq"
                 class="verticle_horizontal_sidebar fw-normal text-white opacity_06 font_lg nav-links"
                 >FAQ</a
               >
             </li>
             <li class="mt-4 pt-2">
               <a
-                href="#"
+                href="#contact"
                 class="verticle_horizontal_sidebar fw-normal text-white opacity_06 font_lg nav-links"
                 >Contact</a
               >
             </li>
-            <div class="py-4 mt-2 d-xl-none">
-              <img
-                class="cursor_pointer navbar_arrow_rotate"
-                width="12.5"
-                height="6.25"
-                src="./assets/images/svg/down_arrow.svg"
-                alt="down_arrow"
-              />
-            </div>
           </ul>
 
-          <div class="py-4 mt-2 ps-2 d-none d-xl-flex">
+          <div class="py-4 mt-2 d-none d-xl-flex">
             <img
               class="cursor_pointer navbar_arrow_rotate"
               width="12.5"
@@ -131,8 +114,11 @@
         </nav>
       </div>
       <!-- MAIN SECTION -->
-      <div class="main min-vh-100 hero_section d-flex justify-content-center">
-        <div class="container mt-5 mt-xl-0 pt-5 pt-xl-0">
+      <div
+        id="home"
+        class="main min_vh_100 py-5 d-flex justify-content-center align-items-center"
+      >
+        <div class="container mt-md-5 mt-xl-0 pt-5 pt-xl-0">
           <div
             class="hero_section_border overflow-hidden d-flex align-items-center justify-content-center position-relative"
           >
@@ -150,20 +136,21 @@
           </div>
         </div>
       </div>
-      <!-- RIGHT SIDEBAAR -->
+      <!-- RIGHT SIDEBAAR ICONS-->
       <div
         class="sidebaar position-absolute overflow-hidden h-100 min_vh_screen z-2"
       >
         <div
-          class="py-2 py-xl-4 position-fixed right_sidebar d-flex justify-content-center align-items-center asidebar_background_color d-xl-block"
+          class="py-2 py-xl-5 position-fixed right_sidebar d-flex justify-content-center align-items-center asidebar_background_color d-xl-block"
         >
           <div class="d-flex flex-xl-column gap-4 align-items-center">
-            <a href="#">
+            <!-- TWITTER ICON -->
+            <a target="_blank" href="https://twitter.com/">
               <div
                 class="sidebar_icons d-flex justify-content-center align-items-center transition_03"
               >
                 <svg
-                  class="transition_03"
+                  class="transition_03 sidebar_icons_screen"
                   width="20"
                   height="18"
                   viewBox="0 0 20 18"
@@ -178,14 +165,13 @@
               </div>
             </a>
 
-            <!-- DISCORD -->
-
-            <a href="#">
+            <!-- DISCORD ICON-->
+            <a target="_blank" href="https://discord.com/">
               <div
                 class="sidebar_icons d-flex justify-content-center align-items-center transition_03"
               >
                 <svg
-                  class="transition_03"
+                  class="transition_03 sidebar_icons_screen"
                   width="20"
                   height="18"
                   viewBox="0 0 20 18"
@@ -201,104 +187,101 @@
                 </svg>
               </div>
             </a>
-
-            <a href="#">
-              <div
-                class="sidebar_icons d-flex justify-content-center align-items-center transition_03"
-              >
-                <svg
-                  class="transition_03"
-                  width="20"
-                  height="18"
-                  viewBox="0 0 20 18"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M13.2658 3.13672C13.2658 5.65899 13.2701 5.73203 13.4721 5.83945C13.5322 5.87383 14.3314 5.88672 15.99 5.88672H17.9221C18.1982 5.88672 18.4221 6.11058 18.4221 6.38672V12.4609V18.5352C18.4221 18.8113 18.1982 19.0352 17.9221 19.0352H11.0959H4.26973C3.99358 19.0352 3.76973 18.8113 3.76973 18.5352V9.9043V1.27344C3.76973 0.997295 3.99358 0.773438 4.26973 0.773438H8.51777H12.7658C13.042 0.773438 13.2658 0.997295 13.2658 1.27344V3.13672Z"
-                    fill="black"
-                  />
-                  <path
-                    d="M3.00488 10.9184L3.01754 19.4439C3.01769 19.5445 3.06171 19.64 3.13809 19.7055C3.21572 19.772 3.3146 19.8086 3.41686 19.8086H9.74668H15.7307C16.0068 19.8086 16.2307 20.0325 16.2307 20.3086V20.5176V20.7266C16.2307 21.0027 16.0068 21.2266 15.7307 21.2266H8.90449H2.07832C1.80218 21.2266 1.57832 21.0027 1.57832 20.7266V11.7305V2.73438C1.57832 2.45823 1.80218 2.23438 2.07832 2.23438H2.2873H2.49678C2.77273 2.23438 2.99651 2.45793 2.99678 2.73388L3.00488 10.9184Z"
-                    fill="black"
-                  />
-                  <path
-                    d="M15.9514 3.22266L16.9884 4.25973C17.3034 4.57471 17.0803 5.11328 16.6349 5.11328H15.9385H14.5393C14.2631 5.11328 14.0393 4.88942 14.0393 4.61328V3.22266C14.0393 2.18281 14.0436 1.33203 14.0521 1.33203C14.0564 1.33203 14.9115 2.18281 15.9514 3.22266Z"
-                    fill="black"
-                  />
-                  <path
-                    d="M5.48828 3.29582C5.45391 3.30871 5.38086 3.36028 5.3293 3.40754C5.23047 3.49348 5.23047 3.50207 5.23047 4.76965V6.04582L5.34219 6.14895C5.45391 6.25207 5.45391 6.25207 6.58398 6.26496C7.32305 6.27356 7.77852 6.26067 7.89453 6.23059C8.18242 6.15325 8.19531 6.0845 8.19531 4.74817C8.19531 3.48059 8.18242 3.39895 7.9332 3.31301C7.79141 3.26575 5.61719 3.24856 5.48828 3.29582ZM7.42188 4.76965V5.50012H6.71289H6.00391V4.76965V4.03918H6.71289H7.42188V4.76965Z"
-                    fill="white"
-                  />
-                  <path
-                    d="M5.33821 7.06826C5.18782 7.21436 5.19211 7.46787 5.3425 7.60967C5.44133 7.6999 5.49719 7.71279 5.86672 7.72998C6.40383 7.74717 6.59289 7.69131 6.67453 7.49365C6.74758 7.32178 6.7218 7.19717 6.59289 7.05537C6.51125 6.96514 6.46828 6.96084 5.97414 6.96084C5.46711 6.96084 5.43703 6.96514 5.33821 7.06826Z"
-                    fill="white"
-                  />
-                  <path
-                    d="M7.52925 7.06824C7.38746 7.20574 7.38746 7.42918 7.52496 7.59246L7.62808 7.71277L12.0925 7.72566C15.2765 7.73425 16.6 7.72566 16.716 7.69129C16.9953 7.60964 17.0683 7.28738 16.8621 7.05535L16.7761 6.96082H12.2043H7.63238L7.52925 7.06824Z"
-                    fill="white"
-                  />
-                  <path
-                    d="M5.33789 9.25977C5.26055 9.33281 5.23047 9.41016 5.23047 9.52617C5.23477 9.84414 5.38086 9.92578 5.96094 9.92578C6.45508 9.92578 6.61406 9.86992 6.68281 9.67656C6.74297 9.50469 6.7 9.33711 6.57109 9.23828C6.48086 9.16523 6.39922 9.15234 5.95234 9.15234C5.4668 9.15234 5.43672 9.15664 5.33789 9.25977Z"
-                    fill="white"
-                  />
-                  <path
-                    d="M7.53398 9.26401C7.3793 9.4187 7.3793 9.65502 7.53398 9.80112L7.6457 9.90424L12.1402 9.91713C15.5391 9.92573 16.6691 9.91284 16.7637 9.87416C17.0043 9.77534 17.0516 9.40151 16.841 9.23823C16.7379 9.15229 16.652 9.15229 12.1918 9.15229H7.65L7.53398 9.26401Z"
-                    fill="white"
-                  />
-                  <path
-                    d="M5.42423 11.3953C5.19649 11.5199 5.15352 11.8336 5.34258 12.0098C5.45001 12.1129 5.48868 12.1172 5.96133 12.1172C6.52423 12.1172 6.65743 12.0656 6.70469 11.8293C6.73477 11.6617 6.63165 11.4383 6.49844 11.3867C6.34805 11.3309 5.53165 11.3352 5.42423 11.3953Z"
-                    fill="white"
-                  />
-                  <path
-                    d="M7.61529 11.3953C7.38755 11.5242 7.34888 11.8207 7.53365 12.0055L7.64966 12.1172H12.1786C15.3411 12.1172 16.7333 12.1043 16.7977 12.0699C16.9309 11.9969 17.0126 11.7648 16.9567 11.6059C16.8579 11.3309 17.1114 11.3438 12.1829 11.3438C8.89146 11.348 7.67974 11.3609 7.61529 11.3953Z"
-                    fill="white"
-                  />
-                  <path
-                    d="M5.44961 13.5824C5.29922 13.6426 5.23477 13.75 5.23047 13.9348C5.23047 14.0508 5.26055 14.1281 5.33789 14.2012C5.43672 14.3043 5.4668 14.3086 5.97383 14.3086C6.46797 14.3086 6.51094 14.3043 6.59258 14.2098C6.71719 14.0723 6.74297 13.9691 6.68711 13.8059C6.61836 13.5953 6.44648 13.5352 5.95234 13.5395C5.7332 13.5395 5.50547 13.5609 5.44961 13.5824Z"
-                    fill="white"
-                  />
-                  <path
-                    d="M7.67984 13.5652C7.41343 13.6641 7.33179 14.0078 7.52945 14.2012L7.63257 14.3086H12.183C16.6517 14.3086 16.7377 14.3086 16.8408 14.2227C17.0642 14.0508 17.0041 13.6727 16.7462 13.5824C16.6431 13.548 15.3755 13.5352 12.1744 13.5395C9.73804 13.5395 7.71421 13.5523 7.67984 13.5652Z"
-                    fill="white"
-                  />
-                  <path
-                    d="M5.51002 15.7566C5.23502 15.8297 5.1276 16.2164 5.32955 16.4055C5.41979 16.4914 5.47565 16.5 5.96549 16.5C6.48541 16.5 6.5069 16.4957 6.60573 16.3926C6.75182 16.2379 6.74323 16.0187 6.59284 15.8641C6.48541 15.7566 6.45104 15.748 6.03854 15.7395C5.79362 15.7352 5.55729 15.7437 5.51002 15.7566Z"
-                    fill="white"
-                  />
-                  <path
-                    d="M7.69286 15.7566C7.43934 15.8082 7.33622 16.2035 7.52957 16.3926L7.6327 16.5H12.2046H16.7765L16.871 16.3969C17.0128 16.2465 17.0042 16.0102 16.8581 15.8598L16.7464 15.748L12.2647 15.7438C9.80262 15.7395 7.74442 15.748 7.69286 15.7566Z"
-                    fill="white"
-                  />
-                </svg>
+            <!--WHITE PAPER ICON-->
+            <div
+              class="sidebar_icons2 d-flex justify-content-center align-items-center transition_03 position-relative cursor_pointer"
+            >
+              <div class="tooltip_img position-absolute whitepaper_icons">
+                <div class="text-white font_md whitepaper_icon_text fw-normal">
+                  Whitepaper
+                </div>
               </div>
-            </a>
+              <svg
+                class="transition_03 sidebar_icons_screen"
+                width="20"
+                height="18"
+                viewBox="0 0 20 18"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M13.2658 3.13672C13.2658 5.65899 13.2701 5.73203 13.4721 5.83945C13.5322 5.87383 14.3314 5.88672 15.99 5.88672H17.9221C18.1982 5.88672 18.4221 6.11058 18.4221 6.38672V12.4609V18.5352C18.4221 18.8113 18.1982 19.0352 17.9221 19.0352H11.0959H4.26973C3.99358 19.0352 3.76973 18.8113 3.76973 18.5352V9.9043V1.27344C3.76973 0.997295 3.99358 0.773438 4.26973 0.773438H8.51777H12.7658C13.042 0.773438 13.2658 0.997295 13.2658 1.27344V3.13672Z"
+                  fill="black"
+                />
+                <path
+                  d="M3.00488 10.9184L3.01754 19.4439C3.01769 19.5445 3.06171 19.64 3.13809 19.7055C3.21572 19.772 3.3146 19.8086 3.41686 19.8086H9.74668H15.7307C16.0068 19.8086 16.2307 20.0325 16.2307 20.3086V20.5176V20.7266C16.2307 21.0027 16.0068 21.2266 15.7307 21.2266H8.90449H2.07832C1.80218 21.2266 1.57832 21.0027 1.57832 20.7266V11.7305V2.73438C1.57832 2.45823 1.80218 2.23438 2.07832 2.23438H2.2873H2.49678C2.77273 2.23438 2.99651 2.45793 2.99678 2.73388L3.00488 10.9184Z"
+                  fill="black"
+                />
+                <path
+                  d="M15.9514 3.22266L16.9884 4.25973C17.3034 4.57471 17.0803 5.11328 16.6349 5.11328H15.9385H14.5393C14.2631 5.11328 14.0393 4.88942 14.0393 4.61328V3.22266C14.0393 2.18281 14.0436 1.33203 14.0521 1.33203C14.0564 1.33203 14.9115 2.18281 15.9514 3.22266Z"
+                  fill="black"
+                />
+                <path
+                  d="M5.48828 3.29582C5.45391 3.30871 5.38086 3.36028 5.3293 3.40754C5.23047 3.49348 5.23047 3.50207 5.23047 4.76965V6.04582L5.34219 6.14895C5.45391 6.25207 5.45391 6.25207 6.58398 6.26496C7.32305 6.27356 7.77852 6.26067 7.89453 6.23059C8.18242 6.15325 8.19531 6.0845 8.19531 4.74817C8.19531 3.48059 8.18242 3.39895 7.9332 3.31301C7.79141 3.26575 5.61719 3.24856 5.48828 3.29582ZM7.42188 4.76965V5.50012H6.71289H6.00391V4.76965V4.03918H6.71289H7.42188V4.76965Z"
+                  fill="white"
+                />
+                <path
+                  d="M5.33821 7.06826C5.18782 7.21436 5.19211 7.46787 5.3425 7.60967C5.44133 7.6999 5.49719 7.71279 5.86672 7.72998C6.40383 7.74717 6.59289 7.69131 6.67453 7.49365C6.74758 7.32178 6.7218 7.19717 6.59289 7.05537C6.51125 6.96514 6.46828 6.96084 5.97414 6.96084C5.46711 6.96084 5.43703 6.96514 5.33821 7.06826Z"
+                  fill="white"
+                />
+                <path
+                  d="M7.52925 7.06824C7.38746 7.20574 7.38746 7.42918 7.52496 7.59246L7.62808 7.71277L12.0925 7.72566C15.2765 7.73425 16.6 7.72566 16.716 7.69129C16.9953 7.60964 17.0683 7.28738 16.8621 7.05535L16.7761 6.96082H12.2043H7.63238L7.52925 7.06824Z"
+                  fill="white"
+                />
+                <path
+                  d="M5.33789 9.25977C5.26055 9.33281 5.23047 9.41016 5.23047 9.52617C5.23477 9.84414 5.38086 9.92578 5.96094 9.92578C6.45508 9.92578 6.61406 9.86992 6.68281 9.67656C6.74297 9.50469 6.7 9.33711 6.57109 9.23828C6.48086 9.16523 6.39922 9.15234 5.95234 9.15234C5.4668 9.15234 5.43672 9.15664 5.33789 9.25977Z"
+                  fill="white"
+                />
+                <path
+                  d="M7.53398 9.26401C7.3793 9.4187 7.3793 9.65502 7.53398 9.80112L7.6457 9.90424L12.1402 9.91713C15.5391 9.92573 16.6691 9.91284 16.7637 9.87416C17.0043 9.77534 17.0516 9.40151 16.841 9.23823C16.7379 9.15229 16.652 9.15229 12.1918 9.15229H7.65L7.53398 9.26401Z"
+                  fill="white"
+                />
+                <path
+                  d="M5.42423 11.3953C5.19649 11.5199 5.15352 11.8336 5.34258 12.0098C5.45001 12.1129 5.48868 12.1172 5.96133 12.1172C6.52423 12.1172 6.65743 12.0656 6.70469 11.8293C6.73477 11.6617 6.63165 11.4383 6.49844 11.3867C6.34805 11.3309 5.53165 11.3352 5.42423 11.3953Z"
+                  fill="white"
+                />
+                <path
+                  d="M7.61529 11.3953C7.38755 11.5242 7.34888 11.8207 7.53365 12.0055L7.64966 12.1172H12.1786C15.3411 12.1172 16.7333 12.1043 16.7977 12.0699C16.9309 11.9969 17.0126 11.7648 16.9567 11.6059C16.8579 11.3309 17.1114 11.3438 12.1829 11.3438C8.89146 11.348 7.67974 11.3609 7.61529 11.3953Z"
+                  fill="white"
+                />
+                <path
+                  d="M5.44961 13.5824C5.29922 13.6426 5.23477 13.75 5.23047 13.9348C5.23047 14.0508 5.26055 14.1281 5.33789 14.2012C5.43672 14.3043 5.4668 14.3086 5.97383 14.3086C6.46797 14.3086 6.51094 14.3043 6.59258 14.2098C6.71719 14.0723 6.74297 13.9691 6.68711 13.8059C6.61836 13.5953 6.44648 13.5352 5.95234 13.5395C5.7332 13.5395 5.50547 13.5609 5.44961 13.5824Z"
+                  fill="white"
+                />
+                <path
+                  d="M7.67984 13.5652C7.41343 13.6641 7.33179 14.0078 7.52945 14.2012L7.63257 14.3086H12.183C16.6517 14.3086 16.7377 14.3086 16.8408 14.2227C17.0642 14.0508 17.0041 13.6727 16.7462 13.5824C16.6431 13.548 15.3755 13.5352 12.1744 13.5395C9.73804 13.5395 7.71421 13.5523 7.67984 13.5652Z"
+                  fill="white"
+                />
+                <path
+                  d="M5.51002 15.7566C5.23502 15.8297 5.1276 16.2164 5.32955 16.4055C5.41979 16.4914 5.47565 16.5 5.96549 16.5C6.48541 16.5 6.5069 16.4957 6.60573 16.3926C6.75182 16.2379 6.74323 16.0187 6.59284 15.8641C6.48541 15.7566 6.45104 15.748 6.03854 15.7395C5.79362 15.7352 5.55729 15.7437 5.51002 15.7566Z"
+                  fill="white"
+                />
+                <path
+                  d="M7.69286 15.7566C7.43934 15.8082 7.33622 16.2035 7.52957 16.3926L7.6327 16.5H12.2046H16.7765L16.871 16.3969C17.0128 16.2465 17.0042 16.0102 16.8581 15.8598L16.7464 15.748L12.2647 15.7438C9.80262 15.7395 7.74442 15.748 7.69286 15.7566Z"
+                  fill="white"
+                />
+              </svg>
+            </div>
           </div>
         </div>
       </div>
     </section>
     <!-- FINGERPRINT-IMAGE-SECTION -->
-    <section class="bg-white pt-2">
-      <div class="container">
-        <div class="pt-5 mt-4 footer_fingrprint_img mx-auto">
-          <img
-            class="w-100"
-            src="./assets/images/webp/footer_fingrprint_img.webp"
-            alt="fingerprint"
-          />
-        </div>
+    <section class="bg-white pt-lg-2">
+      <div class="pt-5 mt-xl-4 footer_fingrprint_img mx-auto">
+        <img class="w-100" src="./assets/images/webp/footer_fingrprint_img.webp" alt="fingerprint" />
       </div>
     </section>
     <!-- FOOTER START -->
-    <section class="footer_bg_colour pt-md-5 position-relative z-1">
+    <section id="contact" class="footer_bg_colour pt-lg-5">
       <div class="container">
-        <div class="row py-4 justify-content-between">
+        <div class="row py-4 py-md-5 py-lg-4 justify-content-between">
           <div class="col-xl-4 col-lg-4 col-md-5 col-sm-8">
             <div class="footer_logo">
               <a href="#">
                 <img
                   class="w-100"
-                  src="./assets/images/webp/footer_logo.webp"
+                  src="./assets/images/webp/page_logo.webp"
                   alt="footer_logo"
                 />
               </a>
@@ -310,34 +293,34 @@
               Meets Freedom.
             </p>
           </div>
-          <div class="col-xl-4 col-lg-5 col-md-6 mt-4 mt-md-0">
+          <div class="col-xl-4 col-lg-5 col-md-6 mt-3 mt-md-0">
             <div class="d-flex justify-content-between">
               <ul class="m-0 p-0">
                 <li class="font_base fw-normal text-white line_height">
                   Links
                 </li>
-                <li class="mt-3">
+                <li class="mt-2 mt-sm-3">
                   <a
-                    href="#"
+                    href="#home"
                     class="font_sm fw-normal text-white opacity_07 footer_link_opacity footer_text_underline position-relative"
                     >Home</a
                   >
                 </li>
-                <li class="mt-2 pt-1">
+                <li class="mt-2 pt-sm-1">
                   <a
-                    href="#"
+                    href="#about"
                     class="font_sm fw-normal text-white opacity_07 footer_link_opacity footer_text_underline position-relative"
                     >About Us</a
                   >
                 </li>
-                <li class="mt-2 pt-1">
+                <li class="mt-2 pt-sm-1">
                   <a
                     href="#"
                     class="font_sm fw-normal text-white opacity_07 footer_link_opacity footer_text_underline position-relative"
                     >Services</a
                   >
                 </li>
-                <li class="mt-2 pt-1">
+                <li class="mt-2 pt-sm-1">
                   <a
                     href="#"
                     class="font_sm fw-normal text-white opacity_07 footer_link_opacity footer_text_underline position-relative"
@@ -350,7 +333,7 @@
                   Contact Us
                 </li>
 
-                <li class="mt-2 pt-1">
+                <li class="mt-2 pt-sm-1">
                   <a href="mailto:support@ddotslab.com">
                     <img
                       src="./assets/images/svg/footer_msg_box.svg"
@@ -377,7 +360,7 @@
                 </li>
                 <button
                   type="button"
-                  class="fw-normal font_base text-white footer_button border-0 mt-4 transition_03"
+                  class="fw-normal font_base text-white footer_button border-0 mt-3 mt-md-4 transition_03"
                 >
                   Donate
                 </button>
@@ -386,13 +369,13 @@
           </div>
         </div>
       </div>
-      <div class="footer_underline mt-sm-3"></div>
+      <div class="footer_underline mt-lg-3"></div>
       <div class="container py-1">
         <div class="d-md-flex justify-content-between py-2">
           <p class="fw-normal font_base text-white opacity_07 mb-0">
             Copyright © 2023 D.Dots, All Right Reserved
           </p>
-          <div class="mt-3 mt-md-0">
+          <div class="mt-2 mt-md-0 pb-5 pb-xl-0">
             <a href="#" class="fw-normal font_base text-white opacity_07">
               Privacy Policy,
             </a>
@@ -403,7 +386,6 @@
         </div>
       </div>
     </section>
-    <section></section>
     <script>
       const hamburger = document.querySelector(".hamburger");
       const navLinks = document.querySelector(".nav-links");
@@ -433,7 +415,10 @@
       };
 
       function scrollFunction() {
-        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        if (
+          document.body.scrollTop > 20 ||
+          document.documentElement.scrollTop > 20
+        ) {
           mybutton.style.display = "block";
         } else {
           mybutton.style.display = "none";
