@@ -47,7 +47,7 @@
 }
 
 .bg_card_ai_innovation:hover {
-  box-shadow: 0px 5px 10px -5px rgba(255, 255, 255, 0.411)
+  box-shadow: 0px 5px 10px -5px rgba(255, 255, 255, 0.411);
 }
 
 .bg_ai_innovation {
@@ -135,7 +135,7 @@
 .stay_email input::placeholder {
   color: white !important;
   opacity: 0.7 !important;
-  font-weight: normal !important;
+  font-weight: 400 !important;
 }
 
 /*  === WHITE PAPER ===  */
@@ -145,7 +145,6 @@
   background-position: center;
   background-repeat: no-repeat;
 }
-
 
 .white_paper_circle {
   width: 100%;
@@ -282,7 +281,6 @@
 }
 
 @media (max-width: 767.98px) {
-
   .bg_video::after,
   .bg_video::before {
     height: 220px;
@@ -318,7 +316,6 @@
 }
 
 @media (max-width: 575.98px) {
-
   .common_btn {
     padding: 10px 20px;
   }
@@ -329,7 +326,6 @@
   .stay_ahead_bg::after {
     height: 100px;
   }
-
 
   .wifi_icon {
     left: 6px;
