@@ -1,4 +1,4 @@
-/* FINGERPRINT CSS */
+/* FINGERPRINT CSS
 .footer_fingrprint_img {
     max-width: 1225px;
 }
@@ -49,7 +49,7 @@
 
 .footer_text_underline:hover::before {
     width: 100%;
-}
+} */
 
 /* ASIDEBAAR CSS*/
 .verticle_horizontal_sidebar {
@@ -139,16 +139,16 @@
 }
 
 /* COMMON CLASS */
-.opacity_06 {
+/* .opacity_06 {
     opacity: 0.6;
 }
 
 .transition_03 {
     transition: 0.3s ease-in-out;
-}
+} */
 
 /* MAIN */
-.main {
+/* .main {
     background-color: #0B0E11;
 }
 
@@ -208,10 +208,10 @@
     background: linear-gradient(145deg, #0C1216 13.59%, #132935 84.97%);
     filter: drop-shadow(0px 0px 124px rgba(17, 34, 45, 0.20));
     animation: circel_4 10s ease-in-out infinite alternate-reverse;
-}
+} */
 
 /* KEYFRAM */
-@keyframes circelFirst {
+/* @keyframes circelFirst {
     0% {
 
         bottom: 300px;
@@ -279,9 +279,9 @@
         left: 222px;
         top: 0;
     }
-}
-
-/* BACK TO TOP */
+} */
+/* 
+BACK TO TOP
 .back-to-top {
     display: none;
     position: fixed;
@@ -301,9 +301,9 @@
 
 .animat_topbtn {
     animation: topbtn 3s linear 0.1s infinite forwards;
-}
+} */
 
-@keyframes topbtn {
+/* @keyframes topbtn {
     0% {
         transform: translateY(0px);
     }
@@ -315,7 +315,7 @@
     100% {
         transform: translateY(0);
     }
-}
+} */
 
 /* MEDIA QUARRY */
 /* NAVBAAR RESPONSIVE */
@@ -416,7 +416,7 @@
     }
 }
 
-@media (min-width:576px) {
+/* @media (min-width:576px) {
     .hero_dots_image {
         max-width: 350px;
     }
@@ -426,9 +426,9 @@
         border-radius: 34px;
         background: #9A0000;
     }
-}
+} */
 
-@media (min-width:768px) {
+/* @media (min-width:768px) {
     .hero_dots_image {
         max-width: 500px;
     }
@@ -445,9 +445,9 @@
         border-radius: 34px;
         background: #9A0000;
     }
-}
+} */
 
-@media (min-width:1200px) {
+/* @media (min-width:1200px) {
     .sidebar_icons {
         width: 36px;
         height: 36px;
@@ -543,9 +543,9 @@
         border-radius: 34px;
         background: #9A0000;
     }
-}
+} */
 
-@media (min-width:1400px) {
+/* @media (min-width:1400px) {
     .page-logo {
         height: 38px;
         width: 68px;
@@ -568,4 +568,4 @@
     .whitepaper_icon_text {
         rotate: 0deg;
     }
-}
+} */
