@@ -46,6 +46,10 @@
   max-width: 822px;
 }
 
+.bg_card_ai_innovation:hover {
+  box-shadow: 0px 5px 10px -5px rgba(255, 255, 255, 0.411)
+}
+
 .bg_ai_innovation {
   background-image: url("../images/png/aI_innovation_bg.png");
   background-position: center;
@@ -231,6 +235,7 @@
   .common_btn {
     padding: 12px 30px;
   }
+
   .bg_video::after,
   .bg_video::before {
     height: 270px;
