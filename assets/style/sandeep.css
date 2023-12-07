@@ -462,7 +462,7 @@
     }
 
     .fourth-text-secure:hover .tooltip {
-        transform: rotate(90deg);
+        transform: rotate(90deg );
     }
 }
 
