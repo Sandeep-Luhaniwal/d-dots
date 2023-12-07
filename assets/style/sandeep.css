@@ -156,7 +156,6 @@
 .secure-data-bg-image {
     background: url('../images/png/secure-data-bg-image.png') no-repeat;
     background-position: center;
-    background-size: cover;
 }
 
 .secure-data-image {

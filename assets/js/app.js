@@ -54,3 +54,30 @@ backToTopButton.addEventListener("click", () => {
     behavior: "smooth",
   });
 });
+
+//SECURE DATA BUTTON JS
+
+function startSimulation() {
+  var elementClasses = [
+    ".first-text-secure",
+    ".second-text-secure",
+    ".third-text-secure",
+    ".fourth-text-secure",
+    ".fifth-text-secure",
+    ".six-text-secure",
+    ".seven-text-secure",
+    ".eight-text-secure"
+  ];
+
+  elementClasses.forEach(function (elementClass, index) {
+    var currentElement = document.querySelector(elementClass);
+
+    if (currentElement) {
+      currentElement.style.opacity = "0";
+
+      setTimeout(function () {
+        currentElement.style.opacity = "1";
+      }, 1000 + 500 * index); // Adjust the delay based on the index
+    }
+  });
+}
