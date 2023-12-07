@@ -22,7 +22,7 @@
   <section>
     <!-- LEFT SIDEBAAR -->
     <div
-      class="p-2 px-xl-0 py-sm-3 py-xl-5 sidebaar overflow-hidden position-fixed asidebar_background_color min_vh_screen nav_bg z-3">
+      class="p-2 px-xl-0 py-sm-3 py-xl-5 sidebaar overflow-hidden position-fixed bg_light_black min_vh_screen nav_bg z-3">
       <nav class="d-xl-flex flex-xl-column align-items-xl-center mx-1 mx-xl-0">
         <div class="d-flex align-items-center justify-content-between justify-content-xl-end w-100">
           <a href="#" class="z-3"><img class="page-logo" src="./assets/images/webp/page_logo.webp"
@@ -33,37 +33,37 @@
             <span class="bar ms-auto"></span>
           </button>
         </div>
-        <ul class="p-0 m-0 mt-3 overflow-y-scroll asidebar_customise nav-menu d-flex justify-content-center d-xl-block">
+        <ul class="p-0 m-0 mt-3 overflow-y-scroll asidebar_customise nav-menu bg_light_black text-center z-1 d-flex flex-column justify-content-center d-xl-block">
           <li class="mt-xl-4">
             <a id="nav-links" href="#home"
-              class="verticle_horizontal_sidebar fw-normal text-white opacity_06 font_lg mt-xl-2 nav-links position-relative">Home</a>
+              class="verticle_horizontal_sidebar position-relative transition_03 fw-normal text-white opacity_06 font_lg mt-xl-2 nav-links position-relative">Home</a>
           </li>
           <li class="mt-4 pt-2">
             <a href="#about"
-              class="verticle_horizontal_sidebar fw-normal text-white opacity_06 font_lg nav-links">Update</a>
+              class="verticle_horizontal_sidebar position-relative transition_03 fw-normal text-white opacity_06 font_lg nav-links">Update</a>
           </li>
           <li class="mt-4 pt-2">
-            <a href="#our" class="verticle_horizontal_sidebar fw-normal text-white opacity_06 font_lg nav-links">Our
+            <a href="#our" class="verticle_horizontal_sidebar position-relative transition_03 fw-normal text-white opacity_06 font_lg nav-links">Our
               Why</a>
           </li>
           <li class="mt-4 pt-2">
             <a href="#solution"
-              class="verticle_horizontal_sidebar fw-normal text-white opacity_06 font_lg nav-links">Solutions</a>
+              class="verticle_horizontal_sidebar position-relative transition_03 fw-normal text-white opacity_06 font_lg nav-links">Solutions</a>
           </li>
           <li class="mt-4 pt-2">
-            <a href="#works" class="verticle_horizontal_sidebar fw-normal text-white opacity_06 font_lg nav-links">How
+            <a href="#works" class="verticle_horizontal_sidebar position-relative transition_03 fw-normal text-white opacity_06 font_lg nav-links">How
               It Works</a>
           </li>
           <li class="mt-4 pt-2">
             <a href="#applications"
-              class="verticle_horizontal_sidebar fw-normal text-white opacity_06 font_lg nav-links">Applications</a>
+              class="verticle_horizontal_sidebar position-relative transition_03 fw-normal text-white opacity_06 font_lg nav-links">Applications</a>
           </li>
           <li class="mt-4 pt-2">
-            <a href="#faq" class="verticle_horizontal_sidebar fw-normal text-white opacity_06 font_lg nav-links">FAQ</a>
+            <a href="#faq" class="verticle_horizontal_sidebar position-relative transition_03 fw-normal text-white opacity_06 font_lg nav-links">FAQ</a>
           </li>
           <li class="mt-4 pt-2">
             <a href="#contact"
-              class="verticle_horizontal_sidebar fw-normal text-white opacity_06 font_lg nav-links">Contact</a>
+              class="verticle_horizontal_sidebar position-relative transition_03 fw-normal text-white opacity_06 font_lg nav-links">Contact</a>
           </li>
         </ul>
 
@@ -74,14 +74,14 @@
       </nav>
     </div>
     <!-- MAIN SECTION -->
-    <div id="home" class="main min_vh_100 py-5 d-flex justify-content-center align-items-center">
+    <div id="home" class="bg_light_black min_vh_100 py-5 d-flex justify-content-center align-items-center">
       <div class="container mt-md-5 mt-xl-0 pt-5 pt-xl-0">
         <div
           class="hero_section_border overflow-hidden d-flex align-items-center justify-content-center position-relative">
-          <div class="circel_first position-absolute hero_circle w-100"></div>
-          <div class="circel_2 position-absolute hero_circle w-100"></div>
-          <div class="circel_3 position-absolute hero_circle w-100"></div>
-          <div class="circel_4 position-absolute hero_circle w-100"></div>
+          <div class="circel_first position-absolute hero_circle_background rounded-pill w-100"></div>
+          <div class="circel_2 position-absolute hero_circle_background rounded-pill w-100"></div>
+          <div class="circel_3 position-absolute hero_circle_background rounded-pill w-100"></div>
+          <div class="circel_4 position-absolute hero_circle_background rounded-pill w-100"></div>
           <div class="position-relative">
             <img class="w-100 hero_dots_image" src="./assets/images/webp/d_dot_img_hero.webp" alt="" />
           </div>
@@ -91,7 +91,7 @@
     <!-- RIGHT SIDEBAAR ICONS-->
     <div class="sidebaar position-absolute overflow-hidden h-100 min_vh_screen z-2">
       <div
-        class="py-2 py-xl-5 position-fixed right_sidebar d-flex justify-content-center align-items-center asidebar_background_color d-xl-block">
+        class="py-2 py-xl-5 position-fixed right_sidebar d-flex justify-content-center align-items-center bg_light_black d-xl-block">
         <div class="d-flex flex-xl-column gap-4 align-items-center">
           <!-- TWITTER ICON -->
           <a target="_blank" href="https://twitter.com/">
@@ -749,7 +749,7 @@
   <!-- -------------------- FOOTER START END -------------------- -->
   <!-- ******************** Back to Top ******************** -->
   <div id="back-to-top" class="hidden z-2 position-relative">
-    <div class="d-flex justify-content-center align-items-center back-to-top animat_topbtn">
+    <div class="d-flex justify-content-center align-items-center back-to-top rounded-pill cursor_pointer border-0 position-fixed animat_topbtn">
       <img height="30px" width="30px" src="./assets/images/webp/back_to_top_icon.webp" alt="back-to-top" />
     </div>
   </div>

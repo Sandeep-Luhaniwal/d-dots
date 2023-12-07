@@ -28,7 +28,7 @@
 }
 
 body {
-  background-color: #0b0e11 !important;
+  background-color: var(--light-black) !important;
   font-family: "articulate-cf" !important;
 }
 
@@ -48,6 +48,7 @@ body {
   --white: #fff;
   --light-white: #fafafa;
   --black: #010101;
+  --light-black: #0b0e11;
   --dark-green: rgba(20, 43, 56, 0.7);
 }
 
@@ -109,6 +110,10 @@ body {
 
 .bg_white {
   background-color: var(--white);
+}
+
+.bg_light_black {
+  background-color: var(--light-black);
 }
 
 /* --------MEDIA QUAERY----------- */
