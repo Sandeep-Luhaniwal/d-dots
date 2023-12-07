@@ -1,6 +1,6 @@
 /* ----------ABOUT US CSS --------------  */
 .about-us-bg-img {
-    background: url("../images/png/about-us-bg-img.png") no-repeat;
+    background: url("../images/webp/about-us-bg-img.webp") no-repeat;
     background-size: cover;
     background-position: center;
 }
@@ -106,11 +106,6 @@
 }
 
 /* --------FAQ------------ */
-.faq-bg-image {
-    background: url('../images/png/faq-bg-image.png') no-repeat;
-    background-position: center;
-}
-
 .faq-accrodion {
     max-width: 800px;
 }
@@ -154,7 +149,7 @@
 
 /* -------- SECURE DATA CSS ------------ */
 .secure-data-bg-image {
-    background: url('../images/png/secure-data-bg-image.png') no-repeat;
+    background: url('../images/webp/secure-data-bg-image.webp') no-repeat;
     background-position: center;
     background-size: cover;
 }
@@ -499,6 +494,14 @@
         max-width: 530px !important;
     }
 
+    /* ---------- FAQ CSS --------------  */
+    .faq-question-image {
+        right: -60px;
+        top: 110px;
+        width: 385px;
+        height: 587px;
+    }
+
     /* ---------- BRAND STORY CSS --------------  */
     .bg-brand-story {
         background-size: contain;
@@ -748,10 +751,16 @@
         left: 30px;
     }
 
+    .faq-question-image {
+        right: -40px;
+    }
+
 }
 
 @media (min-width:1400px) {
     .time-line-works::after {
         width: 768px;
     }
+
+
 }
