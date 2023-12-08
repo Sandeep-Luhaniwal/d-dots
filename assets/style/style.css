@@ -7,15 +7,6 @@
 }
 
 /* ============== COMMON CLASSES ============== */
-
-.bg_dark_green {
-  background-color: rgba(20, 43, 56, 0.7);
-}
-
-.fw_medium {
-  font-weight: 500;
-}
-
 .bg_position_center {
   background-position: center;
 }
@@ -46,7 +37,7 @@
 
 .common_btn {
   border: 1px solid white;
-  padding: 13.2px 31.5px;
+  padding: 10px 20px;
   outline: none;
 }
 
@@ -65,7 +56,7 @@
   display: none;
   bottom: 20px;
   right: 20px;
-  background-color: #11222C;
+  background-color: #11222c;
   width: 40px;
   height: 40px;
 }
@@ -121,7 +112,7 @@
 .sidebar_icons {
   width: 30px;
   height: 30px;
-  background-color: rgba(217, 217, 217, 0.10);
+  background-color: rgba(217, 217, 217, 0.1);
   border-radius: 50%;
   border: 1px solid rgba(255, 255, 255, 0.24);
   backdrop-filter: blur(5px);
@@ -178,8 +169,12 @@
 }
 
 .hero_circle_background {
-  background: linear-gradient(145deg, #0C1216 13.59%, #132935 84.97%) !important;
-  filter: drop-shadow(0px 0px 124px rgba(17, 34, 45, 0.20));
+  background: linear-gradient(
+    145deg,
+    #0c1216 13.59%,
+    #132935 84.97%
+  ) !important;
+  filter: drop-shadow(0px 0px 124px rgba(17, 34, 45, 0.2));
 }
 
 .circel_first {
@@ -229,6 +224,8 @@
 .bg-brand-story {
   background: url("../images/gif/brand_story_gif.gif") no-repeat;
   height: auto;
+  background-position: center;
+  background-size: cover;
 }
 
 .brand-story-paragraph {
@@ -256,7 +253,7 @@
 .how-it-work-box {
   border-radius: 16px;
   border: 1px solid rgba(255, 255, 255, 0.04);
-  background: rgba(76, 90, 101, 0.20);
+  background: rgba(76, 90, 101, 0.2);
   backdrop-filter: blur(4px);
   padding: 8px 16px;
 }
@@ -287,7 +284,7 @@
   width: 11px;
   height: 11px;
   border-radius: 50%;
-  background-color: #A9AAAB;
+  background-color: #a9aaab;
   z-index: 1;
 }
 
@@ -314,7 +311,7 @@
   left: 0;
   top: 0;
   width: 100%;
-  height: 395px;
+  height: 100px;
   background: linear-gradient(180deg, #0b0e11 0%, rgba(11, 14, 17, 0) 100%);
 }
 
@@ -324,11 +321,14 @@
   left: 0;
   bottom: 0;
   width: 100%;
-  height: 395px;
+  height: 100px;
   background: linear-gradient(180deg, #0b0e11 0%, rgba(11, 14, 17, 0) 100%);
   transform: rotate(180deg);
 }
-
+.video_play_btn {
+  width: 22px;
+  height: 29px;
+}
 .ipad_video_card {
   border: 1px solid #ffffff16;
   max-width: 950px;
@@ -361,7 +361,7 @@
 
 /* ============== SECURE DATA CSS ============== */
 .secure-data-bg-image {
-  background: url('../images/webp/secure-data-bg-image.webp') no-repeat;
+  background: url("../images/webp/secure-data-bg-image.webp") no-repeat;
 }
 
 .secure-data-image {
@@ -536,7 +536,7 @@
 
 .accordion-item {
   border: 1px solid rgba(255, 255, 255, 0.16) !important;
-  background: rgba(76, 90, 101, 0.30) !important;
+  background: rgba(76, 90, 101, 0.3) !important;
   backdrop-filter: blur(4px) !important;
   padding: 17px 20px !important;
   border-radius: 24px !important;
@@ -577,7 +577,7 @@
   left: 0;
   top: 0;
   width: 100%;
-  height: 204px;
+  height: 100px;
   background: linear-gradient(180deg, rgba(11, 14, 17, 0) 0%, #0b0e11 100%);
   transform: rotate(180deg);
   z-index: -1;
@@ -589,7 +589,7 @@
   left: 0;
   bottom: 0;
   width: 100%;
-  height: 204px;
+  height: 100px;
   background: linear-gradient(180deg, rgba(11, 14, 17, 0) 0%, #0b0e11 100%);
   z-index: -1;
 }
@@ -624,7 +624,7 @@
   width: 100%;
   border: 2px dashed rgba(255, 255, 255, 0.16);
   border-radius: 100%;
-  padding: 98px;
+  padding: 50px;
   animation: circleanimation 12s infinite linear;
 }
 
@@ -652,31 +652,34 @@
     transform: rotate(-360deg);
   }
 }
-
+.white_paper_icons {
+  width: 50px;
+  height: 50px;
+}
 .wifi_icon {
-  left: -4px;
-  top: 83px;
+  left: -19px;
+  top: 46px;
 }
 
 .i_icon {
-  right: 98px;
-  top: -11px;
+  right: 88px;
+  top: -22px;
 }
 
 .lock_icon {
-  right: -40px;
-  top: 50%;
+  right: -22px;
+  top: 30%;
   transform: translateY(-50%);
 }
 
 .one_icon {
-  right: 121px;
-  bottom: -24px;
+  bottom: -13px;
+  right: 34px;
 }
 
 .v_icon {
-  left: 0;
-  bottom: 61px;
+  bottom: 2px;
+  left: 11px;
 }
 
 /* ============== Application & Benefits ============== */
@@ -702,7 +705,7 @@
 }
 
 .footer_bg_colour {
-  background-color: rgba(20, 43, 56, 0.70);
+  background-color: rgba(20, 43, 56, 0.7);
 }
 
 .line_height {
@@ -720,7 +723,7 @@
 .footer_button {
   padding: 10px 20px;
   border-radius: 34px;
-  background: #9A0000;
+  background: #9a0000;
 }
 
 .footer_button:hover {
@@ -818,115 +821,6 @@
   .footer_logo {
     max-width: 60px;
   }
-
-  .wifi_icon {
-    left: -21px;
-    top: 69px;
-  }
-
-  .i_icon {
-    top: -27px;
-  }
-
-  .lock_icon {
-    right: -37px;
-  }
-
-  .one_icon {
-    right: 100px;
-    bottom: -34px;
-  }
-
-  .v_icon {
-    left: 2px;
-    bottom: 23px;
-  }
-}
-
-@media (max-width: 991.98px) {
-  .common_btn {
-    padding: 12px 30px;
-  }
-
-  .bg_video::after,
-  .bg_video::before {
-    height: 270px;
-  }
-
-  .stay_ahead_bg::before,
-  .stay_ahead_bg::after {
-    height: 180px;
-  }
-
-  .white_paper_circle {
-    padding: 50px;
-  }
-
-  .white_paper_icons {
-    width: 60px;
-    height: 60px;
-  }
-
-  .wifi_icon {
-    left: -12px;
-    top: 34px;
-  }
-
-  .i_icon {
-    top: -25px;
-    right: 71px;
-  }
-
-  .lock_icon {
-    right: -31px;
-    top: 40%;
-  }
-
-  .one_icon {
-    right: 64px;
-    bottom: -23px;
-  }
-
-  .v_icon {
-    left: -11px;
-    bottom: 26px;
-  }
-}
-
-@media (max-width: 767.98px) {
-
-  .bg_video::after,
-  .bg_video::before {
-    height: 220px;
-  }
-
-  .stay_ahead_bg::before,
-  .stay_ahead_bg::after,
-  .stay_ahead_bg::before,
-  .stay_ahead_bg::after {
-    height: 140px;
-  }
-
-  .wifi_icon {
-    left: -4px;
-  }
-
-  .i_icon {
-    top: -20px;
-  }
-
-  .lock_icon {
-    right: -29px;
-    top: 40%;
-  }
-
-  .one_icon {
-    bottom: -21px;
-  }
-
-  .v_icon {
-    left: -2px;
-  }
 }
 
 @media (max-width: 575.98px) {
@@ -938,101 +832,8 @@
   .hero_dots_image {
     max-width: 250px;
   }
-
-  .common_btn {
-    padding: 10px 20px;
-  }
-
-  .bg_video::after,
-  .bg_video::before,
-  .stay_ahead_bg::before,
-  .stay_ahead_bg::after {
-    height: 100px;
-  }
-
-  .wifi_icon {
-    left: 6px;
-    top: 64px;
-  }
-
-  .lock_icon {
-    top: 36%;
-  }
-
-  .i_icon {
-    top: -19px;
-    right: 120px;
-  }
-
-  .one_icon {
-    bottom: -11px;
-    right: 94px;
-  }
-
-  .v_icon {
-    left: 6px;
-    bottom: 61px;
-  }
 }
-
-@media (max-width: 484.98px) {
-  .white_paper_icons {
-    width: 50px;
-    height: 50px;
-  }
-
-  .wifi_icon {
-    left: 4px;
-    top: 60px;
-  }
-
-  .i_icon {
-    top: -19px;
-    right: 112px;
-  }
-
-  .lock_icon {
-    right: -25px;
-    top: 40%;
-  }
-
-  .one_icon {
-    bottom: -14px;
-  }
-
-  .v_icon {
-    left: 11px;
-    bottom: 43px;
-  }
-}
-
-@media (max-width: 430.98px) {
-  .wifi_icon {
-    left: 1px;
-    top: 46px;
-  }
-
-  .i_icon {
-    right: 88px;
-    top: -17px;
-  }
-
-  .lock_icon {
-    right: -25px;
-    top: 43%;
-  }
-
-  .one_icon {
-    bottom: -14px;
-    right: 76px;
-  }
-
-  .v_icon {
-    bottom: 32px;
-  }
-}
-
-@media (max-width: 375.98px) {
+@media (min-width: 333px) {
   .wifi_icon {
     left: -8px;
     top: 46px;
@@ -1056,35 +857,30 @@
     bottom: 17px;
   }
 }
-
-@media (max-width: 333.98px) {
+@media (min-width: 375px) {
   .wifi_icon {
-    left: -19px;
+    left: 1px;
     top: 46px;
   }
 
   .i_icon {
     right: 88px;
-    top: -22px;
+    top: -17px;
   }
 
   .lock_icon {
-    right: -22px;
-    top: 30%;
+    right: -25px;
+    top: 43%;
   }
 
   .one_icon {
-    bottom: -13px;
-    right: 34px;
+    bottom: -14px;
+    right: 76px;
   }
 
   .v_icon {
-    bottom: 2px;
+    bottom: 32px;
   }
-}
-
-@media (min-width:375px) {
-
   /* SECURE SECTION CSS */
   .secure-data-image {
     max-width: 351px;
@@ -1129,9 +925,98 @@
     right: 182px;
   }
 }
+@media (min-width: 430px) {
+  .wifi_icon {
+    left: 4px;
+    top: 60px;
+  }
 
-@media (min-width:576px) {
+  .i_icon {
+    top: -19px;
+    right: 112px;
+  }
 
+  .lock_icon {
+    right: -25px;
+    top: 40%;
+  }
+
+  .one_icon {
+    bottom: -14px;
+  }
+
+  .v_icon {
+    left: 11px;
+    bottom: 43px;
+  }
+}
+@media (min-width: 484px) {
+  .wifi_icon {
+    left: 6px;
+    top: 64px;
+  }
+
+  .lock_icon {
+    top: 36%;
+  }
+
+  .i_icon {
+    top: -19px;
+    right: 120px;
+  }
+
+  .one_icon {
+    bottom: -11px;
+    right: 94px;
+  }
+
+  .v_icon {
+    left: 6px;
+    bottom: 61px;
+  }
+}
+@media (min-width: 576px) {
+  .video_play_btn {
+    width: 32px;
+    height: 39px;
+  }
+  .common_btn {
+    padding: 12px 30px;
+  }
+  .bg_video::after,
+  .bg_video::before {
+    height: 220px;
+  }
+
+  .stay_ahead_bg::before,
+  .stay_ahead_bg::after {
+    height: 140px;
+  }
+
+  .wifi_icon {
+    left: -6px;
+    top: 53px;
+  }
+
+  .i_icon {
+    top: -13px;
+    right: 73px;
+  }
+
+  .lock_icon {
+    right: -25px;
+    top: 50%;
+  }
+
+  .one_icon {
+    bottom: -9px;
+    right: 60px;
+  }
+
+  .v_icon {
+    left: 11px;
+    bottom: 27px;
+  }
   /* HERO CSS */
   .hero_dots_image {
     max-width: 350px;
@@ -1251,11 +1136,53 @@
   .footer_button {
     padding: 10px 24px;
     border-radius: 34px;
-    background: #9A0000;
+    background: #9a0000;
   }
 }
 
-@media (min-width:768px) {
+@media (min-width: 768px) {
+  .common_btn {
+    padding: 13.2px 31.5px;
+  }
+
+  .bg_video::after,
+  .bg_video::before {
+    height: 270px;
+  }
+
+  .stay_ahead_bg::before,
+  .stay_ahead_bg::after {
+    height: 180px;
+  }
+  .white_paper_icons {
+    width: 60px;
+    height: 60px;
+  }
+
+  .wifi_icon {
+    left: -12px;
+    top: 34px;
+  }
+
+  .i_icon {
+    top: -25px;
+    right: 71px;
+  }
+
+  .lock_icon {
+    right: -29px;
+    top: 45%;
+  }
+
+  .one_icon {
+    right: 46px;
+    bottom: -16px;
+  }
+
+  .v_icon {
+    left: -11px;
+    bottom: 26px;
+  }
   .hero_dots_image {
     max-width: 500px;
   }
@@ -1367,7 +1294,45 @@
   }
 }
 
-@media (min-width:992px) {
+@media (min-width: 992px) {
+  .bg_video::after,
+  .bg_video::before {
+    height: 395px;
+  }
+  .stay_ahead_bg::before,
+  .stay_ahead_bg::after {
+    height: 204px;
+  }
+  .white_paper_circle {
+    padding: 98px;
+  }
+  .white_paper_icons {
+    width: 80px;
+    height: 80px;
+  }
+  .wifi_icon {
+    left: -21px;
+    top: 69px;
+  }
+
+  .i_icon {
+    top: -32px;
+    right: 110px;
+  }
+
+  .lock_icon {
+    right: -37px;
+  }
+
+  .one_icon {
+    right: 49px;
+    bottom: -13px;
+  }
+
+  .v_icon {
+    left: 2px;
+    bottom: 23px;
+  }
   .hero_dots_image {
     max-width: 600px;
   }
@@ -1483,11 +1448,36 @@
   .footer_button {
     padding: 12px 28px;
     border-radius: 34px;
-    background: #9A0000;
+    background: #9a0000;
   }
 }
 
 @media (min-width: 1200px) {
+  .wifi_icon {
+    left: -4px;
+    top: 83px;
+  }
+
+  .i_icon {
+    right: 98px;
+    top: -11px;
+  }
+
+  .lock_icon {
+    right: -40px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .one_icon {
+    right: 121px;
+    bottom: -24px;
+  }
+
+  .v_icon {
+    left: 0;
+    bottom: 61px;
+  }
   .container {
     max-width: 1040px !important;
   }
@@ -1588,7 +1578,7 @@
   .footer_button {
     padding: 13.5px 30.5px;
     border-radius: 34px;
-    background: #9A0000;
+    background: #9a0000;
   }
 
   .time-line-works::after {
