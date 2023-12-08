@@ -160,7 +160,9 @@
   background-color: white;
   border-radius: 50%;
 }
-
+.navbar-arrow{
+  bottom: 8px;
+}
 
 /* ============== MAIN HERO HEADER ============== */
 
@@ -1578,7 +1580,7 @@
   }
 
   .asidebar_customise {
-    height: 644px;
+    max-height: 644px;
   }
 
   .right_sidebar {
