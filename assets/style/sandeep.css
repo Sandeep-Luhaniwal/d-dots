@@ -71,6 +71,15 @@
     left: 8px;
 }
 
+.faq-text-start-line::before,
+.stay_ahead_bg::after,
+.stay_ahead_bg::before,
+.bg_application::after,
+.footer_text_underline::before,
+.verticle_horizontal_sidebar::before,
+.bg_video::after,
+.bg_video::before,
+.tooltip:after,
 .bg-brand-story::after,
 .timeline-circle::before,
 .timeline-circle-top::before,

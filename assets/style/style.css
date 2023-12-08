@@ -46,6 +46,25 @@
   color: #fafafa;
 }
 
+.faq-text-start-line::before,
+.stay_ahead_bg::after,
+.stay_ahead_bg::before,
+.bg_application::after,
+.footer_text_underline::before,
+.verticle_horizontal_sidebar::before,
+.bg_video::after,
+.bg_video::before,
+.tooltip:after,
+.bg-brand-story::after,
+.timeline-circle::before,
+.timeline-circle-top::before,
+.timeline-circle-center::before,
+.timeline-circle-bottom::before,
+.time-line-works::after {
+  position: absolute;
+  content: "";
+}
+
 /* ============== SCROLL BAR ============== */
 ::-webkit-scrollbar {
   display: none;
@@ -75,8 +94,6 @@
 
 /* ============== ASIDEBAAR CSS ============== */
 .verticle_horizontal_sidebar::before {
-  content: "";
-  position: absolute;
   width: 0%;
   height: 2px;
   bottom: -3px;
@@ -268,16 +285,6 @@
   left: 8px;
 }
 
-.bg-brand-story::after,
-.timeline-circle::before,
-.timeline-circle-top::before,
-.timeline-circle-center::before,
-.timeline-circle-bottom::before,
-.time-line-works::after {
-  position: absolute;
-  content: "";
-}
-
 .timeline-circle::before {
   width: 11px;
   height: 11px;
@@ -304,8 +311,6 @@
 
 /* ============== VIDEO SECTION ============== */
 .bg_video::after {
-  content: "";
-  position: absolute;
   left: 0;
   top: 0;
   width: 100%;
@@ -314,8 +319,6 @@
 }
 
 .bg_video::before {
-  content: "";
-  position: absolute;
   left: 0;
   bottom: 0;
   width: 100%;
@@ -456,8 +459,6 @@
 }
 
 .tooltip:after {
-  content: "";
-  position: absolute;
   top: 100%;
   left: 50%;
   transform: translateX(-40%);
@@ -573,8 +574,6 @@
 }
 
 .faq-text-start-line::before {
-  position: absolute;
-  content: "";
   height: 95%;
   width: 1px;
   top: 0px;
@@ -585,8 +584,6 @@
 
 /* ============== STAY AHEAD WITH D.DOTS ============== */
 .stay_ahead_bg::after {
-  content: "";
-  position: absolute;
   left: 0;
   top: 0;
   width: 100%;
@@ -597,8 +594,6 @@
 }
 
 .stay_ahead_bg::before {
-  content: "";
-  position: absolute;
   left: 0;
   bottom: 0;
   width: 100%;
@@ -703,8 +698,6 @@
 }
 
 .bg_application::after {
-  content: "";
-  position: absolute;
   left: 0;
   top: 0;
   width: 100%;
@@ -747,8 +740,6 @@
 }
 
 .footer_text_underline::before {
-  content: "";
-  position: absolute;
   width: 0%;
   height: 2px;
   bottom: -3px;
@@ -1608,14 +1599,8 @@
   }
 
   .verticle_horizontal_sidebar::before {
-    content: "";
-    position: absolute;
-    width: 0px;
     height: 0%;
     left: 1px;
-    transition: 0.3s ease-in-out;
-    background-color: white;
-    transform: translateY(50%);
     top: 0%;
   }
 
