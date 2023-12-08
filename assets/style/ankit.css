@@ -9,7 +9,7 @@
 
 .common_btn {
   border: 1px solid white;
-  padding: 13.2px 31.5px;
+  padding: 10px 20px;
   outline: none;
 }
 
@@ -20,10 +20,9 @@
 
 /* ==== Application & Benefits === */
 .bg_application {
-  background-image: url("../images/webp/application_benefits.webp");
+  background: url("../images/webp/application_benefits.webp") no-repeat;
   background-position: center;
   background-size: cover;
-  background-repeat: no-repeat;
 }
 
 .bg_application::after {
@@ -39,7 +38,7 @@
 }
 
 /* === AI INNOVATION SECTION === */
-/* .bg_card_ai_innovation {
+.bg_card_ai_innovation {
   border-radius: 24px;
   background: rgba(242, 247, 249, 0.08);
   backdrop-filter: blur(5px);
@@ -51,20 +50,20 @@
 }
 
 .bg_ai_innovation {
-  background-image: url("../images/webp/aI_innovation_bg.webp");
+  background: url("../images/webp/aI_innovation_bg.webp") no-repeat;
   background-position: center;
   background-size: cover;
-  background-repeat: no-repeat;
-} */
+}
+*/
 
 /* === VIDEO SECTION === */
-/* .bg_video::after {
+.bg_video::after {
   content: "";
   position: absolute;
   left: 0;
   top: 0;
   width: 100%;
-  height: 395px;
+  height: 100px;
   background: linear-gradient(180deg, #0b0e11 0%, rgba(11, 14, 17, 0) 100%);
 }
 
@@ -74,7 +73,7 @@
   left: 0;
   bottom: 0;
   width: 100%;
-  height: 395px;
+  height: 100px;
   background: linear-gradient(180deg, #0b0e11 0%, rgba(11, 14, 17, 0) 100%);
   transform: rotate(180deg);
 }
@@ -91,7 +90,7 @@
 
 .z_index_negative1 {
   z-index: -1;
-} */
+}
 
 /* === STAY AHEAD WITH D.DOTS === */
 .stay_ahead_bg::after {
@@ -100,7 +99,7 @@
   left: 0;
   top: 0;
   width: 100%;
-  height: 204px;
+  height: 100px;
   background: linear-gradient(180deg, rgba(11, 14, 17, 0) 0%, #0b0e11 100%);
   transform: rotate(180deg);
   z-index: -1;
@@ -112,7 +111,7 @@
   left: 0;
   bottom: 0;
   width: 100%;
-  height: 204px;
+  height: 100px;
   background: linear-gradient(180deg, rgba(11, 14, 17, 0) 0%, #0b0e11 100%);
   z-index: -1;
 }
@@ -140,17 +139,16 @@
 
 /*  === WHITE PAPER ===  */
 .bg_white_paper {
-  background-image: url("../images/webp/white_paper_bg.webp");
+  background: url("../images/webp/white_paper_bg.webp") no-repeat;
   background-size: cover;
   background-position: center;
-  background-repeat: no-repeat;
 }
 
 .white_paper_circle {
   width: 100%;
   border: 2px dashed rgba(255, 255, 255, 0.16);
   border-radius: 100%;
-  padding: 98px;
+  padding: 50px;
   animation: circleanimation 12s infinite linear;
 }
 
@@ -178,212 +176,60 @@
     transform: rotate(-360deg);
   }
 }
-
+.white_paper_icons {
+  width: 50px;
+  height: 50px;
+}
 .wifi_icon {
-  left: -4px;
-  top: 83px;
+  left: -19px;
+  top: 46px;
 }
 
 .i_icon {
-  right: 98px;
-  top: -11px;
+  right: 88px;
+  top: -22px;
 }
 
 .lock_icon {
-  right: -40px;
-  top: 50%;
+  right: -22px;
+  top: 30%;
   transform: translateY(-50%);
 }
 
 .one_icon {
-  right: 121px;
-  bottom: -24px;
+  bottom: -13px;
+  right: 34px;
 }
 
 .v_icon {
-  left: 0;
-  bottom: 61px;
+  bottom: 2px;
+  left: 11px;
 }
-
-@media (max-width: 1199.98px) {
+@media (min-width: 333px) {
   .wifi_icon {
-    left: -21px;
-    top: 69px;
+    left: -8px;
+    top: 46px;
   }
 
   .i_icon {
-    top: -27px;
-  }
-
-  .lock_icon {
-    right: -37px;
-  }
-
-  .one_icon {
-    right: 100px;
-    bottom: -34px;
-  }
-
-  .v_icon {
-    left: 2px;
-    bottom: 23px;
-  }
-}
-
-@media (max-width: 991.98px) {
-  .common_btn {
-    padding: 12px 30px;
-  }
-
-  .bg_video::after,
-  .bg_video::before {
-    height: 270px;
-  }
-
-  .stay_ahead_bg::before,
-  .stay_ahead_bg::after {
-    height: 180px;
-  }
-
-  .white_paper_circle {
-    padding: 50px;
-  }
-
-  .white_paper_icons {
-    width: 60px;
-    height: 60px;
-  }
-
-  .wifi_icon {
-    left: -12px;
-    top: 34px;
-  }
-
-  .i_icon {
-    top: -25px;
-    right: 71px;
-  }
-
-  .lock_icon {
-    right: -31px;
-    top: 40%;
-  }
-
-  .one_icon {
-    right: 64px;
-    bottom: -23px;
-  }
-
-  .v_icon {
-    left: -11px;
-    bottom: 26px;
-  }
-}
-
-@media (max-width: 767.98px) {
-  .bg_video::after,
-  .bg_video::before {
-    height: 220px;
-  }
-
-  .stay_ahead_bg::before,
-  .stay_ahead_bg::after,
-  .stay_ahead_bg::before,
-  .stay_ahead_bg::after {
-    height: 140px;
-  }
-
-  .wifi_icon {
-    left: -4px;
-  }
-
-  .i_icon {
-    top: -20px;
-  }
-
-  .lock_icon {
-    right: -29px;
-    top: 40%;
-  }
-
-  .one_icon {
-    bottom: -21px;
-  }
-
-  .v_icon {
-    left: -2px;
-  }
-}
-
-@media (max-width: 575.98px) {
-  .common_btn {
-    padding: 10px 20px;
-  }
-
-  .bg_video::after,
-  .bg_video::before,
-  .stay_ahead_bg::before,
-  .stay_ahead_bg::after {
-    height: 100px;
-  }
-
-  .wifi_icon {
-    left: 6px;
-    top: 64px;
+    right: 66px;
+    top: -18px;
   }
 
   .lock_icon {
     top: 36%;
   }
 
-  .i_icon {
-    top: -19px;
-    right: 120px;
-  }
-
   .one_icon {
-    bottom: -11px;
-    right: 94px;
+    bottom: -13px;
+    right: 55px;
   }
 
   .v_icon {
-    left: 6px;
-    bottom: 61px;
+    bottom: 17px;
   }
 }
-
-@media (max-width: 484.98px) {
-  .white_paper_icons {
-    width: 50px;
-    height: 50px;
-  }
-
-  .wifi_icon {
-    left: 4px;
-    top: 60px;
-  }
-
-  .i_icon {
-    top: -19px;
-    right: 112px;
-  }
-
-  .lock_icon {
-    right: -25px;
-    top: 40%;
-  }
-
-  .one_icon {
-    bottom: -14px;
-  }
-
-  .v_icon {
-    left: 11px;
-    bottom: 43px;
-  }
-}
-
-@media (max-width: 430.98px) {
+@media (min-width: 375px) {
   .wifi_icon {
     left: 1px;
     top: 46px;
@@ -408,54 +254,203 @@
     bottom: 32px;
   }
 }
-
-@media (max-width: 375.98px) {
+@media (min-width: 430px) {
   .wifi_icon {
-    left: -8px;
-    top: 46px;
+    left: 4px;
+    top: 60px;
   }
 
   .i_icon {
-    right: 66px;
-    top: -18px;
+    top: -19px;
+    right: 112px;
+  }
+
+  .lock_icon {
+    right: -25px;
+    top: 40%;
+  }
+
+  .one_icon {
+    bottom: -14px;
+  }
+
+  .v_icon {
+    left: 11px;
+    bottom: 43px;
+  }
+}
+@media (min-width: 484px) {
+  .wifi_icon {
+    left: 6px;
+    top: 64px;
   }
 
   .lock_icon {
     top: 36%;
   }
 
+  .i_icon {
+    top: -19px;
+    right: 120px;
+  }
+
   .one_icon {
-    bottom: -13px;
-    right: 55px;
+    bottom: -11px;
+    right: 94px;
   }
 
   .v_icon {
-    bottom: 17px;
+    left: 6px;
+    bottom: 61px;
   }
 }
+@media (min-width: 576px) {
+  .common_btn {
+    padding: 12px 30px;
+  }
+  .bg_video::after,
+  .bg_video::before {
+    height: 220px;
+  }
 
-@media (max-width: 333.98px) {
+  .stay_ahead_bg::before,
+  .stay_ahead_bg::after {
+    height: 140px;
+  }
+
   .wifi_icon {
-    left: -19px;
-    top: 46px;
+    left: -6px;
+    top: 53px;
   }
 
   .i_icon {
-    right: 88px;
-    top: -22px;
+    top: -13px;
+    right: 73px;
   }
 
   .lock_icon {
-    right: -22px;
-    top: 30%;
+    right: -25px;
+    top: 50%;
   }
 
   .one_icon {
-    bottom: -13px;
-    right: 34px;
+    bottom: -9px;
+    right: 60px;
   }
 
   .v_icon {
-    bottom: 2px;
+    left: 11px;
+    bottom: 27px;
+  }
+}
+@media (min-width: 768px) {
+  .common_btn {
+    padding: 13.2px 31.5px;
+  }
+
+  .bg_video::after,
+  .bg_video::before {
+    height: 270px;
+  }
+
+  .stay_ahead_bg::before,
+  .stay_ahead_bg::after {
+    height: 180px;
+  }
+  .white_paper_icons {
+    width: 60px;
+    height: 60px;
+  }
+
+  .wifi_icon {
+    left: -12px;
+    top: 34px;
+  }
+
+  .i_icon {
+    top: -25px;
+    right: 71px;
+  }
+
+  .lock_icon {
+    right: -29px;
+    top: 45%;
+  }
+
+  .one_icon {
+    right: 46px;
+    bottom: -16px;
+  }
+
+  .v_icon {
+    left: -11px;
+    bottom: 26px;
+  }
+}
+@media (min-width: 992px) {
+  .bg_video::after,
+  .bg_video::before {
+    height: 395px;
+  }
+  .stay_ahead_bg::before,
+  .stay_ahead_bg::after {
+    height: 204px;
+  }
+  .white_paper_circle {
+    padding: 98px;
+  }
+  .white_paper_icons {
+    width: 80px;
+    height: 80px;
+  }
+  .wifi_icon {
+    left: -21px;
+    top: 69px;
+  }
+
+  .i_icon {
+    top: -32px;
+    right: 110px;
+  }
+
+  .lock_icon {
+    right: -37px;
+  }
+
+  .one_icon {
+    right: 49px;
+    bottom: -13px;
+  }
+
+  .v_icon {
+    left: 2px;
+    bottom: 23px;
+  }
+}
+@media (min-width: 1200px) {
+  .wifi_icon {
+    left: -4px;
+    top: 83px;
+  }
+
+  .i_icon {
+    right: 98px;
+    top: -11px;
+  }
+
+  .lock_icon {
+    right: -40px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .one_icon {
+    right: 121px;
+    bottom: -24px;
+  }
+
+  .v_icon {
+    left: 0;
+    bottom: 61px;
   }
 }
