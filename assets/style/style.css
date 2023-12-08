@@ -164,9 +164,11 @@
 .navbar-arrow {
   bottom: 8px;
 }
-/* 
-.blur {
-  filter: blur(10px);
+
+/* .blur_color {
+  background-color: transparent;
+  -webkit-backdrop-filter: blur(5px) !important;
+  backdrop-filter: blur(25px) !important;
 } */
 
 /* ============== MAIN HERO HEADER ============== */
@@ -1591,7 +1593,8 @@
   }
 
   .asidebar_customise {
-    max-height: 644px;
+    height: calc(100vh - 140px);
+    overflow-y: scroll !important;
   }
 
   .right_sidebar {
