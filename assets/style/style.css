@@ -145,15 +145,15 @@
 }
 
 .sidebar_icons2:hover .tooltip_img {
-  opacity: 1;
+  display: inline-block;
 }
 
-.tooltip_img {
+/* .tooltip_img {
   background-image: url(../images/svg/tooltip_bg_img.svg);
   background-size: 100% 100%;
-  opacity: 0;
+  display: none;
   rotate: 180deg;
-}
+} */
 
 /* ============== MAIN HERO HEADER ============== */
 
