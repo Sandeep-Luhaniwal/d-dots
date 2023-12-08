@@ -467,6 +467,7 @@
   border-color: white transparent transparent transparent;
 }
 
+.tooltipside:hover .tooltip,
 .first-text-secure:hover .tooltip,
 .second-text-secure:hover .tooltip,
 .third-text-secure:hover .tooltip,
@@ -477,6 +478,18 @@
 .eight-text-secure:hover .tooltip {
   visibility: visible;
   opacity: 1;
+}
+
+.tooltipside:hover .tooltip {
+  background-color: black !important;
+  transform: translateX(-140px);
+}
+
+.tooltipside:hover .tooltip:after {
+  top: 50%;
+  left: 102px;
+  transform: translateY(-50%);
+  border-color: transparent transparent transparent white;
 }
 
 .fourth-text-secure:hover .tooltip {
