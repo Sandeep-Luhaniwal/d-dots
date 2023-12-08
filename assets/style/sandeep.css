@@ -490,6 +490,7 @@
 }
 
 @media (min-width:768px) {
+
     /* ---------- HOW IT WORK CSS --------------  */
     .how-it-work-image {
         max-width: 530px !important;
@@ -763,5 +764,13 @@
         width: 768px;
     }
 
+}
 
+.abc:hover {
+    fill: red;
+}
+
+.abc:hover~.abc1 {
+    fill: none;
+    /* or transparent, depending on your needs */
 }
