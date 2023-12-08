@@ -638,7 +638,7 @@
   border: 2px dashed rgba(255, 255, 255, 0.16);
   border-radius: 100%;
   padding: 50px;
-  animation: circleanimation 12s infinite linear;
+  animation: circleanimation 25s infinite linear;
 }
 
 @keyframes circleanimation {
@@ -653,7 +653,7 @@
 
 .white_paper_icons,
 .white_paper_img {
-  animation: iconsanimation 12s infinite linear;
+  animation: iconsanimation 25s infinite linear;
 }
 
 @keyframes iconsanimation {
@@ -952,7 +952,7 @@
   }
 
   .lock_icon {
-    right: -25px;
+    right: -22px;
     top: 40%;
   }
 
@@ -968,22 +968,22 @@
 
 @media (min-width: 484px) {
   .wifi_icon {
-    left: 6px;
-    top: 64px;
+    left: -2px;
+    top: 80px;
   }
 
   .lock_icon {
-    top: 36%;
+    top: 39%;
   }
 
   .i_icon {
-    top: -19px;
-    right: 120px;
+    top: -25px;
+    right: 160px;
   }
 
   .one_icon {
-    bottom: -11px;
-    right: 94px;
+    bottom: 2px;
+    right: 76px;
   }
 
   .v_icon {
@@ -1176,17 +1176,17 @@
   }
 
   .white_paper_icons {
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
   }
 
   .wifi_icon {
-    left: -12px;
+    left: -6px;
     top: 34px;
   }
 
   .i_icon {
-    top: -25px;
+    top: -22px;
     right: 71px;
   }
 
@@ -1197,11 +1197,11 @@
 
   .one_icon {
     right: 46px;
-    bottom: -16px;
+    bottom: -9px;
   }
 
   .v_icon {
-    left: -11px;
+    left: -4px;
     bottom: 26px;
   }
 
@@ -1504,7 +1504,7 @@
 
   .i_icon {
     right: 98px;
-    top: -11px;
+    top: -20px;
   }
 
   .lock_icon {
