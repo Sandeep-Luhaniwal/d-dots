@@ -165,11 +165,9 @@
   bottom: 8px;
 }
 
-/* .blur_color {
-  background-color: transparent;
-  -webkit-backdrop-filter: blur(5px) !important;
-  backdrop-filter: blur(25px) !important;
-} */
+.blur_color {
+  background: rgba(11, 14, 17, 0.40) !important;
+}
 
 /* ============== MAIN HERO HEADER ============== */
 
