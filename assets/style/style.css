@@ -16,6 +16,14 @@
   font-weight: 500;
 }
 
+.bg_position_center {
+  background-position: center;
+}
+
+.bg_size_cover {
+  background-size: cover;
+}
+
 .cursor_pointer {
   cursor: pointer;
 }
@@ -52,7 +60,6 @@
   display: none;
 }
 
-
 /* ============== BACK TO TOP ============== */
 .back-to-top {
   display: none;
@@ -75,7 +82,6 @@
   animation: topbtn 3s linear 0.1s infinite forwards;
 }
 
-
 /* ============== ASIDEBAAR CSS ============== */
 .verticle_horizontal_sidebar::before {
   content: "";
@@ -97,11 +103,10 @@
   width: 50%;
 }
 
-.navbar_arrow_rotate img{
+.navbar_arrow_rotate img {
   height: 6.25px;
   width: 12.5px;
 }
-
 
 /* ============== HERO SIDEBAAR CSS ============== */
 .page-logo {
@@ -168,10 +173,8 @@
 .hero_section_border {
   border-radius: 24px;
   border: 1px solid rgba(255, 255, 255, 0.16);
-  background: #0D161B;
   padding: 0 12px;
   min-height: 650px;
-  position: relative;
 }
 
 .hero_circle_background {
@@ -203,12 +206,9 @@
   animation: circel_4 10s ease-in-out infinite alternate-reverse;
 }
 
-
 /* ============== ABOUT US CSS ============== */
 .about-us-bg-img {
   background: url("../images/webp/about-us-bg-img.webp") no-repeat;
-  background-size: cover;
-  background-position: center;
 }
 
 .top-overlay,
@@ -228,8 +228,6 @@
 /* ============== BRAND STORY CSS ============== */
 .bg-brand-story {
   background: url("../images/gif/brand_story_gif.gif") no-repeat;
-  background-position: center;
-  background-size: cover;
   height: auto;
 }
 
@@ -253,8 +251,6 @@
 
 .how-it-work-bg-img {
   background: url("../images/webp/how-it-work-bg-image.webp") no-repeat;
-  background-size: cover;
-  background-position: center;
 }
 
 .how-it-work-box {
@@ -361,15 +357,11 @@
 
 .bg_ai_innovation {
   background: url("../images/webp/aI_innovation_bg.webp") no-repeat;
-  background-position: center;
-  background-size: cover;
 }
 
 /* ============== SECURE DATA CSS ============== */
 .secure-data-bg-image {
   background: url('../images/webp/secure-data-bg-image.webp') no-repeat;
-  background-position: center;
-  background-size: cover;
 }
 
 .secure-data-image {
@@ -410,7 +402,6 @@
   left: -42px;
   transform: rotate(-90deg);
 }
-
 
 .six-text-secure {
   top: 155px;
@@ -510,7 +501,6 @@
   border-color: transparent transparent white transparent;
 }
 
-
 .first-text-secure:hover .tooltip,
 .third-text-secure:hover .tooltip,
 .fifth-text-secure:hover .tooltip,
@@ -538,7 +528,6 @@
   top: 35px;
   left: 0px;
 }
-
 
 /* ============== FAQ ============== */
 .faq-accrodion {
@@ -626,12 +615,9 @@
   font-weight: 400 !important;
 }
 
-
 /*  ============== WHITE PAPER ==============  */
 .bg_white_paper {
   background: url("../images/webp/white_paper_bg.webp") no-repeat;
-  background-size: cover;
-  background-position: center;
 }
 
 .white_paper_circle {
@@ -693,12 +679,9 @@
   bottom: 61px;
 }
 
-
 /* ============== Application & Benefits ============== */
 .bg_application {
   background: url("../images/webp/application_benefits.webp") no-repeat;
-  background-position: center;
-  background-size: cover;
 }
 
 .bg_application::after {
@@ -713,15 +696,11 @@
   z-index: -1;
 }
 
-
-
-
-/* ============== FINGERPRINT CSS ============== */
+/* ============== FOOTER CSS ============== */
 .footer_fingrprint_img {
-  max-width: 1225px;
+  max-width: 300px;
 }
 
-/* ============== FOOTER CSS ============== */
 .footer_bg_colour {
   background-color: rgba(20, 43, 56, 0.70);
 }
@@ -786,10 +765,6 @@
   }
 
   .hamburger {
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-    position: relative;
     z-index: 5;
   }
 
@@ -843,7 +818,6 @@
 
   .footer_logo {
     max-width: 60px;
-
   }
 
   .wifi_icon {
@@ -1117,7 +1091,6 @@
     max-width: 351px;
   }
 
-
   .d-mobile-block {
     display: block !important;
   }
@@ -1163,6 +1136,10 @@
   /* HERO CSS */
   .hero_dots_image {
     max-width: 350px;
+  }
+
+  .footer_fingrprint_img {
+    max-width: 550px;
   }
 
   /* -------- ABOUT DATA CSS ------------ */
@@ -1284,6 +1261,10 @@
     max-width: 500px;
   }
 
+  .footer_fingrprint_img {
+    max-width: 750px;
+  }
+
   /* ---------- HOW IT WORK CSS --------------  */
   .how-it-work-image {
     max-width: 530px !important;
@@ -1390,6 +1371,10 @@
 @media (min-width:992px) {
   .hero_dots_image {
     max-width: 600px;
+  }
+
+  .footer_fingrprint_img {
+    max-width: 950px;
   }
 
   /* ---------- BRAND STORY CSS --------------  */
@@ -1508,6 +1493,10 @@
     max-width: 1040px !important;
   }
 
+  .footer_fingrprint_img {
+    max-width: 1050px;
+  }
+
   .sidebar_icons {
     width: 36px;
     height: 36px;
@@ -1595,7 +1584,6 @@
   .verticle_horizontal_sidebar:hover::before {
     width: 2px;
     height: 50%;
-
   }
 
   .footer_button {
@@ -1631,7 +1619,6 @@
 
   .timeline-circle-bottom::before {
     left: 84%;
-
   }
 
   /* -------- SECURE DATA CSS ------------ */
@@ -1693,12 +1680,15 @@
   .time-line-works::after {
     width: 768px;
   }
+
+  .footer_fingrprint_img {
+    max-width: 1225px;
+  }
 }
 
 /* KEYFRAM */
 @keyframes circelFirst {
   0% {
-
     bottom: 300px;
     opacity: 20%;
     max-width: 200px;
@@ -1745,7 +1735,6 @@
 
 @keyframes circel_4 {
   0% {
-
     top: 10%;
     left: 140px;
     max-width: 400px;

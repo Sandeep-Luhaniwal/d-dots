@@ -50,6 +50,7 @@ body {
   --black: #010101;
   --light-black: #0b0e11;
   --dark-green: rgba(20, 43, 56, 0.7);
+  --background-light-green: #0D161B;
 }
 
 /* ---------- FONT-SIZE ---------- */
@@ -114,6 +115,10 @@ body {
 
 .bg_light_black {
   background-color: var(--light-black);
+}
+
+.backgroung_black {
+  background-color: var(--background-light-green);
 }
 
 /* --------MEDIA QUAERY----------- */
