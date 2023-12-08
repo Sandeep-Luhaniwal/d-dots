@@ -165,6 +165,10 @@
   bottom: 8px;
 }
 
+.blur {
+  filter: blur(10px);
+}
+
 /* ============== MAIN HERO HEADER ============== */
 
 .hero_dots_image {
