@@ -224,6 +224,8 @@
 .bg-brand-story {
   background: url("../images/gif/brand_story_gif.gif") no-repeat;
   height: auto;
+  background-position: center;
+  background-size: cover;
 }
 
 .brand-story-paragraph {
@@ -323,7 +325,10 @@
   background: linear-gradient(180deg, #0b0e11 0%, rgba(11, 14, 17, 0) 100%);
   transform: rotate(180deg);
 }
-
+.video_play_btn {
+  width: 22px;
+  height: 29px;
+}
 .ipad_video_card {
   border: 1px solid #ffffff16;
   max-width: 950px;
@@ -971,6 +976,10 @@
   }
 }
 @media (min-width: 576px) {
+  .video_play_btn {
+    width: 32px;
+    height: 39px;
+  }
   .common_btn {
     padding: 12px 30px;
   }
