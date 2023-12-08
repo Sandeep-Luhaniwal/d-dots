@@ -1218,6 +1218,22 @@
   }
 
   /* ---------- HOW IT WORK CSS --------------  */
+  .svg-path-fill:hover {
+    fill: #fafafa;
+  }
+
+  .text-fill-black {
+    fill: #010101;
+  }
+
+  .text-fill-white {
+    fill: #fafafa;
+  }
+
+  .text-fill-light-black {
+    fill: #11222c;
+  }
+
   .how-it-work-image {
     max-width: 530px !important;
   }
