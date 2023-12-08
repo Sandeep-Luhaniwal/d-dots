@@ -766,11 +766,19 @@
 
 }
 
-.abc:hover {
-    fill: red;
+.work-circle-img-hove-fill-box:hover,
+.work-circle-img-hove-fill:hover {
+    fill: var(--light-white);
 }
 
-.abc:hover~.abc1 {
-    fill: none;
+.highlight-abc1 {
+    fill: #11222c;
     /* or transparent, depending on your needs */
+}
+
+.abcd {
+    fill: white;
+}
+.abcd1 {
+    fill: white;
 }
