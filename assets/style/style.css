@@ -70,11 +70,6 @@
   content: "";
 }
 
-.common-btn2:hover {
-  background-color: white;
-  border: 1px solid white;
-}
-
 /* ============== SCROLL BAR ============== */
 ::-webkit-scrollbar {
   display: none;
@@ -2189,7 +2184,6 @@
     max-width: 1225px;
   }
 }
-
 
 
 /* BACK TO TOP CSS KEYFRAME*/
