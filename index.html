@@ -42,8 +42,8 @@
   <!-- ============== LEFT SIDEBAAR ============== -->
   
   <div
-    class="p-2 px-xl-0 py-sm-3 py-xl-5 sidebaar overflow-hidden position-fixed blur_color min_vh_screen nav_bg z-3">
-    <nav class="d-xl-flex flex-xl-column align-items-xl-center mx-1 mx-xl-0">
+    class="p-2 px-xl-0 py-sm-3 pt-xl-5 pb-xl-0 sidebaar overflow-hidden position-fixed blur_color min_vh_screen nav_bg z-3">
+    <nav class="d-xl-flex flex-xl-column align-items-xl-center mx-1 mx-xl-0 mb-xl-5">
       <div class="d-flex align-items-center justify-content-between justify-content-xl-end w-100">
         <a href="#" class="z-3"><img class="page-logo" src="./assets/images/webp/page_logo.webp"
             alt="main-logo-image" /></a>
@@ -55,7 +55,7 @@
         </button>
       </div>
       <ul
-        class="p-0 m-0 mt-3 overflow-y-scroll asidebar_customise nav-menu text-center z-1 d-flex flex-column justify-content-center d-xl-block">
+        class="p-0 w-100 m-0 mt-3 overflow-y-scroll asidebar_customise nav-menu text-center z-1 d-flex flex-column justify-content-center d-xl-block">
         <li class="mt-xl-4">
           <a id="nav-links" href="#home"
             class="verticle_horizontal_sidebar position-relative transition_03 fw-normal text-white opacity_06 font_lg mt-xl-2 nav-links position-relative">Home</a>
@@ -93,8 +93,8 @@
       </ul>
 
       <div
-        class="my-3 d-none d-xl-flex justify-content-xl-center z-1 sidebaar  position-fixed bottom-0">
-        <a href="#bottom">
+        class="mb-xl-3 d-none d-xl-flex justify-content-xl-center z-1 sidebaar position-fixed bottom-0">
+        <a href="#bottom" class="transition_03">
           <img class="navbar_arrow_rotate" src="./assets/images/svg/down_arrow.svg" alt="down_arrow" />
         </a>
       </div>
@@ -118,7 +118,7 @@
   <!-- ============== RIGHT SIDEBAAR ICONS ============== -->
   <div class="sidebaar position-absolute overflow-hidden h-100 min_vh_screen z-2">
     <div
-      class="py-2 py-xl-5 position-fixed right_sidebar d-flex justify-content-center align-items-center bg_light_black d-xl-block">
+      class="py-2 py-xl-5 position-fixed right_sidebar d-flex justify-content-center align-items-center blur_color d-xl-block">
       <div class="d-flex flex-xl-column gap-4 align-items-center">
         <!-- TWITTER ICON -->
         <a target="_blank" href="https://twitter.com/">
@@ -590,7 +590,7 @@
               Whitepaper
             </p>
           </div>
-          <button class="position-absolute" type="button" id="securedatabtn" onclick="startSimulation()">
+          <button class="font_base fw-semibold lh_160 color_black bg_white rounded-pill bottom-0 common_btn scuredatabtn transition_03 position-absolute" type="button" id="securedatabtn" onclick="startSimulation()">
             Start the Simulation
           </button>
         </div>
@@ -726,7 +726,7 @@
         Subscribe for updates and insights into how we'rechanging the world,
         one encrypted byte at a time.
       </p>
-      <div class="stay_email rounded-pill d-flex justify-content-between mx-auto p-1">
+      <div class="stay_email rounded-pill d-flex justify-content-between mx-auto p-1 transition_03">
         <input type="email" placeholder="Your Email Here..."
           class="font_base fw-normal lh_160 color_white opacity_07 border-0 bg-transparent w-100 ps-4 pe-2" />
         <button
@@ -905,56 +905,13 @@
     </div>
   </div>
 
-  <script>
-    const bgFirst = document.getElementById("svg-background-first");
-    const bgSecond = document.getElementById("svg-background-second");
-    const svgTextFirst = document.getElementById("svg-text-first");
-    const svgText = document.getElementById("svg-text-hover-first");
-    const svgTextHoverSecond = document.getElementById("svg-text-hover-second");
-    const svgTextHoverThree = document.getElementById("svg-text-hover-three");
-    function svgHover() {
-      svgTextFirst.classList.add("text-fill-black");
-      svgTextHoverThree.classList.add("text-fill-black");
-      bgFirst.classList.add("text-fill-white");
-      svgText.classList.add("text-fill-white");
-      svgTextHoverSecond.classList.add("text-fill-white");
-      bgSecond.classList.add("text-fill-light-black");
-    }
-    function svgHoveRemove() {
-      svgTextFirst.classList.remove("text-fill-black");
-      svgTextHoverThree.classList.remove("text-fill-black");
-      bgFirst.classList.remove("text-fill-white");
-      bgSecond.classList.remove("text-fill-light-black");
-      svgText.classList.remove("text-fill-white");
-      svgTextHoverSecond.classList.remove("text-fill-white");
-    }
-    const bgThird = document.getElementById("svg-background-third");
-    const text_3 = document.getElementById("svg_text_three");
-    const text_4 = document.getElementById("svg_text_four");
-    function svgHover2() {
-      text_3.classList.add("text-fill-black");
-      text_4.classList.add("text-fill-black");
-      bgThird.classList.add("text-fill-white");
-      bgSecond.classList.add("text-fill-light-black");
-      svgText.classList.add("text-fill-white");
-      svgTextHoverSecond.classList.add("text-fill-white");
-    }
-    function svgHoveRemove2() {
-      text_3.classList.remove("text-fill-black");
-      text_4.classList.remove("text-fill-black");
-      bgThird.classList.remove("text-fill-white");
-      bgSecond.classList.remove("text-fill-light-black");
-      svgText.classList.remove("text-fill-white");
-      svgTextHoverSecond.classList.remove("text-fill-white");
-    }
-  </script>
-
   <!-- ============== BOOTSTRAP JS ============== -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
     crossorigin="anonymous"></script>
   <!-- ============== JS FILE LINK ============== -->
   <script src="./assets/js/app.js"></script>
+  <script src="./assets/js/work.js"></script>
 </body>
 
 </html>

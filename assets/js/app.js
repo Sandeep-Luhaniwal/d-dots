@@ -1,4 +1,4 @@
-// VIDEO JS START
+// ************  VIDEO JS START ************ 
 let vid = document.getElementById("myVideo");
 let playButton = document.getElementById("playVideo");
 function playVid() {
@@ -15,8 +15,8 @@ vid.addEventListener("pause", function () {
   playButton.classList.remove("d-none");
 });
 
-// VIDEO JS END
-
+//  ************  VIDEO JS END  ************
+//  ************ SIDENAVBAR JS  ************ 
 const hamburger = document.querySelector(".hamburger");
 const navLinks = document.querySelector(".nav-links");
 const navMenu = document.querySelector(".nav-menu");
@@ -55,7 +55,7 @@ backToTopButton.addEventListener("click", () => {
   });
 });
 
-//SECURE DATA BUTTON JS
+// ************ SECURE DATA BUTTON JS ************ 
 
 let isSimulationActive = false;
 
@@ -72,16 +72,33 @@ function startSimulation() {
     ".fifth-text-secure",
     ".six-text-secure",
     ".seven-text-secure",
-    ".eight-text-secure"
+    ".eight-text-secure",
   ];
+
+  // Disable the button
+  let button = document.getElementById("securedatabtn"); // Replace 'your-button-id' with your button's ID
+  button.disabled = true;
+  button.classList.remove("common_btn");
+
+  // Change cursor style to 'no-drop'
+  button.style.cursor = "not-allowed";
 
   elementClasses.forEach((elementClass, index) => {
     let currentElement = document.querySelector(elementClass);
     if (currentElement) {
       currentElement.style.opacity = "0";
-      setTimeout(() => currentElement.style.opacity = "1", 1000 + 500 * index);
+      setTimeout(
+        () => (currentElement.style.opacity = "1"),
+        1000 + 800 * index
+      );
     }
   });
 
-  setTimeout(() => isSimulationActive = false, 1000 + 500 * (elementClasses.length - 1));
+  setTimeout(() => {
+    isSimulationActive = false;
+    // Enable the button after the simulation completes
+    button.disabled = false;
+    button.classList.add("common_btn");
+    button.style.cursor = "pointer"; // Change cursor back to default or as needed
+  }, 1000 + 800 * (elementClasses.length - 1));
 }
