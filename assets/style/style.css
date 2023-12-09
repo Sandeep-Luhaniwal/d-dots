@@ -80,7 +80,6 @@
   display: none;
   bottom: 20px;
   right: 20px;
-  background-color: #11222c;
   width: 40px;
   height: 40px;
 }
@@ -171,8 +170,6 @@
 .sidebar_icons2 {
   width: 30px;
   height: 30px;
-  background-color: white;
-  border-radius: 50%;
 }
 
 .navbar-arrow {
@@ -1068,7 +1065,6 @@
     height: 3px;
     margin: 4px 0;
     -webkit-transition: all 0.3s ease-in-out;
-    background-color: white;
     z-index: 99;
   }
 
@@ -1097,9 +1093,11 @@
 
   .nav-menu {
     position: fixed;
+    background-color: var(--light-black);
     left: -100%;
     top: 0;
     width: 100%;
+    background-color: var(--light-black);
     min-height: 100vh;
     -webkit-transition: 0.6s ease-in-out;
     -o-transition: 0.6s ease-in-out;
@@ -1804,6 +1802,11 @@
 }
 
 @media (min-width: 1200px) {
+  .asidebar_customise {
+    height: calc(100vh - 140px);
+    overflow-y: scroll !important;
+  }
+
   .wifi_icon {
     left: -4px;
     top: 83px;
@@ -1903,10 +1906,6 @@
     transform: rotate(180deg);
   }
 
-  .asidebar_customise {
-    height: calc(100vh - 140px);
-    overflow-y: scroll !important;
-  }
 
   .right_sidebar {
     top: 0 !important;

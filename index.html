@@ -42,20 +42,22 @@
   <!-- ============== LEFT SIDEBAAR ============== -->
   
   <div
-    class="p-2 px-xl-0 py-sm-3 pt-xl-5 pb-xl-0 sidebaar overflow-hidden position-fixed blur_color min_vh_screen nav_bg z-3">
+    class="p-2 px-xl-0 py-sm-3 pt-xl-5 pb-xl-0 sidebaar overflow-hidde position-fixed blur_color min_vh_screen nav_bg z-3">
     <nav class="d-xl-flex flex-xl-column align-items-xl-center mx-1 mx-xl-0 mb-xl-5">
-      <div class="d-flex align-items-center justify-content-between justify-content-xl-end w-100">
+      <div class="d-flex justify-content-between justify-content-xl-end w-100">
         <a href="#" class="z-3"><img class="page-logo" src="./assets/images/webp/page_logo.webp"
             alt="main-logo-image" /></a>
-        <button type="button"
-          class="hamburger border-0 bg-transparent d-xl-none index_5 cross_icon position-relative cursor_pointer transition_03">
-          <span class="bar ms-auto"></span>
-          <span class="bar bar-2"></span>
-          <span class="bar ms-auto"></span>
-        </button>
+        <div class="d-flex align-items-start">
+          <button type="button"
+            class="hamburger  border-0 bg-transparent d-xl-none index_5 cross_icon position-relative cursor_pointer transition_03">
+            <span class="bar bg-white ms-auto"></span>
+            <span class="bar bg-white bar-2"></span>
+            <span class="bar bg-white ms-auto"></span>
+          </button>
+        </div>
       </div>
       <ul
-        class="p-0 w-100 m-0 mt-3 overflow-y-scroll asidebar_customise nav-menu text-center z-1 d-flex flex-column justify-content-center d-xl-block">
+        class="p-0 w-100 m-0 mt-xl-3 asidebar_customise nav-menu text-center z-2 d-flex flex-column justify-content-center d-xl-block">
         <li class="mt-xl-4">
           <a id="nav-links" href="#home"
             class="verticle_horizontal_sidebar position-relative transition_03 fw-normal text-white opacity_06 font_lg mt-xl-2 nav-links position-relative">Home</a>
@@ -145,7 +147,7 @@
         </a>
         <!--PAGE ICON-->
         <div
-          class="sidebar_icons2 tooltipside d-flex justify-content-center align-items-center transition_03 position-relative cursor_pointer">
+          class="sidebar_icons2 bg-white rounded-pill tooltipside d-flex justify-content-center align-items-center transition_03 position-relative cursor_pointer">
           <svg class="transition_03 sidebar_icons_screen" width="20" height="18" viewBox="0 0 20 18" fill="none"
             xmlns="http://www.w3.org/2000/svg">
             <path
@@ -900,7 +902,7 @@
   <!-- ============== Back to Top ============== -->
   <div id="back-to-top" class="hidden z-2 position-relative">
     <div
-      class="d-flex justify-content-center align-items-center back-to-top rounded-pill cursor_pointer border-0 position-fixed animat_topbtn">
+      class="d-flex justify-content-center align-items-center back-to-top rounded-pill bg-black cursor_pointer border-0 position-fixed animat_topbtn">
       <img src="./assets/images/webp/back_to_top_icon.webp" alt="back-to-top" />
     </div>
   </div>
