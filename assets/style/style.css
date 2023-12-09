@@ -137,8 +137,6 @@
 }
 
 .sidebar_icons {
-  width: 30px;
-  height: 30px;
   background-color: rgba(217, 217, 217, 0.1);
   border-radius: 50%;
   border: 1px solid rgba(255, 255, 255, 0.24);
@@ -146,15 +144,12 @@
   backdrop-filter: blur(5px);
 }
 
+.sidebar_icons2 svg,
 .sidebar_icons svg {
   width: 14px;
   height: 12px;
 }
 
-.sidebar_icons2 svg {
-  width: 14px;
-  height: 12px;
-}
 
 .sidebar_icons:hover {
   border: none;
@@ -167,6 +162,7 @@
   transform: scale(1.5);
 }
 
+.sidebar_icons,
 .sidebar_icons2 {
   width: 30px;
   height: 30px;
@@ -178,8 +174,8 @@
 
 .blur_color {
   background: rgba(11, 14, 17, 0.30) !important;
-  -webkit-backdrop-filter: blur(10px);
-  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(6px);
+  backdrop-filter: blur(6px);
 }
 
 /* ============== MAIN HERO HEADER ============== */
@@ -1853,12 +1849,8 @@
     height: 36px;
   }
 
+  .sidebar_icons2 svg,
   .sidebar_icons svg {
-    width: 20px;
-    height: 18px;
-  }
-
-  .sidebar_icons2 svg {
     width: 20px;
     height: 18px;
   }
