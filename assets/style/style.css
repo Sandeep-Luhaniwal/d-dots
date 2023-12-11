@@ -8,6 +8,9 @@
 }
 
 /* ============== COMMON CLASSES ============== */
+.d_none {
+  display: none;
+}
 .bg_position_center {
   background-position: center !important;
 }
