@@ -37,7 +37,13 @@
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
-<body>
+<body style="overflow: hidden">
+  <!-- === PRELODER === -->
+  <div
+    class="w-100 vh-100 d-flex justify-content-center align-items-center preloder position-fixed bg-black start-0 top-0 text-white"
+    id="preloderTime">
+    <img src="./assets/images/webp/page_logo.webp" alt="preloader" width="250px" />
+  </div>
   <!-- ============== HERO SECTION ============== -->
   <!-- ============== LEFT SIDEBAAR ============== -->
   <div
@@ -122,21 +128,24 @@
       class="py-2 py-xl-5 position-fixed right_sidebar d-flex justify-content-center align-items-center blur_color d-xl-block">
       <div class="d-flex flex-xl-column gap-4 align-items-center">
         <!-- TWITTER ICON -->
-        <a target="_blank" href="https://twitter.com/" class="sidebar_icons d-flex justify-content-center align-items-center transition_03">
-            <svg class="transition_03" width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="M15.7512 0H18.818L12.1179 7.62462L20 18H13.8275L8.99365 11.7074L3.46266 18H0.394011L7.56038 9.84461L0 0H6.32735L10.6967 5.75169L15.7493 0H15.7512ZM14.6748 16.1723H16.3742L5.4049 1.73169H3.58133L14.6748 16.1723Z"
-                fill="white" />
-            </svg>
+        <a target="_blank" href="https://twitter.com/"
+          class="sidebar_icons d-flex justify-content-center align-items-center transition_03">
+          <svg class="transition_03" width="20" height="18" viewBox="0 0 20 18" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M15.7512 0H18.818L12.1179 7.62462L20 18H13.8275L8.99365 11.7074L3.46266 18H0.394011L7.56038 9.84461L0 0H6.32735L10.6967 5.75169L15.7493 0H15.7512ZM14.6748 16.1723H16.3742L5.4049 1.73169H3.58133L14.6748 16.1723Z"
+              fill="white" />
+          </svg>
         </a>
         <!-- DISCORD ICON-->
-        <a target="_blank" href="https://discord.com/" class="sidebar_icons d-flex justify-content-center align-items-center transition_03">
-            <svg class="transition_03" width="22" height="17" viewBox="0 0 22 17" fill="none"
-              xmlns="http://www.w3.org/2000/svg">
-              <path fill-rule="evenodd" clip-rule="evenodd"
-                d="M14.003 0C14.747 0 15.533 0.26 16.253 0.547L16.78 0.763C18.04 1.291 18.748 2.399 19.297 3.616C20.188 5.591 20.807 8.224 21.021 10.226C21.123 11.176 21.148 12.132 20.965 12.775C20.768 13.462 20.098 13.948 19.447 14.33L19.125 14.513L18.791 14.699C18.619 14.795 18.442 14.89 18.266 14.983L17.744 15.253L17.027 15.61L16.45 15.894C16.3321 15.9576 16.2027 15.9968 16.0694 16.0094C15.936 16.022 15.8015 16.0077 15.6738 15.9673C15.5462 15.9269 15.4279 15.8613 15.326 15.7743C15.2242 15.6874 15.1408 15.5808 15.0809 15.461C15.0211 15.3413 14.9858 15.2107 14.9774 15.077C14.9689 14.9433 14.9874 14.8094 15.0317 14.683C15.076 14.5566 15.1452 14.4404 15.2353 14.3413C15.3254 14.2422 15.4344 14.1622 15.556 14.106L16.346 13.716L15.766 13.107C14.376 13.677 12.739 14 11 14C9.26101 14 7.62401 13.678 6.23401 13.107L5.65401 13.715L6.44701 14.105C6.56455 14.1637 6.66937 14.245 6.75549 14.3442C6.84161 14.4434 6.90735 14.5586 6.94895 14.6832C6.99055 14.8078 7.0072 14.9394 6.99795 15.0705C6.98869 15.2015 6.95372 15.3295 6.89501 15.447C6.83631 15.5645 6.75504 15.6694 6.65583 15.7555C6.55662 15.8416 6.44141 15.9073 6.3168 15.9489C6.06512 16.033 5.79038 16.0136 5.55301 15.895L5.00901 15.625C4.60701 15.425 4.20401 15.227 3.80601 15.018L2.87801 14.513L2.55701 14.33C1.90601 13.948 1.23501 13.462 1.03901 12.775C0.855014 12.132 0.881014 11.177 0.982014 10.225C1.19601 8.224 1.81501 5.591 2.70601 3.616C3.25501 2.399 3.96301 1.291 5.22301 0.763C6.05901 0.413 7.07201 0 8.00001 0C8.60301 0 9.07701 0.555 8.99001 1.147C9.65548 1.04854 10.3273 0.999404 11 1C11.691 1 12.366 1.05 13.014 1.148C12.9947 1.00599 13.0059 0.861504 13.0466 0.724109C13.0874 0.586714 13.1568 0.459542 13.2504 0.351012C13.344 0.242481 13.4596 0.155067 13.5895 0.0945554C13.7194 0.0340434 13.8597 0.00181393 14.003 0ZM7.75001 6.5C7.28589 6.5 6.84077 6.68437 6.51258 7.01256C6.18439 7.34075 6.00001 7.78587 6.00001 8.25C6.00001 8.71413 6.18439 9.15925 6.51258 9.48744C6.84077 9.81563 7.28589 10 7.75001 10C8.21414 10 8.65926 9.81563 8.98745 9.48744C9.31564 9.15925 9.50001 8.71413 9.50001 8.25C9.50001 7.78587 9.31564 7.34075 8.98745 7.01256C8.65926 6.68437 8.21414 6.5 7.75001 6.5ZM14.25 6.5C13.7859 6.5 13.3408 6.68437 13.0126 7.01256C12.6844 7.34075 12.5 7.78587 12.5 8.25C12.5 8.71413 12.6844 9.15925 13.0126 9.48744C13.3408 9.81563 13.7859 10 14.25 10C14.7141 10 15.1593 9.81563 15.4875 9.48744C15.8156 9.15925 16 8.71413 16 8.25C16 7.78587 15.8156 7.34075 15.4875 7.01256C15.1593 6.68437 14.7141 6.5 14.25 6.5Z"
-                fill="white" />
-            </svg>
+        <a target="_blank" href="https://discord.com/"
+          class="sidebar_icons d-flex justify-content-center align-items-center transition_03">
+          <svg class="transition_03" width="22" height="17" viewBox="0 0 22 17" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M14.003 0C14.747 0 15.533 0.26 16.253 0.547L16.78 0.763C18.04 1.291 18.748 2.399 19.297 3.616C20.188 5.591 20.807 8.224 21.021 10.226C21.123 11.176 21.148 12.132 20.965 12.775C20.768 13.462 20.098 13.948 19.447 14.33L19.125 14.513L18.791 14.699C18.619 14.795 18.442 14.89 18.266 14.983L17.744 15.253L17.027 15.61L16.45 15.894C16.3321 15.9576 16.2027 15.9968 16.0694 16.0094C15.936 16.022 15.8015 16.0077 15.6738 15.9673C15.5462 15.9269 15.4279 15.8613 15.326 15.7743C15.2242 15.6874 15.1408 15.5808 15.0809 15.461C15.0211 15.3413 14.9858 15.2107 14.9774 15.077C14.9689 14.9433 14.9874 14.8094 15.0317 14.683C15.076 14.5566 15.1452 14.4404 15.2353 14.3413C15.3254 14.2422 15.4344 14.1622 15.556 14.106L16.346 13.716L15.766 13.107C14.376 13.677 12.739 14 11 14C9.26101 14 7.62401 13.678 6.23401 13.107L5.65401 13.715L6.44701 14.105C6.56455 14.1637 6.66937 14.245 6.75549 14.3442C6.84161 14.4434 6.90735 14.5586 6.94895 14.6832C6.99055 14.8078 7.0072 14.9394 6.99795 15.0705C6.98869 15.2015 6.95372 15.3295 6.89501 15.447C6.83631 15.5645 6.75504 15.6694 6.65583 15.7555C6.55662 15.8416 6.44141 15.9073 6.3168 15.9489C6.06512 16.033 5.79038 16.0136 5.55301 15.895L5.00901 15.625C4.60701 15.425 4.20401 15.227 3.80601 15.018L2.87801 14.513L2.55701 14.33C1.90601 13.948 1.23501 13.462 1.03901 12.775C0.855014 12.132 0.881014 11.177 0.982014 10.225C1.19601 8.224 1.81501 5.591 2.70601 3.616C3.25501 2.399 3.96301 1.291 5.22301 0.763C6.05901 0.413 7.07201 0 8.00001 0C8.60301 0 9.07701 0.555 8.99001 1.147C9.65548 1.04854 10.3273 0.999404 11 1C11.691 1 12.366 1.05 13.014 1.148C12.9947 1.00599 13.0059 0.861504 13.0466 0.724109C13.0874 0.586714 13.1568 0.459542 13.2504 0.351012C13.344 0.242481 13.4596 0.155067 13.5895 0.0945554C13.7194 0.0340434 13.8597 0.00181393 14.003 0ZM7.75001 6.5C7.28589 6.5 6.84077 6.68437 6.51258 7.01256C6.18439 7.34075 6.00001 7.78587 6.00001 8.25C6.00001 8.71413 6.18439 9.15925 6.51258 9.48744C6.84077 9.81563 7.28589 10 7.75001 10C8.21414 10 8.65926 9.81563 8.98745 9.48744C9.31564 9.15925 9.50001 8.71413 9.50001 8.25C9.50001 7.78587 9.31564 7.34075 8.98745 7.01256C8.65926 6.68437 8.21414 6.5 7.75001 6.5ZM14.25 6.5C13.7859 6.5 13.3408 6.68437 13.0126 7.01256C12.6844 7.34075 12.5 7.78587 12.5 8.25C12.5 8.71413 12.6844 9.15925 13.0126 9.48744C13.3408 9.81563 13.7859 10 14.25 10C14.7141 10 15.1593 9.81563 15.4875 9.48744C15.8156 9.15925 16 8.71413 16 8.25C16 7.78587 15.8156 7.34075 15.4875 7.01256C15.1593 6.68437 14.7141 6.5 14.25 6.5Z"
+              fill="white" />
+          </svg>
         </a>
         <!--PAGE ICON-->
         <div
@@ -782,8 +791,7 @@
   </section>
   <!-- ============== WHITE PAPER END ============== -->
   <!-- ============== APPLICATION & BENEFITS START ============== -->
-  <section id="applications"
-    class="bg_application overflow-hidden bg_size_cover bg_position_center position-relative z-1 py-5">
+  <section id="applications" class="bg_application bg_size_cover bg_position_center position-relative z-1 py-5">
     <div class="container text-center py-lg-5 my-xl-4">
       <h5 class="font_4xl fw-bold color_white mb-0 mb-lg-5 pb-3">
         Application & Benefits
@@ -801,7 +809,7 @@
         </div>
         <div class="col-sm-6 col-lg-6 col-xl-5 pt-3 pt-sm-0" data-aos="fade-left">
           <h6 class="font_xl fw-medium color_white pb-sm-1">
-            Financial Sector
+            Hypothetical Scenarios
           </h6>
           <p class="font_base fw-normal lh_160 px-lg-3 color_white opacity_07 mb-0">
             Lorem ipsum dolor sit amet consectetur. Id mollis donec eget netus
@@ -866,7 +874,7 @@
                 </li>
 
                 <li class="mt-2 pt-sm-1">
-                  <a href="mailto:support@ddotslab.com">
+                  <a href="mailto:support@ddotslab.com" target="_blank">
                     <img loading="lazy" src="./assets/images/svg/footer_msg_box.svg" alt="msg" />
                     <span class="ps-2 ms-1 font_sm fw-normal text-white">support@ddotslab.com</span>
                   </a>
@@ -890,16 +898,16 @@
       </div>
     </div>
     <div class="footer_underline mt-lg-3"></div>
-    <div class="container py-1">
+    <div class="container py-1 text-center text-md-start">
       <div class="d-md-flex justify-content-between py-2">
         <p class="fw-normal font_base text-white opacity_07 mb-0">
           Copyright © 2023 D.Dots, All Right Reserved
         </p>
         <div class="mt-2 mt-md-0 pb-5 pb-xl-0">
-          <a href="#" class="fw-normal font_base text-white opacity_07">
+          <a href="#" class="fw-normal font_base text-white opacity_07 privacy_terms transition_03">
             Privacy Policy,
           </a>
-          <a href="#" class="fw-normal font_base text-white opacity_07 ms-1">
+          <a href="#" class="fw-normal font_base text-white opacity_07 ms-1 privacy_terms transition_03">
             Terms & Conditions
           </a>
         </div>
