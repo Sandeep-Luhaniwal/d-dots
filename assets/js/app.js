@@ -102,3 +102,10 @@ function startSimulation() {
     button.style.cursor = "pointer"; // Change cursor back to default or as needed
   }, 1000 + 800 * (elementClasses.length - 1));
 }
+
+
+// ************ AOS ANIMATION ************
+AOS.init({
+  duration: 700,
+  once: true,
+});

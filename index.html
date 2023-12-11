@@ -33,6 +33,8 @@
   <!-- ============== BOOTSTRAP LINK ============== -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+  <!--  ============== AOS LINK ============== -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
@@ -109,7 +111,8 @@
         <div class="circel_3 position-absolute hero_circle_background rounded-pill w-100"></div>
         <div class="circel_4 position-absolute hero_circle_background rounded-pill w-100"></div>
         <div class="position-relative">
-          <img loading="lazy" class="w-100 hero_dots_image" src="./assets/images/webp/d_dot_img_hero.webp" alt="dots image" />
+          <img loading="lazy" class="w-100 hero_dots_image" src="./assets/images/webp/d_dot_img_hero.webp"
+            alt="dots image" />
         </div>
       </div>
     </div>
@@ -198,12 +201,12 @@
     </div>
   </div>
   <!-- ============== ABOUT US SECTION START ============== -->
-  <section class="py-5 position-relative about-us-bg-img bg_size_cover bg_position_center">
+  <section class="py-5 position-relative about-us-bg-img bg_size_cover bg_position_center overflow-hidden">
     <div class="top-0 start-0 w-100 h-100 position-absolute top-overlay transfrom-rotate"></div>
     <div class="bottom-0 start-0 w-100 h-100 position-absolute bottom-overlay"></div>
     <div class="container py-lg-5 my-lg-4 position-relative z-1">
       <div class="row justify-content-between align-items-center py-lg-5">
-        <div class="col-md-7 col-lg-6">
+        <div class="col-md-7 col-lg-6" data-aos="fade-right">
           <h2 class="text-center text-md-start text-white font_4xl fw-bold mb-0">
             About Us
           </h2>
@@ -229,9 +232,9 @@
             andunintrusive.
           </p>
         </div>
-        <div class="col-md-5 col-lg-6 d-flex justify-content-center pt-4 pt-md-0">
+        <div class="col-md-5 col-lg-6 d-flex justify-content-center pt-4 pt-md-0" >
           <img loading="lazy" src="./assets/images/webp/about-us-do-dots-image.webp" alt="about-us-do-dots-image"
-            class="about-us-image w-100" />
+            class="about-us-image w-100" data-aos="fade-left" />
         </div>
       </div>
     </div>
@@ -239,14 +242,14 @@
   <!-- ============== ABOUT US SECTION END ============== -->
   <!-- ============== BRAND STORY SECTION START ============== -->
   <section
-    class="py-sm-5 py-md-0 bg-brand-story bg-black position-relative d-flex justify-content-center align-items-center">
+    class="py-sm-5 py-md-0 bg-brand-story bg-black position-relative d-flex justify-content-center align-items-center overflow-hidden">
     <div class="top-0 start-0 w-100 h-100 position-absolute top-overlay transfrom-rotate"></div>
     <div class="bottom-0 start-0 w-100 h-100 position-absolute bottom-overlay"></div>
     <img loading="lazy" src="./assets/images/webp/left-brands-circle-image.webp" alt="circle images"
       class="d-none d-md-block left-top-circle-brand-position position-absolute" />
     <img loading="lazy" src="./assets/images/webp/right-brands-circle-image.webp" alt="circle images"
       class="d-none d-md-block right-bottom-circle-brand-position position-absolute" />
-    <div class="container position-relative z-1 py-5 my-5">
+    <div class="container position-relative z-1 py-5 my-5" data-aos="fade-zoom-in" data-aos-duration="1000">
       <h3 class="text-white mb-0 font_3xl fw-semibold text-center">
         Brand Story
       </h3>
@@ -261,12 +264,12 @@
   <!-- ============== BRAND STORY SECTION END ============== -->
   <!-- ============== HOW IT WORKS SECTION START ============== -->
   <section id="works"
-    class="px-lg-3 py-5 pt-lg-0 pb-lg-5 position-relative how-it-work-bg-img bg_size_cover bg_position_center">
+    class="px-lg-3 py-5 pt-lg-0 pb-lg-5 position-relative how-it-work-bg-img bg_size_cover bg_position_center overflow-hidden">
     <div class="top-0 start-0 w-100 h-100 position-absolute top-overlay transfrom-rotate"></div>
     <div class="bottom-0 start-0 w-100 h-100 position-absolute bottom-overlay"></div>
     <div class="container position-relative z-1 mb-xl-4">
       <div class="row align-items-center pb-md-4 mb-lg-2">
-        <div class="col-md-6 col-lg-5 pe-xl-3">
+        <div class="col-md-6 col-lg-5 pe-xl-3" data-aos="fade-right">
           <h2 class="text-center text-md-start color_light_white font_4xl fw-bold mb-0">
             How It Works
           </h2>
@@ -280,7 +283,8 @@
             maintaining privacy integrity.
           </p>
         </div>
-        <div class="col-md-6 col-lg-7 d-flex justify-content-center justify-content-md-start py-4 py-md-0">
+        <div class="col-md-6 col-lg-7 d-flex justify-content-center justify-content-md-start py-4 py-md-0"
+          data-aos="fade-left">
           <svg class="w-100 how-it-work-image" viewBox="0 0 580 530" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path
               d="M478.933 44.5204C471.529 46.1384 470.193 46.7011 463.881 50.4294C458.418 53.7356 454.169 58.73 454.048 62.1769C453.927 65.5534 456.719 65.4128 458.782 61.8955C464.124 52.9618 479.055 46.7715 493.379 47.5453C499.206 47.897 507.703 50.0073 512.073 52.188C515.594 54.0169 522.028 60.0666 524.091 63.5838C526.034 66.9603 527.976 67.8748 529.068 65.9052C530.646 63.021 524.091 54.5797 516.565 49.6556C507.825 44.028 491.801 41.777 478.933 44.5204Z"
@@ -386,7 +390,7 @@
           <div class="timeline-circle timeline-circle-center position-relative">
             <div class="timeline-circle timeline-circle-bottom position-relative">
               <div class="row flex-column flex-md-row pt-md-4">
-                <div class="col-md-4">
+                <div class="col-md-4" data-aos="fade-up">
                   <div class="how-it-work-box transition_03 h-100 z-1 position-relative h-100 d-flex flex-column">
                     <p class="font_md fw-medium color_light_white mb-0">
                       How It Works
@@ -398,7 +402,7 @@
                     </p>
                   </div>
                 </div>
-                <div class="col-md-4 pt-4 pt-md-0">
+                <div class="col-md-4 pt-4 pt-md-0" data-aos="fade-up" data-aos-duration="1000">
                   <div class="how-it-work-box transition_03 h-100 z-1 position-relative d-flex flex-column">
                     <p class="font_md fw-medium color_light_white mb-0">
                       Workflow Explanation
@@ -410,7 +414,7 @@
                     </p>
                   </div>
                 </div>
-                <div class="col-md-4 pt-4 pt-md-0">
+                <div class="col-md-4 pt-4 pt-md-0" data-aos="fade-up" data-aos-duration="1200">
                   <div class="how-it-work-box transition_03 h-100 z-1 position-relative d-flex flex-column">
                     <p class="font_md fw-medium color_light_white mb-0">
                       Streamlined Process
@@ -430,9 +434,9 @@
   </section>
   <!-- ============== HOW IT WORKS SECTION END ============== -->
   <!-- ============== VIDEO SECTION START ============== -->
-  <section id="our" class="py-5 bg_dark_green bg_video position-relative">
+  <section id="our" class="py-5 bg_dark_green bg_video position-relative overflow-hidden">
     <div class="container py-lg-5 my-lg-5">
-      <div class="position-relative ipad_video_card rounded-4 z-1 mx-auto">
+      <div class="position-relative ipad_video_card rounded-4 z-1 mx-auto" data-aos="fade-up">
         <video class="w-100 h-100 ipad_video d-block rounded-4" id="myVideo" width="950" height="534" muted
           poster="./assets/images/webp/video_play.webp">
           <source src="./assets/video/video_dummy.mp4" type="video/mp4" />
@@ -445,9 +449,9 @@
   </section>
   <!-- ============== VIDEO SECTION END ============== -->
   <!-- ============== AI INNOVATION SECTION START ============== -->
-  <section id="solution" class="bg_ai_innovation bg_size_cover bg_position_center pb-5 pb-md-0 pt-4 pt-xl-5">
+  <section id="solution" class="bg_ai_innovation bg_size_cover bg_position_center pb-5 pb-md-0 pt-4 pt-xl-5 overflow-hidden">
     <div class="container pt-lg-3 mt-lg-1 d-flex flex-md-column flex-column-reverse">
-      <div class="text-center bg_card_ai_innovation mx-auto py-4 px-3 p-sm-4 p-md-5 mt-4 mt-sm-0">
+      <div class="text-center bg_card_ai_innovation mx-auto py-4 px-3 p-sm-4 p-md-5 mt-4 mt-sm-0" data-aos="fade-up">
         <h5 class="font_3xl color_white fw-semibold lh_160 mb-lg-3 mt-lg-3">
           AI Innovation
         </h5>
@@ -460,25 +464,26 @@
       </div>
       <div class="px-md-5 mx-lg-5 mt-4 mt-lg-5">
         <img loading="lazy" src="./assets/images/webp/trust_privacy_ai.webp" alt="Trust Privacy"
-          class="w-100 px-xl-3 d-none d-sm-inline" />
-        <img loading="lazy" src="./assets/images//webp/ai_privacy_sm.webp" alt="Trust Privacy" class="w-100 d-sm-none" />
-        <div class="text-center bg_ai_card rounded-3 mx-auto p-3 mt-3 d-sm-none">
+          class="w-100 px-xl-3 d-none d-sm-inline" data-aos="zoom-out" />
+        <img loading="lazy" src="./assets/images//webp/ai_privacy_sm.webp" alt="Trust Privacy" class="w-100 d-sm-none"
+          data-aos="zoom-out" />
+        <div class="text-center bg_ai_card rounded-3 mx-auto p-3 mt-3 d-sm-none" data-aos="fade-right" data-aos-duration="1000">
           <h6 class="fw-medium font_md color_white">Privacy</h6>
           <p class="font_xs fw-normal lh_160 color_white opacity_07 mb-0">Safeguarding your digital footprint with
             utmost
             discretion</p>
         </div>
-        <div class="text-center bg_ai_card rounded-3 mx-auto p-3 mt-3 d-sm-none">
+        <div class="text-center bg_ai_card rounded-3 mx-auto p-3 mt-3 d-sm-none" data-aos="fade-left" data-aos-duration="1200">
           <h6 class="fw-medium font_md color_white">Security</h6>
           <p class="font_xs fw-normal lh_160 color_white opacity_07 mb-0">Fortifying your data against modern digital
             threats.</p>
         </div>
-        <div class="text-center bg_ai_card rounded-3 mx-auto p-3 mt-3 d-sm-none">
+        <div class="text-center bg_ai_card rounded-3 mx-auto p-3 mt-3 d-sm-none" data-aos="fade-right" data-aos-duration="1400">
           <h6 class="fw-medium font_md color_white">Encryption</h6>
           <p class="font_xs fw-normal lh_160 color_white opacity_07 mb-0">Unbreakable protection for every transaction.
           </p>
         </div>
-        <div class="text-center bg_ai_card rounded-3 mx-auto p-3 mt-3 d-sm-none">
+        <div class="text-center bg_ai_card rounded-3 mx-auto p-3 mt-3 d-sm-none" data-aos="fade-left" data-aos-duration="1600">
           <h6 class="fw-medium font_md color_white">Money</h6>
           <p class="font_xs fw-normal lh_160 color_white opacity_07 mb-0">Financial data safeguarded with cutting-edge
             technology.</p>
@@ -488,7 +493,7 @@
   </section>
   <!-- ============== AI INNOVATION SECTION END ============== -->
   <!-- ============== SECURE DATA SECTION START ============== -->
-  <section class="py-5 py-lg-0 secure-data-bg-image bg_size_cover bg_position_center position-relative">
+  <section class="py-5 py-lg-0 secure-data-bg-image bg_size_cover bg_position_center position-relative overflow-hidden">
     <div class="top-0 start-0 w-100 h-100 position-absolute top-overlay transfrom-rotate"></div>
     <div class="bottom-0 start-0 w-100 h-100 position-absolute bottom-overlay"></div>
     <div class="container py-lg-5 my-xl-4 position-relative z-1">
@@ -497,7 +502,8 @@
       </h2>
       <div class="d-flex justify-content-center">
         <div class="position-relative pb-5 pb-lg-0">
-          <img loading="lazy" src="./assets/images/webp/secure-data-image.webp" alt="secure data" class="secure-data-image" />
+          <img loading="lazy" src="./assets/images/webp/secure-data-image.webp" alt="secure data"
+            class="secure-data-image" data-aos="zoom-in" data-aos-duration="1200" />
           <div class="position-absolute first-text-secure transition_03">
             <p class="fw-semibold font_sm text-white mb-0">1. Generate Key</p>
             <p class="tooltip position-absolute text-white font_sm fw-normal color_light_white mb-0">
@@ -611,7 +617,7 @@
       </h2>
       <div class="faq-accrodion mx-auto">
         <div class="accordion gap-3 gap-md-4 d-flex flex-column pt-md-3" id="accordionExample">
-          <div class="accordion-item">
+          <div class="accordion-item" data-aos="fade-left" data-aos-duration="1000">
             <button class="accordion-button border-0 bg-transparent p-0 text-white fw-semibold" type="button"
               data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
               <span class="font_base">1. Are there any companies or initiatives that exemplify this
@@ -626,7 +632,7 @@
               </p>
             </div>
           </div>
-          <div class="accordion-item">
+          <div class="accordion-item" data-aos="fade-right" data-aos-duration="1200">
             <button class="accordion-button border-0 bg-transparent p-0 text-white collapsed fw-semibold font_base"
               type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false"
               aria-controls="collapseTwo">
@@ -644,7 +650,7 @@
               </p>
             </div>
           </div>
-          <div class="accordion-item">
+          <div class="accordion-item" data-aos="fade-left" data-aos-duration="1400">
             <button class="accordion-button border-0 bg-transparent p-0 text-white collapsed fw-semibold font_base"
               type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false"
               aria-controls="collapseThree">
@@ -662,7 +668,7 @@
               </p>
             </div>
           </div>
-          <div class="accordion-item">
+          <div class="accordion-item" data-aos="fade-right" data-aos-duration="1600">
             <button class="accordion-button border-0 bg-transparent p-0 text-white collapsed fw-semibold font_base"
               type="button" data-bs-toggle="collapse" data-bs-target="#collapseFourth" aria-expanded="false"
               aria-controls="collapseFourth">
@@ -678,7 +684,7 @@
               </p>
             </div>
           </div>
-          <div class="accordion-item">
+          <div class="accordion-item" data-aos="fade-left" data-aos-duration="1800">
             <button class="accordion-button border-0 bg-transparent p-0 text-white collapsed fw-semibold font_base"
               type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false"
               aria-controls="collapseFive">
@@ -693,7 +699,7 @@
               </p>
             </div>
           </div>
-          <div class="accordion-item">
+          <div class="accordion-item" data-aos="fade-right" data-aos-duration="2000">
             <button class="accordion-button border-0 bg-transparent p-0 text-white collapsed fw-semibold font_base"
               type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false"
               aria-controls="collapseSix">
@@ -716,18 +722,18 @@
   </section>
   <!-- ============== FAQ SECTION END ============== -->
   <!-- ============== STAY AHEAD WITH D.DOTS START ============== -->
-  <section class="bg_dark_green py-5 position-relative stay_ahead_bg z-1">
+  <section class="bg_dark_green py-5 position-relative stay_ahead_bg z-1 overflow-hidden">
     <div class="container my-lg-5">
-      <h5 class="font_4xl fw-semibold text-capitalize color_white mb-3 text-center">
+      <h5 class="font_4xl fw-semibold text-capitalize color_white mb-3 text-center" data-aos="fade-right">
         stay ahead with d.dots
       </h5>
-      <p class="font_base color_white fw-normal opacity_07 lh_160 mb-4 pb-lg-3 mx-auto text-center">
+      <p class="font_base color_white fw-normal opacity_07 lh_160 mb-4 pb-lg-3 mx-auto text-center" data-aos="fade-left">
         Stay in touch with D.Dots and be the first to know about our
         innovative solutions thatredefine privacy in the digital age.
         Subscribe for updates and insights into how we'rechanging the world,
         one encrypted byte at a time.
       </p>
-      <div class="stay_email rounded-pill d-flex justify-content-between mx-auto p-1 transition_03">
+      <div class="stay_email rounded-pill d-flex justify-content-between mx-auto p-1 transition_03" data-aos="zoom-out">
         <input type="email" placeholder="Your Email Here..."
           class="font_base fw-normal lh_160 color_white opacity_07 border-0 bg-transparent w-100 ps-4 pe-2" />
         <button
@@ -742,7 +748,7 @@
   <section id="about" class="pb-5 pt-4 py-md-5 bg_white_paper bg_size_cover bg_position_center">
     <div class="container pt-xl-5 my-xl-4">
       <div class="row align-items-center justify-content-center flex-column-reverse flex-md-row">
-        <div class="col-md-6 text-center text-md-start pe-xxl-5">
+        <div class="col-md-6 text-center text-md-start pe-xxl-5" data-aos="fade-right">
           <h5 class="font_4xl fw-bold color_white mb-3">White Paper</h5>
           <p class="font_base fw-normal lh_160 color_white opacity_07 mb-lg-4 pb-lg-3 pe-lg-5">
             Lorem ipsum dolor sit amet consectetur. Id mollis donec eget netus
@@ -754,7 +760,7 @@
             Read Now
           </button>
         </div>
-        <div class="col-sm-9 col-md-6 p-5 overflow-hidden">
+        <div class="col-sm-9 col-md-6 p-5 overflow-hidden" data-aos="zoom-in">
           <div class="white_paper_circle position-relative">
             <img loading="lazy" src="./assets/images/webp/white_paper_img.webp" alt="D" class="w-100 white_paper_img" />
             <img loading="lazy" src="./assets/images/webp/wifi_icon.webp" alt="wifi" width="80" height="80"
@@ -780,7 +786,7 @@
         Application & Benefits
       </h5>
       <div class="row justify-content-evenly">
-        <div class="col-sm-6 col-lg-6 col-xl-5">
+        <div class="col-sm-6 col-lg-6 col-xl-5" data-aos="fade-right">
           <h6 class="font_xl fw-medium color_white pb-sm-1">
             Financial Sector
           </h6>
@@ -790,7 +796,7 @@
             ac fringilla.
           </p>
         </div>
-        <div class="col-sm-6 col-lg-6 col-xl-5 pt-3 pt-sm-0">
+        <div class="col-sm-6 col-lg-6 col-xl-5 pt-3 pt-sm-0" data-aos="fade-left">
           <h6 class="font_xl fw-medium color_white pb-sm-1">
             Financial Sector
           </h6>
@@ -910,6 +916,9 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
     crossorigin="anonymous"></script>
+  <!-- ============== AOS JS FILE ============== -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
   <!-- ============== JS FILE LINK ============== -->
   <script src="./assets/js/app.js"></script>
   <script src="./assets/js/work.js"></script>
