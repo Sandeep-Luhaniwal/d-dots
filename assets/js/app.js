@@ -1,4 +1,4 @@
-// ************  VIDEO JS START ************ 
+// ************  VIDEO JS START ************
 let vid = document.getElementById("myVideo");
 let playButton = document.getElementById("playVideo");
 function playVid() {
@@ -16,7 +16,7 @@ vid.addEventListener("pause", function () {
 });
 
 //  ************  VIDEO JS END  ************
-//  ************ SIDENAVBAR JS  ************ 
+//  ************ SIDENAVBAR JS  ************
 const hamburger = document.querySelector(".hamburger");
 const navLinks = document.querySelector(".nav-links");
 const navMenu = document.querySelector(".nav-menu");
@@ -55,7 +55,7 @@ backToTopButton.addEventListener("click", () => {
   });
 });
 
-// ************ SECURE DATA BUTTON JS ************ 
+// ************ SECURE DATA BUTTON JS ************
 
 let isSimulationActive = false;
 
@@ -103,7 +103,12 @@ function startSimulation() {
   }, 1000 + 800 * (elementClasses.length - 1));
 }
 
-
+// Preloader
+setTimeout(function () {
+  document.querySelector("#preloaderTime").classList.add("d-none");
+  document.body.style.overflowY = "visible";
+  document.documentElement.style.overflowY = "visible";
+}, 1500);
 // ************ AOS ANIMATION ************
 AOS.init({
   duration: 700,

@@ -40,9 +40,9 @@
 <body style="overflow: hidden">
   <!-- === PRELODER === -->
   <div
-    class="w-100 vh-100 d-flex justify-content-center align-items-center preloder position-fixed bg-black start-0 top-0 text-white"
-    id="preloderTime">
-    <img src="./assets/images/webp/page_logo.webp" alt="preloader" width="250px" />
+    class="w-100 vh-100 d-flex justify-content-center align-items-center preloader position-fixed bg-black start-0 top-0 text-white"
+    id="preloaderTime">
+    <img src="./assets/images/webp/page_logo.webp" alt="preloader" />
   </div>
   <!-- ============== HERO SECTION ============== -->
   <!-- ============== LEFT SIDEBAAR ============== -->
@@ -617,109 +617,227 @@
   <!-- ============== SECURE DATA SECTION END ============== -->
   <!-- ============== FAQ SECTION START ============== -->
   <section id="faq" class="mb-lg-5 position-relative overflow-hidden">
-    <div class="top-0 start-0 w-100 h-100 position-absolute top-overlay transfrom-rotate"></div>
-    <div class="bottom-0 start-0 w-100 h-100 position-absolute bottom-overlay"></div>
+    <div
+      class="top-0 start-0 w-100 h-100 position-absolute top-overlay transfrom-rotate"
+    ></div>
+    <div
+      class="bottom-0 start-0 w-100 h-100 position-absolute bottom-overlay"
+    ></div>
     <div class="container position-relative z-1 py-5 mb-lg-4">
-      <img loading="lazy" src="./assets/images/webp/faq-question-image.webp" alt="faq-question-image"
-        class="faq-question-image d-none d-md-block position-absolute" />
+      <img
+        loading="lazy"
+        src="./assets/images/webp/faq-question-image.webp"
+        alt="faq-question-image"
+        class="faq-question-image d-none d-md-block position-absolute"
+      />
       <h2 class="text-white font_4xl fw-bold text-center mb-3 mb-lg-4">
         FAQ’s
       </h2>
       <div class="faq-accrodion mx-auto">
-        <div class="accordion gap-3 gap-md-4 d-flex flex-column pt-md-3" id="accordionExample">
-          <div class="accordion-item" data-aos="fade-left" data-aos-duration="1000">
-            <button class="accordion-button border-0 bg-transparent p-0 text-white fw-semibold" type="button"
-              data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-              <span class="font_base">1. Are there any companies or initiatives that exemplify this
-                vision?</span>
+        <div
+          class="accordion gap-3 gap-md-4 d-flex flex-column pt-md-3"
+          id="accordionExample"
+        >
+          <div
+            class="accordion-item"
+            data-aos="fade-left"
+            data-aos-duration="1000"
+          >
+            <button
+              class="accordion-button border-0 bg-transparent p-0 text-white fw-semibold"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseOne"
+              aria-expanded="true"
+              aria-controls="collapseOne"
+            >
+              <div class="font_base d-flex gap-1">
+                <p class="m-0">1.</p>
+                <p class="m-0">
+                  Are there any companies or initiatives that exemplify this
+                  vision?
+                </p>
+              </div>
             </button>
-            <div id="collapseOne" class="accordion-collapse collapse pt-2 show" data-bs-parent="#accordionExample">
+            <div
+              id="collapseOne"
+              class="accordion-collapse collapse pt-2 show"
+              data-bs-parent="#accordionExample"
+            >
               <p
-                class="mb-0 py-0 pe-0 pe-lg-4 fw-normal color_light_white font_base accordion-body faq-text-start-line position-relative">
+                class="mb-0 py-0 pe-0 pe-lg-4 fw-normal color_light_white font_base accordion-body faq-text-start-line position-relative"
+              >
                 D.Dots is unique in its approach to data privacy, but we stand
                 alongside a community of innovators who understand that the
                 future of technology is ethical, secure, and user-focused
               </p>
             </div>
           </div>
-          <div class="accordion-item" data-aos="fade-right" data-aos-duration="1200">
-            <button class="accordion-button border-0 bg-transparent p-0 text-white collapsed fw-semibold font_base"
-              type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false"
-              aria-controls="collapseTwo">
-              <span class="font_base">
-                2. What technologies and methodologies are commonly used to
-                achieve this vision?
-              </span>
+          <div
+            class="accordion-item"
+            data-aos="fade-right"
+            data-aos-duration="1200"
+          >
+            <button
+              class="accordion-button border-0 bg-transparent p-0 text-white collapsed fw-semibold font_base"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseTwo"
+              aria-expanded="false"
+              aria-controls="collapseTwo"
+            >
+              <div class="font_base d-flex gap-1">
+                <p class="m-0">2.</p>
+                <p class="m-0">
+                  What technologies and methodologies are commonly used to
+                  achieve this vision?
+                </p>
+              </div>
             </button>
-            <div id="collapseTwo" class="accordion-collapse pt-2 collapse" data-bs-parent="#accordionExample">
+            <div
+              id="collapseTwo"
+              class="accordion-collapse pt-2 collapse"
+              data-bs-parent="#accordionExample"
+            >
               <p
-                class="mb-0 py-0 pe-0 pe-lg-4 fw-normal color_light_white font_base accordion-body faq-text-start-line position-relative">
+                class="mb-0 py-0 pe-0 pe-lg-4 fw-normal color_light_white font_base accordion-body faq-text-start-line position-relative"
+              >
                 D.Dots is unique in its approach to data privacy, but we stand
                 alongside a community of innovators who understand that the
                 future of technology is ethical, secure, and user-focused
               </p>
             </div>
           </div>
-          <div class="accordion-item" data-aos="fade-left" data-aos-duration="1400">
-            <button class="accordion-button border-0 bg-transparent p-0 text-white collapsed fw-semibold font_base"
-              type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false"
-              aria-controls="collapseThree">
-              <span class="font_base">
-                3. What is the core concept behind data-driven decision-making
-                without compromising?
-              </span>
+          <div
+            class="accordion-item"
+            data-aos="fade-left"
+            data-aos-duration="1400"
+          >
+            <button
+              class="accordion-button border-0 bg-transparent p-0 text-white collapsed fw-semibold font_base"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseThree"
+              aria-expanded="false"
+              aria-controls="collapseThree"
+            >
+              <div class="font_base d-flex gap-1">
+                <p class="m-0">3.</p>
+                <p class="m-0">
+                  What is the core concept behind data-driven decision-making
+                  without compromising?
+                </p>
+              </div>
             </button>
-            <div id="collapseThree" class="accordion-collapse pt-2 collapse" data-bs-parent="#accordionExample">
+            <div
+              id="collapseThree"
+              class="accordion-collapse pt-2 collapse"
+              data-bs-parent="#accordionExample"
+            >
               <p
-                class="mb-0 py-0 pe-0 pe-lg-4 fw-normal color_light_white font_base accordion-body faq-text-start-line position-relative">
+                class="mb-0 py-0 pe-0 pe-lg-4 fw-normal color_light_white font_base accordion-body faq-text-start-line position-relative"
+              >
                 D.Dots is unique in its approach to data privacy, but we stand
                 alongside a community of innovators who understand that the
                 future of technology is ethical, secure, and user-focused
               </p>
             </div>
           </div>
-          <div class="accordion-item" data-aos="fade-right" data-aos-duration="1600">
-            <button class="accordion-button border-0 bg-transparent p-0 text-white collapsed fw-semibold font_base"
-              type="button" data-bs-toggle="collapse" data-bs-target="#collapseFourth" aria-expanded="false"
-              aria-controls="collapseFourth">
-              <span class="font_base">4. How can individuals protect their own data privacy in this
-                context?</span>
+          <div
+            class="accordion-item"
+            data-aos="fade-right"
+            data-aos-duration="1600"
+          >
+            <button
+              class="accordion-button border-0 bg-transparent p-0 text-white collapsed fw-semibold font_base"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseFourth"
+              aria-expanded="false"
+              aria-controls="collapseFourth"
+            >
+              <div class="font_base d-flex gap-1">
+                <p class="m-0">4.</p>
+                <p class="m-0">
+                  How can individuals protect their own data privacy in this
+                  context?
+                </p>
+              </div>
             </button>
-            <div id="collapseFourth" class="accordion-collapse pt-2 collapse" data-bs-parent="#accordionExample">
+            <div
+              id="collapseFourth"
+              class="accordion-collapse pt-2 collapse"
+              data-bs-parent="#accordionExample"
+            >
               <p
-                class="mb-0 py-0 pe-0 pe-lg-4 fw-normal color_light_white font_base accordion-body faq-text-start-line position-relative">
+                class="mb-0 py-0 pe-0 pe-lg-4 fw-normal color_light_white font_base accordion-body faq-text-start-line position-relative"
+              >
                 D.Dots is unique in its approach to data privacy, but we stand
                 alongside a community of innovators who understand that the
                 future of technology is ethical, secure, and user-focused
               </p>
             </div>
           </div>
-          <div class="accordion-item" data-aos="fade-left" data-aos-duration="1800">
-            <button class="accordion-button border-0 bg-transparent p-0 text-white collapsed fw-semibold font_base"
-              type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false"
-              aria-controls="collapseFive">
-              <span class="font_base">5. How does "D.Dots" ensure data privacy?</span>
+          <div
+            class="accordion-item"
+            data-aos="fade-left"
+            data-aos-duration="1800"
+          >
+            <button
+              class="accordion-button border-0 bg-transparent p-0 text-white collapsed fw-semibold font_base"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseFive"
+              aria-expanded="false"
+              aria-controls="collapseFive"
+            >
+              <div class="font_base d-flex gap-1">
+                <p class="m-0">5.</p>
+                <p class="m-0">How does "D.Dots" ensure data privacy?</p>
+              </div>
             </button>
-            <div id="collapseFive" class="accordion-collapse pt-2 collapse" data-bs-parent="#accordionExample">
+            <div
+              id="collapseFive"
+              class="accordion-collapse pt-2 collapse"
+              data-bs-parent="#accordionExample"
+            >
               <p
-                class="mb-0 py-0 pe-0 pe-lg-4 fw-normal color_light_white font_base accordion-body faq-text-start-line position-relative">
+                class="mb-0 py-0 pe-0 pe-lg-4 fw-normal color_light_white font_base accordion-body faq-text-start-line position-relative"
+              >
                 D.Dots is unique in its approach to data privacy, but we stand
                 alongside a community of innovators who understand that the
                 future of technology is ethical, secure, and user-focused
               </p>
             </div>
           </div>
-          <div class="accordion-item" data-aos="fade-right" data-aos-duration="2000">
-            <button class="accordion-button border-0 bg-transparent p-0 text-white collapsed fw-semibold font_base"
-              type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false"
-              aria-controls="collapseSix">
-              <span class="font_base">
-                6. How does this vision benefit businesses and organizations?
-              </span>
+          <div
+            class="accordion-item"
+            data-aos="fade-right"
+            data-aos-duration="2000"
+          >
+            <button
+              class="accordion-button border-0 bg-transparent p-0 text-white collapsed fw-semibold font_base"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseSix"
+              aria-expanded="false"
+              aria-controls="collapseSix"
+            >
+              <div class="font_base d-flex gap-1">
+                <p class="m-0">6.</p>
+                <p class="m-0">
+                  How does this vision benefit businesses and organizations?
+                </p>
+              </div>
             </button>
-            <div id="collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div
+              id="collapseSix"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionExample"
+            >
               <p
-                class="mt-2 mb-0 py-0 pe-0 pe-lg-4 fw-normal color_light_white font_base accordion-body faq-text-start-line position-relative">
+                class="mt-2 mb-0 py-0 pe-0 pe-lg-4 fw-normal color_light_white font_base accordion-body faq-text-start-line position-relative"
+              >
                 D.Dots is unique in its approach to data privacy, but we stand
                 alongside a community of innovators who understand that the
                 future of technology is ethical, secure, and user-focused
@@ -791,7 +909,7 @@
   </section>
   <!-- ============== WHITE PAPER END ============== -->
   <!-- ============== APPLICATION & BENEFITS START ============== -->
-  <section id="applications" class="bg_application bg_size_cover bg_position_center position-relative z-1 py-5">
+  <section id="applications" class="bg_application bg_size_cover bg_position_center overflow-hidden position-relative z-1 py-5">
     <div class="container text-center py-lg-5 my-xl-4">
       <h5 class="font_4xl fw-bold color_white mb-0 mb-lg-5 pb-3">
         Application & Benefits
