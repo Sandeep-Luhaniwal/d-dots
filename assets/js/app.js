@@ -112,5 +112,4 @@ setTimeout(function () {
 // ************ AOS ANIMATION ************
 AOS.init({
   duration: 700,
-  once: true,
 });
