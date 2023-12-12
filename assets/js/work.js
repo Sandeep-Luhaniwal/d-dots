@@ -1,4 +1,3 @@
-
 const bgFirst = document.getElementById("svg-background-first");
 const bgSecond = document.getElementById("svg-background-second");
 const svgTextFirst = document.getElementById("svg-text-first");
