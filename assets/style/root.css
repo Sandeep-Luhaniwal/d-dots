@@ -94,7 +94,7 @@ body {
 }
 
 .color_light_white {
-  color: var(--light-white);
+  color: var(--light-white) !important;
 }
 
 .color_black {
