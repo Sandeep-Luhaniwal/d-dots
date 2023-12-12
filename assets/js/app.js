@@ -103,7 +103,7 @@ function startSimulation() {
   }, 1000 + 800 * (elementClasses.length - 1));
 }
 
-// Preloader
+// ************ Preloader ************
 setTimeout(function () {
   document.querySelector("#preloaderTime").classList.add("d-none");
   document.body.style.overflowY = "visible";
@@ -112,4 +112,5 @@ setTimeout(function () {
 // ************ AOS ANIMATION ************
 AOS.init({
   duration: 700,
+  once: true,
 });
