@@ -143,9 +143,9 @@
   -o-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
   background-color: white;
-  -webkit-transform: translatex(-50%);
-  -ms-transform: translatex(-50%);
-  transform: translatex(-50%);
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
   left: 50%;
 }
 
@@ -227,12 +227,8 @@
 }
 
 .hero_circle_background {
-  background: -o-linear-gradient(305deg,
-      #0c1216 13.59%,
-      #132935 84.97%) !important;
-  background: linear-gradient(145deg,
-      #0c1216 13.59%,
-      #132935 84.97%) !important;
+  background: -o-linear-gradient(305deg, #0c1216 13.59%, #132935 84.97%) !important;
+  background: linear-gradient(145deg, #0c1216 13.59%, #132935 84.97%) !important;
   -webkit-filter: drop-shadow(0px 0px 124px rgba(17, 34, 45, 0.2));
   filter: drop-shadow(0px 0px 124px rgba(17, 34, 45, 0.2));
 }
@@ -490,16 +486,22 @@
 }
 
 .timeline-circle-center::before {
-  top: 50%;
   left: -21px;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
 }
 
 .timeline-circle-bottom::before {
   bottom: -2px;
   left: -21px;
+}
+
+.timeline-circle-center::before,
+.tooltipside:hover .tooltip:after,
+.third-text-secure:hover .tooltip:after,
+.fourth-text-secure:hover .tooltip::after {
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
 }
 
 /* ============== VIDEO SECTION ============== */
@@ -556,17 +558,18 @@
 
 /* ============== AI INNOVATION SECTION ============== */
 .bg_ai_card {
+  max-width: 390px;
+}
+
+.bg_ai_card,
+.bg_card_ai_innovation {
   background: rgba(242, 247, 249, 0.08);
   -webkit-backdrop-filter: blur(5px);
   backdrop-filter: blur(5px);
-  max-width: 390px;
 }
 
 .bg_card_ai_innovation {
   border-radius: 24px;
-  background: rgba(242, 247, 249, 0.08);
-  -webkit-backdrop-filter: blur(5px);
-  backdrop-filter: blur(5px);
   max-width: 822px;
 }
 
@@ -706,11 +709,7 @@
 }
 
 .tooltipside:hover .tooltip:after {
-  top: 50%;
   left: 102px;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
   border-color: transparent transparent transparent white;
 }
 
@@ -728,11 +727,7 @@
 
 .third-text-secure:hover .tooltip:after,
 .fourth-text-secure:hover .tooltip::after {
-  top: 50%;
   left: -15px;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
   border-color: transparent white transparent transparent;
 }
 
